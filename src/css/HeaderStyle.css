@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hello{
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+.headtwo{
+    border-bottom: 1px solid #ddd; 
+
+}
+.links{
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: bold;
+}
+.img_achy{
+    width: 35px;
+    height: 35px;
+}
