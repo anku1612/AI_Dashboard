@@ -5,9 +5,9 @@ import { FormControl,Image } from 'react-bootstrap';
 import '../css/HeaderStyle.css';
 import { FaCog ,FaEnvelope,FaBuffer,} from 'react-icons/fa';
 
-// const NavbarStyle={
-// background :"#"
-// }
+const Navctive={
+    color: "#12b2f0"
+}
 
 const Header = () => {
   return(
@@ -21,7 +21,7 @@ const Header = () => {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="links w-50" textalgn="center">
-      <FormControl type="text" placeholder="Search "  className="mr-sm-2 text-teal" />
+      <FormControl type="text" placeholder="Search"  className="mr-sm-2 text-teal" />
     </Nav>
 <Nav>
 <Nav.Link eventKey={4} href="#memes"> <div className="icon"> <FaCog/></div>  </Nav.Link>
@@ -34,8 +34,8 @@ const Header = () => {
 </Navbar>
 </div>
 <Navbar variant="light" className="headtwo"> 
-    <Nav  className="links">
-      <Nav.Link href="#home" active>DASHBOARD</Nav.Link>
+    <Nav  className="links w-75 d-flex justify-content-around">
+      <Nav.Link href="#home" active style={Navctive}>DASHBOARD</Nav.Link>
       <Nav.Link href="#features">MY ACTIVITY</Nav.Link>
       <Nav.Link href="#pricing">SUMMARY</Nav.Link>
       <Nav.Link href="#pricing">PERSONAL DETAILS</Nav.Link>
