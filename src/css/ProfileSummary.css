@@ -3,9 +3,7 @@
 }
 .profile{
     padding: 20px 0px 0px 0px;
-    font-size: 14px;
-    font-weight: bold;
-    color: rgba(0,0,0,.5);
+  
 }
 .card {
     position: relative;
@@ -24,8 +22,64 @@
     margin-top: -6px;
     height: 35px;
     color: #00adef;
-    border-color: #00adef;
+    border-color: #84949b;
 }
 .resume{
     color: #00adef;
+}
+.img_pro{
+    width: 60px;
+    height: 60px;
+}
+.UsreName{
+    color: #00adef;
+    font-size: 25px;
+    font-weight: 400;
+}
+.Pro_con{
+    line-height: 0.3;
+    margin-left: 6px;
+}
+.User_con{
+    line-height: 0.3;
+}
+.login{
+  color: #04d10a;
+  }
+.agency{
+  color:  #0c0ce8
+}
+.reject{
+    color:#fe4543;
+}
+.head_con{
+    font-size: 17px;
+    font-weight: bold;
+    color:#717171; 
+}
+p{
+    font-size: 13px;
+    color:  #a6a6a6; 
+    font-weight: 500; 
+}
+._con{
+    color: black;
+}
+.exp_con{
+    line-height: 0;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400; 
+    color:#707070;
+    margin-top: 10px;
+}
+.icon{
+    color:  #a6a6a6;  
+}
+.yr{
+    color: #707070;
+    font-size: 11px;
+}
+.align{
+    align-items: center;
 }
