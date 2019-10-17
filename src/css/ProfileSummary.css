@@ -61,6 +61,7 @@ p{
     font-size: 13px;
     color:  #a6a6a6; 
     font-weight: 500; 
+    
 }
 ._con{
     color: black;
@@ -79,7 +80,48 @@ p{
 .yr{
     color: #707070;
     font-size: 11px;
+    height: 0px;
 }
 .align{
     align-items: center;
+}
+.year_exp{
+    border: 1px solid #ddd;
+    background: #f8f8fa;
+    margin-bottom: 0;
+    padding: 5px;
+}
+.yrexp{
+    margin-bottom: 20px;
+}
+.c_body{
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.skills {
+    border: 1px solid #ddd;
+    background: #f8f8fa;
+    margin-bottom: 0;
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+    /* padding-left: 0; */
+}
+.col-md-2.main {
+    padding: 2px;
+}
+.cb_body{
+    margin-bottom: 20px;
+}
+.item_align{
+padding: .60rem !important;
+}
+.per-details {
+    border: 1px solid #ddd;
+    margin-bottom: 0;
+    font-size: 12px;
+    padding: 10px;
+   height: 100%;
+}
+.Doc{
+    color: #04d10a;
 }
