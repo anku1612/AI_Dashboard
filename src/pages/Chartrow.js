@@ -1,11 +1,63 @@
 import React from 'react';
-import { Row, Col, ProgressBar } from 'react-bootstrap';
+import { Row, Col, ProgressBar} from 'react-bootstrap';
 import AnyChart from '../../node_modules/anychart-react/dist/anychart-react.min.js'
+import { Pie } from '../../node_modules/react-chartjs-2/es/index'
 // import Piechart from "./Piechart"
 // import {igx-pie-chart} from 'anychart-react'
 import '../css/ProfileSummary.css';
 
 class Welcome extends React.Component {
+
+    constructor() {
+        super();
+        this.state = {
+          name: 'React',
+          lineData: {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [{
+                label: "Old User",
+                backgroundColor: '#08AEEA',
+                borderColor: '#08AEEA',
+                data: [0, 10, 5, 14, 30, 40, 55],
+            },
+            {
+                label: "New User",
+                backgroundColor: '#2AF598',
+                borderColor: '#2AF598',
+                data: [100, 104, 120, 80, 95, 80, 70],
+            }]
+        },
+    
+        pieData: {
+            labels: ["January", "February", "March", "April", "May"],
+            datasets: [{
+                backgroundColor: ['rgba(255, 0, 0, 0.7)','rgba(255, 100, 50, 0.7)','rgba(10, 100, 200, 0.7)','rgba(20, 110, 250, 0.7)','rgba(50, 210, 350, 0.7)','rgba(255, 100, 255, 0.7)','rgba(250, 200, 10, 0.7)'],
+                borderColor: ['rgba(255, 0, 0, 0.7)','rgba(255, 100, 50, 0.7)','rgba(10, 100, 200, 0.7)','rgba(20, 110, 250, 0.7)','rgba(50, 210, 350, 0.7)','rgba(255, 100, 255, 0.7)','rgba(250, 200, 10, 0.7)'],
+                data: [25, 10, 5, 14, 30, 40, 55],
+            }]
+        },
+        lineChartOptions:{
+          maintainAspectRatio: true,
+          legend: {
+            position: 'left',
+            // fillStyle: Color,
+            color: 'rgba(0,0,0,0)',
+          }
+        },
+        pieChartOptions:{
+          maintainAspectRatio: true,
+          legend: {
+            position: 'left',
+          }
+        },
+        };
+      }
+    
+
+
+
+
+
     render()  {
 const complexSettings = {
     type: 'row',
@@ -28,11 +80,15 @@ const complexSettings = {
       value: 4.5
     }
   }
- 
-
-
    return (
         <div className="mt-5 mx-4">
+                  {/* <p>
+        <Line data={this.state.lineData} options={this.state.lineChartOptions} redraw/>
+        <br/>
+        <br/>
+        <br/>
+        <h2>Pie Chart</h2>
+        </p> */}
             <Row>
             <Col md="3">
                     <div className="card">
@@ -78,7 +134,7 @@ const complexSettings = {
                     <div className="card">
                         <h6 className="card-header  bg-white">CV-Summarization Charts</h6>
                         <div className="card-body">
-                     
+        <Pie data={this.state.pieData} options={this.state.pieChartOptions} redraw/>
                         </div>
                     </div>
                     </Col>
