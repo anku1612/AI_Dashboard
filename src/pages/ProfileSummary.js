@@ -38,9 +38,9 @@ const ProfileSummary = () => {
 <p className="UsreName">Sharon Mathews </p>
 <p>Senior java Programmer @infosys</p>
   <div className="d-flex"> 
-  <div eventKey={4}  className="icon px-2"> <FaPhone/></div> 
-  <div eventKey={4}  className="icon px-2"> <FaEnvelope/></div> 
-  <div eventKey={4}  className="icon px-2"> <FaRocketchat/></div> 
+  <div  className="icon px-2"> <FaPhone/></div> 
+  <div  className="icon px-2"> <FaEnvelope/></div> 
+  <div  className="icon px-2"> <FaRocketchat/></div> 
   </div>
   </div>
   </div>
