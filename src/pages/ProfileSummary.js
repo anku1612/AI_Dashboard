@@ -7,6 +7,12 @@ const cardstyle={
     background: "white",
     display:"flex"
 }
+
+const cardonestyle={
+  background: "white",
+  display:"flex",
+  "padding-top": "0px",
+}
 const ProfileSummary = () => {
   return(
       
@@ -38,9 +44,9 @@ const ProfileSummary = () => {
 <p className="UsreName">Sharon Mathews </p>
 <p>Senior java Programmer @infosys</p>
   <div className="d-flex"> 
-  <div eventKey={4}  className="icon px-2"> <FaPhone/></div> 
-  <div eventKey={4}  className="icon px-2"> <FaEnvelope/></div> 
-  <div eventKey={4}  className="icon px-2"> <FaRocketchat/></div> 
+  <div className="icon px-2"> <FaPhone/></div> 
+  <div className="icon px-2"> <FaEnvelope/></div> 
+  <div className="icon px-2"> <FaRocketchat/></div> 
   </div>
   </div>
   </div>
@@ -100,7 +106,7 @@ const ProfileSummary = () => {
 
 
 
-<Card.Body style={cardstyle}  className="cb_body">
+<Card.Body style={cardonestyle}  className="cb_body">
 <div className="col-md-2 main">
 <p className="mb-1 ">Documents  Verified</p>
 <p className="per-details Doc"><FaFileAlt/>Yes</p>
