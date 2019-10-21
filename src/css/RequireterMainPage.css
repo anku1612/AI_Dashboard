@@ -1,0 +1,134 @@
+.btn-req {
+    font-size: 12px !important;
+    color: black !important;
+    border-color: transparent !important;
+    background: #f4f1f8 !important;
+    padding:0px 15px 0px 15px !important;
+    margin-left: 5px;
+  
+}
+.img_req{
+    width: 50px;
+    height: 50px;  
+}
+.req_con{
+    margin-left: 13px;
+}
+.mat{
+    margin-top: -10px;
+    text-align: center;
+}
+.pc{
+    font-size: 12px !important;
+    color: #7a7a7a!important;
+    margin-top: -5px;
+}
+.card-body{
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.sec{
+    margin-top: -7px;
+}
+.head{
+  color:  #6c6c6c
+}
+.UserName{
+    color: #00adef;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.right_icon{
+    color: rgb(1, 224, 19);
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    border-radius: 100px;
+    border: 2px solid rgb(1, 224, 19);
+    background: white;
+    border-color: rgb(1, 224, 19);
+    margin-left: 20px;
+}
+.hold_icon{
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    color: #fa1568;
+    margin-left: 20px;
+    }
+    .circle_icon{
+        width: 25px;
+        height: 25px;
+        margin-left: 20px;
+        color:#cecdd2;
+        border-radius: 1px solid #cecdd2;
+       
+    }
+    .dot_icon{
+        position: absolute;
+        left: 26%;
+        border-radius: 100px;
+        width: 4px;
+        height: 4px;
+        background:  rgb(1, 224, 19);
+        margin-top: -15px;
+    }
+    .dotone_icon{
+        position: absolute;
+        left: 42%;
+        border-radius: 100px;
+        width: 4px;
+        height: 4px;
+        background:  rgb(1, 224, 19);
+        margin-top: -15px;
+    }
+    .dottwo_icon{
+        position: absolute;
+        left: 60%;
+        border-radius: 100px;
+        width: 4px;
+        height: 4px;
+        background:  #cecdd2;
+        margin-top: -15px;
+    }
+    .dotthree_icon{
+        position: absolute;
+        left: 75%;
+        border-radius: 100px;
+        width: 4px;
+        height: 4px;
+        background:  #cecdd2;
+        margin-top: -15px;
+    }
+    .mail_btn{
+        font-size:12px !important;
+        color: #707070 !important;
+        border-color: transparent !important;
+        background: #f4f1f8 !important;
+        padding:0px 15px 0px 15px !important;
+        margin-left: 5px;
+    }
+    .reqstyle{
+        background-color:#64c9f3 !important;
+        color: white !important;
+    }
+    .mail{
+        font-size: 10px !important;
+        color: #7a7a7a!important;
+      
+    }
+    .mail_icons{
+        background:#f8f8fa ;
+        padding:0;
+        text-align: center;
+        width: 40px !important;
+        margin-left: 35px;
+    }
+    .int_status{
+        margin-left: 20px;
+    }
+    .success{
+        color:#3abd3d;
+        font-size: 11px;
+        font-weight: 800;
+    }

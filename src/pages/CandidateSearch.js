@@ -10,12 +10,6 @@ const CandidateSearch = () => {
         <Card className="candidateSearch p-2 font-weight-bold mx-4 mt-4">
             <Card.Header className="bg-white">Candidate Search</Card.Header>
             <Card.Body className="p-2">
-                {/* <div class="dropdown">
-                    <button class="dropbtn">Dropdown</button>
-                    <div class="dropdown-content">
-                        <Dashboard />
-                    </div>
-                </div> */}
                 <div className="col-12 rowodd d-flex p-0 ">
                     <div className="col-md-3">
                         <Card className="my_card" style={{ width: '20.1rem' }}>
