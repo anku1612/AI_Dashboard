@@ -166,15 +166,40 @@ class Welcome extends React.Component {
                     <Col md="3">
                         <div className="card">
                             <h6 className="card-header  bg-white">Weightage</h6>
-                            <div className="card-body">
+                            <div className="card-body pb-4 pt-1">
                                 <div className="my-2">
-                                    <p className="card-title my-0">Resume</p>
-                                    <div className="adjest_items d-flex pb-4 pt-4">
-                                        <Col md="6">
-                                            <Pie data={this.state.dataFlow} height={350} />
+                                    <div className="adjest_items d-flex  pb-5 pt-5">
+                                        <Col md="6 hlo">
+                                            {/* <Pie data={this.state.dataFlow} height={350} /> */}
+                                            <svg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="90" cy="90" r="80" stroke="#e5e6fa" fill="#beeb5d" strokeWidth="15" />
+                                            </svg>
+                                            <svg version="1.1" id="line_2" xmlns="http://www.w3.org/2000/svg"
+                                             x="0px" y="0px" width="30px" height="80px" xml="preserve">
+                                                 <path className="path-vert" fill="#333333" strokeWidth="3"
+                                                  stroke="#333333" d="M30 0 v600 400"/>
+                                            </svg>
+                                            <div className="resume_screen">
+                                            <p className="card-title my-0">Resume</p>
+                                            <p className="per_bar">90%</p>
+                                            </div>
+                                      
                                         </Col>
                                         <Col md="6">
-                                            <Pie data={this.state.dataFlow} height={350} />
+                                            <svg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="90" cy="90" r="80" stroke="#e5e6fa" fill="#efbb70" 
+                                                strokeDasharray=" 1000" animation="draw1 5s linear alternate" strokeWidth="15" />
+                                            </svg>
+                                            <svg version="1.1" id="line_2" xmlns="http://www.w3.org/2000/svg"
+                                             x="0px" y="0px" width="30px" height="80px" xml="preserve">
+                                                 <path className="path-vert" fill="#333333" strokeWidth="3"
+                                                  stroke="#333333" d="M30 0 v600 400"/>
+                                            </svg>
+                                            <div className="resume_screen">
+                                            <p className="card-title my-0">Screening</p>
+                                            <p className="per_bar">75%</p>
+                                            </div>
+                                          
                                         </Col>
                                     </div>
                                 </div>

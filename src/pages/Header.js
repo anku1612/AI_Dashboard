@@ -24,9 +24,9 @@ const Header = () => {
       <FormControl type="text" placeholder="Search"  className="mr-sm-2 text-teal" />
     </Nav>
 <Nav>
-<Nav.Link eventKey={4} href="#memes"> <div className="icon"> <FaCog/></div>  </Nav.Link>
-<Nav.Link eventKey={4} href="#memes"> <div className="icon"> <FaEnvelope/></div>  </Nav.Link>
-<Nav.Link eventKey={4} href="#memes"> <div className="icon"> <FaBuffer/></div>  </Nav.Link>
+<Nav.Link href="#memes"> <div className="icon"> <FaCog/></div>  </Nav.Link>
+<Nav.Link  href="#memes"> <div className="icon"> <FaEnvelope/></div>  </Nav.Link>
+<Nav.Link  href="#memes"> <div className="icon"> <FaBuffer/></div>  </Nav.Link>
 </Nav>
     
 
