@@ -11,7 +11,7 @@ const cardstyle={
 const cardonestyle={
   background: "white",
   display:"flex",
-  "padding-top": "0px",
+  paddingTop: "0px",
 }
 const ProfileSummary = () => {
   return(
@@ -76,7 +76,7 @@ const ProfileSummary = () => {
  
   </Card.Body>
 
-  <Card.Body style={cardstyle}  >
+  <Card.Body style={cardstyle}>
 <div className="col-md-2 main">
 <p className="mb-1">Primary Skills</p>
 <p className="skills">JAVA, PHP</p>
@@ -105,8 +105,7 @@ const ProfileSummary = () => {
 </Card.Body>
 
 
-
-<Card.Body style={cardonestyle}  className="cb_body">
+  <Card.Body style={cardonestyle} className="cb_body">
 <div className="col-md-2 main">
 <p className="mb-1 ">Documents  Verified</p>
 <p className="per-details Doc"><FaFileAlt/>Yes</p>

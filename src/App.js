@@ -14,9 +14,9 @@ function App(){
       <Header />
       <Switch>
       <Route path="/" exact component={CandidateSearch} />
-      <Route path="/Dashboard" component={Dashboard} />
+      <Route path="/Dashboard"  component={Dashboard} />
     </Switch>
-    </div>
+ </div>
     </BrowserRouter>
   )
 }

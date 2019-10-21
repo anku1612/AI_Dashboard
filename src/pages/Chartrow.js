@@ -1,6 +1,5 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import AnyChart from '../../node_modules/anychart-react/dist/anychart-react.min.js'
 import { Pie, Line } from '../../node_modules/react-chartjs-2/es/index'
 import '../css/ProfileSummary.css';
 
@@ -68,34 +67,7 @@ class Welcome extends React.Component {
             },
         };
     }
-
-
-
-
-
-
-    render() {
-        const complexSettings = {
-            type: 'row',
-            data: "infosys,1\nCognizant,2\nAccenture,5\nCyient,10, value:#637166",
-            xAxis: [1, {
-                orientation: 'right',
-                enabled: true,
-                labels: {
-                    format: '{%Value}{decimalPoint:\\,}',
-                    fontColor: 'red'
-                }
-            }],
-            legend: {
-                layout: "",
-                padding: 0,
-                position: "left",
-                itemsLayout: "vertical-expandable"
-            },
-            lineMarker: {
-                value: 4.5
-            }
-        }
+  render() {
         return (
             <div className="mt-5 mx-4">
                 <Row>
@@ -134,7 +106,7 @@ class Welcome extends React.Component {
                         <div className="card">
                             <h6 className="card-header bg-white">Domain</h6>
                             <div className="card-body">
-                                <AnyChart {...complexSettings} type="pie" />
+                            <Pie data={this.state.pieData} options={this.state.pieChartOptions} width={1000} height={580} redraw />
                             </div>
                         </div>
                     </Col>

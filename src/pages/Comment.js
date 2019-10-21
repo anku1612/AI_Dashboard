@@ -14,7 +14,7 @@ const Comments = () => {
                 </div>
                 <div className="col-md-6 d-flex">
                     <div className="col-md-7">
-                        <p><h6 className="float-right"><FaSearch /></h6></p>
+                        <h6 className="float-right"><FaSearch /></h6>
                     </div>
                     <div className="col-md-5">
                         <h6 className="float-right font-weight-bold text-success">Add new comment</h6>
@@ -23,27 +23,27 @@ const Comments = () => {
             </Card.Header>
             <Card.Body>
                 <Row className="commentsTitles py-3 px-1 mx-3">
-                    <div className="col-md-1">
+                    <div className="col-md-2">
                         <p className="mb-0">Date</p>
                     </div>
                     <div className="col-md-2 font-weight-bold">
                         <p className="mb-0">Interview Title</p>
                     </div>
-                    <div className="col-md-7">
+                    <div className="col-md-6">
                         <p className="mb-0">Comments</p>
                     </div>
                     <div className="col-md-2">
-                        <p className="mb-0 text-center">Action</p>
+                        <p className="mb-0">Action</p>
                     </div>
                 </Row>
                 <Row className="py-4 px-1 mx-3">
-                    <div className="col-md-1 fontsize">
+                    <div className="col-md-2 fontsize">
                     <p className="font-weight-bold">21/08/2019</p>
             </div>
                     <div className="col-md-2 fontsize">
                         <p className="font-weight-bold">Cognizant Interview</p>
                     </div>
-                    <div className="col-md-7 month">
+                    <div className="col-md-6 month">
                         <p>Pass in the url prop of your social network, and the icon will be rendered.</p>
                     </div>
                     <div className="col-md-2 d-flex text-center">
@@ -51,14 +51,14 @@ const Comments = () => {
                         <p className="ml-2"><Link to="" className="text-danger fontsize float-left">Delete</Link></p>
                     </div>
                 </Row>
-                <Row className="py-4 px-1 mx-3">
-                    <div className="col-md-1">
+                <Row className="py-4 px-2 mx-3">
+                    <div className="col-md-2">
                         <p className="font-weight-bold">21/08/2019</p>
                     </div>
                     <div className="col-md-2">
                         <p className="font-weight-bold">Cognizant Interview</p>
                     </div>
-                    <div className="col-md-7 month">
+                    <div className="col-md-6 month">
                         <p>Pass in the url prop of your social network, and the icon will be rendered.</p>
                     </div>
                     <div className="col-md-2 d-flex">
