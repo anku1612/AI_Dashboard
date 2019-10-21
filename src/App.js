@@ -8,7 +8,7 @@ import Header from './pages/Header';
 // import Comments from './pages/Comments';
 import Dashboard from './pages/Dashboard';
 import CandidateSearch from './pages/CandidateSearch';
-
+import PanellistDashboard from './pages/PanellistDashboard'
 
 import './App.css';
 
@@ -17,6 +17,7 @@ function App(){
     <BrowserRouter>
     <div >
       <Header />
+      <PanellistDashboard />
       <Switch>
       <Route path="/" exact component={CandidateSearch} />
       <Route path="/Dashboard" component={Dashboard} />
