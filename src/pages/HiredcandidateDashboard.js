@@ -36,7 +36,7 @@ const HiredcandidateDashboard = () => {
                                 </div>
 
                             </div>
-                            <hr />
+                            <hr className="my-4 mx-2"  />
                             <div className="row ">
                                 <div className="col-md-2">
                                     <Image src="../profile1.png" roundedCircle className="hiredImg" />
@@ -58,7 +58,7 @@ const HiredcandidateDashboard = () => {
                                 </div>
 
                             </div>
-                           <hr />
+                           <hr className="my-4 mx-2" />
                            <div className="row ">
                                 <div className="col-md-2">
                                     <Image src="../profile1.png" roundedCircle className="hiredImg" />
