@@ -9,9 +9,9 @@ const PanellistDashboard = () => {
         <div className="mx-4 px-4">
             <div className="row ">
                 <Card className="mt-4 w-100">
-                    <h4 className="bg-white py-3 px-4 d-flex">
+                    <div className="bg-white py-3 px-4 d-flex">
                             <h6 className="font-weight-bold PanelTitle">Panellist Dashboard</h6>                
-                    </h4>
+                    </div>
                     < hr className="my-0" />
 
                     <Card.Body>
@@ -72,7 +72,7 @@ const PanellistDashboard = () => {
                         </div>
                         <div className="col-md-6 d-flex">
                             <div className="col-md-7">
-                                <p><h6 className="float-right"><FaSearch /></h6></p>
+                                <h6 className="float-right text-teal"><FaSearch /></h6>
                             </div>
                             <div className="col-md-5">
                                 <h6 className="float-right font-weight-bold text-success">Add new comment</h6>
@@ -101,16 +101,16 @@ const PanellistDashboard = () => {
                             <div className="col-md-2 fontsize">
                                 <p className="font-weight-bold m-auto">Cognizant Interview</p>
                                 <div className="text-primary d-flex">
-                                    <Link><p className="textColor m-auto">Resume</p></Link>
-                                    <Link> <p className="textColor m-auto">| JD | </p></Link>
-                                    <Link><p className="textColor m-auto">Video Interview</p></Link>
+                                    <Link to=" "><p className="textColor m-auto">Resume</p></Link>
+                                    <Link to=" "> <p className="textColor m-auto">| JD | </p></Link>
+                                    <Link to=" "><p className="textColor m-auto">Video Interview</p></Link>
                                 </div>
                             </div>
                             <div className="col-md-5 month m-auto">
                                 <p>Pass in the url prop of your social network, and the icon will be rendered social network, and the icon will be rendered.</p>
                             </div>
                             <div className="col-md-3 m-auto d-flex justify-content-around text-center">
-                                <p className="mr-2 m-auto"><Link className="text-success fontsize float-left">Comment</Link></p>
+                                <p className="mr-2 m-auto">< Link to =" " className="text-success fontsize float-left">Comment</Link></p>
                                 <Button variant="primary" size="sm" className="rounded-pill h-50 text-center my-auto mr-2 mb-0 ">
                                     <small>START INTERVIEW</small></Button>
                                 <Button variant="primary" size="sm" className="rounded-pill h-50 my-auto mb-0 ">
@@ -125,9 +125,9 @@ const PanellistDashboard = () => {
                             <div className="col-md-2 fontsize">
                                 <p className="font-weight-bold mb-0">Cognizant Interview</p>
                                 <div className="text-primary d-flex">
-                                    <Link><p className="textColor">Resume</p></Link>
-                                    <Link> <p className="textColor">| JD | </p></Link>
-                                    <Link><p className="textColor">Video Interview</p></Link>
+                                    <Link to=" "><p className="textColor">Resume</p></Link>
+                                    <Link to=" "> <p className="textColor">| JD | </p></Link>
+                                    <Link to=" "><p className="textColor">Video Interview</p></Link>
 
                                 </div>
                             </div>
@@ -135,7 +135,7 @@ const PanellistDashboard = () => {
                                 <p>Pass in the url prop of your social network, and the icon will be rendered social network, and the icon will be rendered.</p>
                             </div>
                             <div className="col-md-3 d-flex justify-content-around text-center">
-                                <p className="mr-2 m-auto"><Link to="" className="text-success fontsize float-left">Comment</Link></p>
+                                <p className="mr-2 m-auto">< Link to =" " className="text-success fontsize float-left">Comment</Link></p>
                                 <Button variant="primary" size="sm" className="rounded-pill h-50 text-center my-auto mr-2 mb-0 ">
                                     <small>START INTERVIEW</small></Button>
                                 <Button variant="primary" size="sm" className="rounded-pill h-50 my-auto mb-0 ">
@@ -150,9 +150,9 @@ const PanellistDashboard = () => {
                             <div className="col-md-2 fontsize m-auto">
                                 <p className="font-weight-bold mb-0">Cognizant Interview</p>
                                 <div className="text-primary d-flex">
-                                    <Link><p className="textColor m-auto">Resume</p></Link>
-                                    <Link> <p className="textColor m-auto">| JD | </p></Link>
-                                    <Link><p className="textColor">Video Interview</p></Link>
+                                    <Link to=" "><p className="textColor m-auto">Resume</p></Link>
+                                    <Link to=" "> <p className="textColor m-auto">| JD | </p></Link>
+                                    <Link to=" "><p className="textColor">Video Interview</p></Link>
 
                                 </div>
                             </div>
@@ -160,7 +160,7 @@ const PanellistDashboard = () => {
                                 <p>Pass in the url prop of your social network, and the icon will be rendered social network, and the icon will be rendered.</p>
                             </div>
                             <div className="col-md-3 d-flex justify-content-around text-center">
-                                <p className="mr-2 m-auto"><Link to="" className="text-success fontsize float-left">Comment</Link></p>
+                                <p className="mr-2 m-auto">< Link to =" " className="text-success fontsize float-left">Comment</Link></p>
                                 <Button variant="primary" size="sm" className="rounded-pill h-50 text-center my-auto mr-2 mb-0 ">
                                     <small>START INTERVIEW</small></Button>
                                 <Button variant="primary" size="sm" className="rounded-pill h-50 my-auto mb-0 ">

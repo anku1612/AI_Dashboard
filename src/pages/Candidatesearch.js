@@ -2,35 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import '../css/CandidateSearch.css';
 import { Card,Image } from 'react-bootstrap';
-import Dashboard from './Dashboard'
-import ReactHover from '../../node_modules/react-hover'
 
 
-
-
-{/* <ReactHover >
-    <ReactHover.Trigger type='trigger'>
-        <Link to="/Dashboard" className="profile_name mb-0 pl-4">
-            Sharon Mathews </Link>
-    </ReactHover.Trigger>
-    <ReactHover.Hover type='hover'>
-        <div className={'hover'} style={{ position: "absolute" }} >
-            <Dashboard />
-
-        </div>
-    </ReactHover.Hover>
-</ReactHover> */}
-
-
-
-
-
-// const optionsCursorTrueWithMargin = {
-//     followCursor: true,
-//     shiftX: 0,
-//     shiftY: 0,
-
-// }
 
 const CandidateSearch = () => {
     return (
@@ -46,7 +19,7 @@ const CandidateSearch = () => {
                                         <Image src="../profile1.png" roundedCircle className="img_pro" />
                                     </div>
                                     <div className="my_pro pl-2">
-                                                <Link className="profile_name mb-0 pl-4 tiptext">
+                                                <Link to="" className="profile_name mb-0 pl-4 tiptext">
                                                     Sharon Mathews</Link>
                                         <p className="mb-0 pl-4">Senior Java Developer @ infosys</p>
                                         <div className="exp_adj_main d-flex pb-3">

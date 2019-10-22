@@ -9,7 +9,8 @@ import Header from './pages/Header';
 import Dashboard from './pages/Dashboard';
 import CandidateSearch from './pages/CandidateSearch';
 import PanellistDashboard from './pages/PanellistDashboard'
-
+import RecruiterIntelligentSearch from './pages/RecruiterIntelligentSearch'
+import HiredcandidateDashboard from './pages/HiredcandidateDashboard'
 import './App.css';
 
 function App(){
@@ -17,6 +18,8 @@ function App(){
     <BrowserRouter>
     <div >
       <Header />
+      <HiredcandidateDashboard />
+      <RecruiterIntelligentSearch />
       <PanellistDashboard />
       <Switch>
       <Route path="/" exact component={CandidateSearch} />
