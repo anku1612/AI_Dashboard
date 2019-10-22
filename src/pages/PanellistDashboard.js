@@ -179,7 +179,7 @@ const PanellistDashboard = () => {
                             <h6 className="font-weight-bold PanelTitle px-2">Transactions</h6>
                         </div>
                     </h4>
-                    <Card.Body>
+                    <div>
                         <Row className="commentsTitles py-3 px-1 mx-3">
                             <div className="col-md-2 mr-3">
                                 <p className="mb-0">Date</p>
@@ -227,22 +227,22 @@ const PanellistDashboard = () => {
 
 
                         </Row>
-                        < hr className="my-0" />
-                    </Card.Body>
-                    <h4 className="bg-white py-0 px-1 d-flex">
+                        < hr className="my-0 mx-4" />
+                    </div>
+                    <h4 className="bg-white py-3 px-1 d-flex">
                         <div className="col-md-6">
-                            <h6 className="font-weight-bold PanelTitle px-2 pb-0">Invoices</h6>
+                            <h6 className="font-weight-bold PanelTitle px-2 mb-0">Invoices</h6>
                         </div>
                     </h4>
+                    < hr className="my-0 mx-4" />
 
                     <Card.Body>
-                        < hr className="mt-0" />
                         <Row className=" py-2 px-1 mx-3 d-flex">
                             <div className="col-md-1 ">
                                 <Button variant="success" size="sm" className="my-auto w-100 mb-0 ">
                                     <small>PAID</small></Button>
                             </div>
-                            <div className="col-md-1">
+                            <div className="col-md-2">
                                 <p className="mb-0 font-weight-bold">21/08/2019</p>
                             </div>
                             <div className="col-md-2 ">
@@ -256,7 +256,7 @@ const PanellistDashboard = () => {
                             <div className="col-md-1 text-center ">
                                 <p className="mb-0">$ 2000</p>
                             </div>
-                            <div className="col-md-6 text-center">
+                            <div className="col-md-5 text-center">
                                 <p className="mb-0">Completes enrolments by analyzing documents and tapes.</p>
                             </div>
                         </Row>
@@ -265,7 +265,7 @@ const PanellistDashboard = () => {
                                 <Button variant="warning" size="sm" className="my-auto text-white w-100 mb-0 ">
                                     <small>PENDING</small></Button>
                             </div>
-                            <div className="col-md-1">
+                            <div className="col-md-2">
                                 <p className="mb-0 font-weight-bold">21/08/2019</p>
                             </div>
                             <div className="col-md-2">
@@ -279,7 +279,7 @@ const PanellistDashboard = () => {
                             <div className="col-md-1 text-center">
                                 <p className="mb-0">$ 2000</p>
                             </div>
-                            <div className="col-md-6 text-center">
+                            <div className="col-md-5 text-center">
                                 <p className="mb-0">Completes enrolments by analyzing documents and tapes.</p>
                             </div>
                         </Row>
@@ -288,7 +288,7 @@ const PanellistDashboard = () => {
                                 <Button variant="danger" size="sm" className="my-auto mb-0 ">
                                     <small>CANCELLED</small></Button>
                             </div>
-                            <div className="col-md-1">
+                            <div className="col-md-2">
                                 <p className="mb-0 font-weight-bold">21/08/2019</p>
                             </div>
                             <div className="col-md-2">
@@ -302,7 +302,7 @@ const PanellistDashboard = () => {
                             <div className="col-md-1 text-center ">
                                 <p className="mb-0">$ 2000</p>
                             </div>
-                            <div className="col-md-6 text-center">
+                            <div className="col-md-5 text-center">
                                 <p className="mb-0">Completes enrolments by analyzing documents and tapes.</p>
                             </div>
                         </Row>
