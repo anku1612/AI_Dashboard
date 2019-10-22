@@ -1,0 +1,18 @@
+.panellistImg{
+    height: 60px;
+    width: 60px;
+}
+.panellistbg{
+    background-color: #f8f8f8;
+    justify-content: space-around;
+}
+.PanelTitle{
+    color: #7f7f7f;
+}
+.textColor{
+    color: #00adef ;
+
+}
+.panelBorder{
+    border: 1px solid ;
+}
