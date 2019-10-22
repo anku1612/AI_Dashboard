@@ -26,9 +26,9 @@ const HiredcandidateDashboard = () => {
                                 </div>
                                 <div className="col-md-3 mt-3">
                                     <p className="mb-0 PanelTitle textSmall">Jazz Recruiters</p>
-                                    <div className="d-flex  PanelTitle justify-content-between">
+                                    <div className="d-flex  PanelTitle">
                                         <p className="PanelTitle textSmall">10:00</p>
-                                        <p className="PanelTitle textSmall">20/01/2019</p>
+                                        <p className="PanelTitle textSmall pl-3">20/01/2019</p>
                                     </div>
                                 </div>
                                 <div className="col-md-2">
@@ -48,9 +48,9 @@ const HiredcandidateDashboard = () => {
                                 </div>
                                 <div className="col-md-3 mt-3">
                                     <p className="mb-0  PanelTitle textSmall">Jazz Recruiters</p>
-                                    <div className="d-flex  PanelTitle justify-content-between">
+                                    <div className="d-flex  PanelTitle">
                                         <p className=" PanelTitle textSmall">10:00</p>
-                                        <p className=" PanelTitle textSmall">20/01/2019</p>
+                                        <p className=" PanelTitle textSmall pl-3">20/01/2019</p>
                                     </div>
                                 </div>
                                 <div className="col-md-2">
@@ -70,9 +70,9 @@ const HiredcandidateDashboard = () => {
                                 </div>
                                 <div className="col-md-3 mt-3">
                                     <p className="mb-0  PanelTitle textSmall">Jazz Recruiters</p>
-                                    <div className="d-flex  PanelTitle justify-content-between">
+                                    <div className="d-flex  PanelTitle">
                                         <p className=" PanelTitle textSmall">10:00</p>
-                                        <p className=" PanelTitle textSmall">20/01/2019</p>
+                                        <p className=" PanelTitle textSmall pl-3">20/01/2019</p>
                                     </div>
                                 </div>
                                 <div className="col-md-2">

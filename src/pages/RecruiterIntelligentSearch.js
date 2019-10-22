@@ -39,7 +39,7 @@ const RecruiterIntelligentSearch = () => {
                                     <p className="mb-0 smallText">Primary Skills</p>
                                     <p className="font-weight-bold  PanelTitle smallText mb-0">JAVA,PHP</p>
                                 </div>
-                                <div className="col-md-2 px-0">
+                                <div className="col-md-2 px-0 pl-4">
                                     <p className="mb-0 smallText">Relocation</p>
                                     <p className="font-weight-bold  PanelTitle smallText mb-0">Hyd 20%, USA 100%</p>
                                 </div>
@@ -51,7 +51,7 @@ const RecruiterIntelligentSearch = () => {
                                     <p className="mb-0 smallText">Notice Period</p>
                                     <p className="font-weight-bold  PanelTitle smallText mb-0">2 Months</p>
                                 </div>
-                                <div className="col-md-2 px-0">
+                                <div className="col-md-2 pl-4">
                                     <p className="mb-0 smallText">Current CTC</p>
                                     <p className="font-weight-bold  PanelTitle smallText mb-0">INR 2,00,000</p>
                                 </div>
@@ -81,7 +81,7 @@ const RecruiterIntelligentSearch = () => {
                                     <p className="mb-0 smallText">Primary Skills</p>
                                     <p className="font-weight-bold  PanelTitle smallText mb-0">JAVA,PHP</p>
                                 </div>
-                                <div className="col-md-2 px-0">
+                                <div className="col-md-2 pl-4">
                                     <p className="mb-0 smallText">Relocation</p>
                                     <p className="font-weight-bold  PanelTitle smallText mb-0">Hyd 20%, USA 100%</p>
                                 </div>
@@ -93,7 +93,7 @@ const RecruiterIntelligentSearch = () => {
                                     <p className="mb-0 smallText">Notice Period</p>
                                     <p className="font-weight-bold  PanelTitle smallText mb-0">2 Months</p>
                                 </div>
-                                <div className="col-md-2 px-0">
+                                <div className="col-md-2 pl-4">
                                     <p className="mb-0 smallText">Current CTC</p>
                                     <p className="font-weight-bold  PanelTitle smallText mb-0">INR 2,00,000</p>
                                 </div>
@@ -123,7 +123,7 @@ const RecruiterIntelligentSearch = () => {
                                     <p className="mb-0 smallText">Primary Skills</p>
                                     <p className="font-weight-bold  PanelTitle smallText mb-0">JAVA,PHP</p>
                                 </div>
-                                <div className="col-md-2 px-0">
+                                <div className="col-md-2 pl-4">
                                     <p className="mb-0 smallText">Relocation</p>
                                     <p className="font-weight-bold  PanelTitle smallText mb-0">Hyd 20%, USA 100%</p>
                                 </div>
@@ -135,7 +135,7 @@ const RecruiterIntelligentSearch = () => {
                                     <p className="mb-0 smallText">Notice Period</p>
                                     <p className="font-weight-bold  PanelTitle smallText mb-0">2 Months</p>
                                 </div>
-                                <div className="col-md-2 px-0">
+                                <div className="col-md-2 pl-4">
                                     <p className="mb-0 smallText">Current CTC</p>
                                     <p className="font-weight-bold  PanelTitle smallText mb-0">INR 2,00,000</p>
                                 </div>
@@ -151,7 +151,6 @@ const RecruiterIntelligentSearch = () => {
                                 </div>
                             </div>
                         </div>
-                  
                     </Card.Body>
                 </Card>
             </div>

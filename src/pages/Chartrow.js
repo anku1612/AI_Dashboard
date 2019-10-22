@@ -69,7 +69,6 @@ class Welcome extends React.Component {
         };
     }
 
-
     render() {
         const complexSettings = {
             type: 'row',
