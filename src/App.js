@@ -7,7 +7,7 @@ import Header from './pages/Header';
 // import Candidatesearch from './pages/Candidatesearch';
 // import Comments from './pages/Comments';
 import Dashboard from './pages/Dashboard';
-import CandidateSearch from './pages/CandidateSearch';
+
 import PanellistDashboard from './pages/PanellistDashboard'
 import RecruiterIntelligentSearch from './pages/RecruiterIntelligentSearch'
 import HiredcandidateDashboard from './pages/HiredcandidateDashboard'
@@ -23,7 +23,7 @@ function App(){
       <RecruiterIntelligentSearch />
       <PanellistDashboard />
       <Switch>
-      <Route path="/" exact component={CandidateSearch} />
+      {/* <Route path="/" exact component={CandidateSearch} /> */}
       <Route path="/Dashboard" component={Dashboard} />
     </Switch>
     </div>
