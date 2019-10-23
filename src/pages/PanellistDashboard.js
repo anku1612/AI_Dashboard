@@ -172,7 +172,7 @@ const PanellistDashboard = () => {
                 </Card>
 
             </div>
-            <div className="row">
+            <div className="row mb-4">
                 <Card className=" mt-4 w-100">
                     <h4 className="bg-white pt-4 pb-0 px-1 d-flex">
                         <div className="col-md-6">
@@ -189,17 +189,14 @@ const PanellistDashboard = () => {
                             </div>
                             <div className="col-md-1 mr-3">
                                 <p className="mb-0">Hours</p>
-
                             </div>
                             <div className="col-md-1 mr-3">
                                 <p className="mb-0">Amount</p>
-
                             </div>
                             <div className="col-md-4 mr-3">
                                 <p className="mb-0">Comments</p>
                             </div>
                             <div className="col-md-2">
-
                             </div>
                         </Row>
                         <Row className="py-4 px-1 mx-3">
