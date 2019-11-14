@@ -16,3 +16,8 @@
 .panelBorder{
     border: 1px solid ;
 }
+.circleDot{
+    font-size: 20px;
+    border: 1px solid white;
+    outline: 1px solid red;
+}

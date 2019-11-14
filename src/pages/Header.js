@@ -1,50 +1,38 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { FormControl,Image } from 'react-bootstrap';
+import {Image } from 'react-bootstrap';
+import { Link} from 'react-router-dom'
 import '../css/HeaderStyle.css';
-import { FaCog ,FaEnvelope,FaBuffer,} from 'react-icons/fa';
+import { FaCog ,FaEnvelope,FaBuffer,FaSistrix} from 'react-icons/fa';
 
-const Navctive={
-    color: "#12b2f0"
-}
+
 
 const Header = () => {
-  return(
-      
+  return( 
      <div className="header">
          <div className="sub_dev">
- <Navbar className="hello">
-  <Navbar.Brand  href="#home">
-  <Image src="../Achyutas SoftLogo.png" className="img_achy" />
-      </Navbar.Brand>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="links w-50" textalgn="center">
-      <FormControl type="text" placeholder="Search"  className="mr-sm-2 text-teal" />
+         <Navbar variant="light" className="headtwo"> 
+    <Nav className="links w-50 d-flex justify-content-around">
+      <Link to="/" className="Navctive nav-link">Dashboard</Link>
+      <Link to="/MyRequirements" className="nav-link">My Requirement</Link>
+      <Link to="/ISearch" className="nav-link">iSearch</Link>
+      <Link to="/HotCVs" className="nav-link">Hot CV's</Link>
+      <Link to="/MyReava" className="nav-link">My ReAVA</Link>
+      <Link to="/InMail" className="nav-link">In-Mail</Link>
+      <Link to="/panelList" className="nav-link">Panel List</Link>
     </Nav>
-<Nav>
-<Nav.Link href="#memes"> <div className="icon"> <FaCog/></div>  </Nav.Link>
-<Nav.Link  href="#memes"> <div className="icon"> <FaEnvelope/></div>  </Nav.Link>
-<Nav.Link  href="#memes"> <div className="icon"> <FaBuffer/></div>  </Nav.Link>
+    <Nav>
+ <Nav.Link href="#memes"><FaSistrix className="icon"/> </Nav.Link>
+<Nav.Link href="#memes">  <FaCog className="icon"/>  </Nav.Link>
+<Nav.Link  href="#memes">  <FaEnvelope className="icon"/> </Nav.Link>
+<Nav.Link  href="#memes">  <FaBuffer className="icon"/> </Nav.Link>
+<Image src="../profile1.png" roundedCircle className="img_chat" />
 </Nav>
-    
-
-  </Navbar.Collapse>
-</Navbar>
-</div>
-<Navbar variant="light" className="headtwo"> 
-    <Nav  className="links w-75 d-flex justify-content-around">
-      <Nav.Link href="#home" active style={Navctive}>DASHBOARD</Nav.Link>
-      <Nav.Link href="#features">MY ACTIVITY</Nav.Link>
-      <Nav.Link href="#pricing">SUMMARY</Nav.Link>
-      <Nav.Link href="#pricing">PERSONAL DETAILS</Nav.Link>
-      <Nav.Link href="#pricing">SKILLS AT A GLANCE</Nav.Link>
-      <Nav.Link href="#pricing">WORK HISTORY</Nav.Link>
-      <Nav.Link href="#pricing">ASK REAVA</Nav.Link>
-    </Nav>
-   
   </Navbar>
+
+</div>
+
      </div>  
   )
 

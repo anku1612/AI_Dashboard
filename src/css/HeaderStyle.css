@@ -14,9 +14,27 @@
     margin: 0 auto;
     font-size: 12px;
     font-weight: bold;
+    margin-left: 0px !important;
+}
+.linksearch{
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: bold;
 }
 .img_achy{
     width: 35px;
     height: 35px;
+}
+.Navctive{
+    border-bottom: 2px solid black;
+}
+.search{
+    font-style: italic;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+}
+.icon{
+    width: 25px;
+    height: 25px;
 }
 

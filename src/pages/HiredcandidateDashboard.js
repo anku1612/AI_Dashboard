@@ -1,7 +1,8 @@
 import React from 'react';
 import { Card, Image } from 'react-bootstrap';
 import '../css/HiredcandidateDashboard.css';
-import { FaEllipsisV,FaTimesCircle,FaCheckCircle } from 'react-icons/fa';
+import { FaEllipsisH,FaCheckCircle ,FaExclamationCircle,FaRegCircle} from 'react-icons/fa';
+import { Link } from 'react-router-dom'
 
 const HiredcandidateDashboard = () => {
     return (
@@ -10,8 +11,8 @@ const HiredcandidateDashboard = () => {
                 <div className="col-md-6">
                     <Card className="mt-4">
                         <div className="header pl-4 py-3 d-flex justify-content-between">
-                            <h6 className="bg-white PanelTitle font-weight-bold">Hired Candidates</h6>
-                            <div className="text-muted dotIcon mr-4" ><FaEllipsisV size={25} /></div>
+                            <h6 className="bg-white PanelTitle text-dark font-weight-bold">Hired Candidates</h6>
+                            <div className="text-muted dotIcon mr-4" >  <FaEllipsisH  size={25} /></div>
                         </div>
                         < hr className="my-0 mx-4" />
                         <Card.Body>
@@ -19,66 +20,55 @@ const HiredcandidateDashboard = () => {
                                 <div className="col-md-2">
                                     <Image src="../profile1.png" roundedCircle className="hiredImg" />
                                 </div>
-                                <div className="col-md-5 px-0">
-                                    <p className="mb-0 HiredtextColor">Sheron Mathews</p>
-                                    <p className="mb-1">Senior Java Programmer @ Infosys</p>
+                                <div className="col-md-8 px-0">
+                                   <Link to="/RequireterMainPage" className="mb-0 text-dark font-weight-bold"> Sheron Mathews </Link>
+
                                     <p className="mb-0 textSmall PanelTitle">10 mins ago</p>
-                                </div>
-                                <div className="col-md-3 mt-3">
-                                    <p className="mb-0 PanelTitle textSmall">Jazz Recruiters</p>
-                                    <div className="d-flex  PanelTitle">
-                                        <p className="PanelTitle textSmall">10:00</p>
-                                        <p className="PanelTitle textSmall pl-3">20/01/2019</p>
+                                    <p className="mb-1">UI Designer @ Infosys</p>
                                     </div>
-                                </div>
-                                <div className="col-md-2">
-                                    <p className="text-success text-center mb-0 align-center">Hired</p>
+                                <div className="col-md-2 p-0 text-right">
+                                    <p className="hired-stl">Hired</p>
+                                    <p className="mb-0 PanelTitle textSmall">Jazz Recruiters</p>
                                 </div>
 
                             </div>
-                            <hr className="my-4 mx-2"  />
+                            <hr className="pb-3 pt-2"  />
                             <div className="row ">
                                 <div className="col-md-2">
                                     <Image src="../profile1.png" roundedCircle className="hiredImg" />
                                 </div>
-                                <div className="col-md-5 px-0">
-                                    <p className="mb-0 HiredtextColor">Sheron Mathews</p>
-                                    <p className="mb-1">Senior Java Programmer @ Infosys</p>
-                                    <p className="mb-0 textSmall  PanelTitle">10 mins ago</p>
-                                </div>
-                                <div className="col-md-3 mt-3">
-                                    <p className="mb-0  PanelTitle textSmall">Jazz Recruiters</p>
-                                    <div className="d-flex  PanelTitle">
-                                        <p className=" PanelTitle textSmall">10:00</p>
-                                        <p className=" PanelTitle textSmall pl-3">20/01/2019</p>
+                                <div className="col-md-8 px-0">
+                                   <Link to="/RequireterMainPage" className="mb-0 text-dark font-weight-bold"> Sheron Mathews </Link>
+
+                                    <p className="mb-0 textSmall PanelTitle">10 mins ago</p>
+                                    <p className="mb-1">UI Designer @ Infosys</p>
                                     </div>
-                                </div>
-                                <div className="col-md-2">
-                                    <p className="text-success text-center mb-0">Hired</p>
+                                <div className="col-md-2 p-0 text-right">
+                                    <p className="hired-stl">Hired</p>
+                                    <p className="mb-0 PanelTitle textSmall">Jazz Recruiters</p>
                                 </div>
 
                             </div>
-                           <hr className="my-4 mx-2" />
+                           <hr className="pb-3 pt-2" />
                            <div className="row ">
                                 <div className="col-md-2">
                                     <Image src="../profile1.png" roundedCircle className="hiredImg" />
                                 </div>
-                                <div className="col-md-5 px-0">
-                                    <p className="mb-0 HiredtextColor">Sheron Mathews</p>
-                                    <p className="mb-1">Senior Java Programmer @ Infosys</p>
-                                    <p className="mb-0 textSmall  PanelTitle">10 mins ago</p>
-                                </div>
-                                <div className="col-md-3 mt-3">
-                                    <p className="mb-0  PanelTitle textSmall">Jazz Recruiters</p>
-                                    <div className="d-flex  PanelTitle">
-                                        <p className=" PanelTitle textSmall">10:00</p>
-                                        <p className=" PanelTitle textSmall pl-3">20/01/2019</p>
+                                <div className="col-md-8 px-0">
+                                   <Link to="/RequireterMainPage" className="mb-0 text-dark font-weight-bold"> Sheron Mathews </Link>
+
+                                    <p className="mb-0 textSmall PanelTitle">10 mins ago</p>
+                                    <p className="mb-1">UI Designer @ Infosys</p>
                                     </div>
+                                <div className="col-md-2 p-0 text-right">
+                                    <p className="hired-stl">Hired</p>
+                                    <p className="mb-0 PanelTitle textSmall">Jazz Recruiters</p>
                                 </div>
-                                <div className="col-md-2">
-                                    <p className="text-success text-center pb-0">Hired</p>
-                                </div>
+
                             </div>
+                            <hr className="pb-2 pt-2" />
+                       
+                       
                         </Card.Body>
                     </Card>
                 </div>
@@ -86,8 +76,8 @@ const HiredcandidateDashboard = () => {
                 <div className="col-md-6">
                     <Card className="mt-4">
                         <div className="header pl-4 py-3 d-flex justify-content-between">
-                            <h6 className="bg-white PanelTitle font-weight-bold">Verification</h6>
-                            <div className="text-muted dotIcon mr-4" ><FaEllipsisV size={25} /></div>
+                            <h6 className="bg-white PanelTitle font-weight-bold text-dark">Verification Status</h6>
+                            <div className="text-muted dotIcon mr-4" ><FaEllipsisH size={25} /></div>
                         </div>
                         < hr className="my-0 mx-4" />
                         <Card.Body>
@@ -95,23 +85,23 @@ const HiredcandidateDashboard = () => {
                             <div className="col-md-2">
                                     <Image src="../profile1.png" roundedCircle className="hiredImg" />
                                 </div>
-                                <div className="col-md-4 px-0">
-                                    <p className="mb-0 HiredtextColor">Sheron Mathews</p>
-                                    <p className="mb-1 textSmall">Senior Java Programmer @ Infosys</p>
-                                    <p className="mb-1 textSmall  PanelTitle">Jazz Recruiter</p>
+                                <div className="col-md-4 p-0">
+                                <Link to="/RequireterMainPage" className="mb-0 text-dark font-weight-bold"> Sharon Mathews </Link>
                                     <p className="mb-0 textSmall  PanelTitle">10 mins ago</p>
+                                    <p className="mb-1 textSmall">UI Designer @ Accenture</p>
+                                    <p className="mb-1 textSmall  PanelTitle">Jazz Recruiter</p>
                                 </div>
-                                <div className="col-md-2 text-center m-auto">
-                                    <p className="text-center textSmall  PanelTitle text-center mb-0">Documents</p>
-                                    <FaTimesCircle size={25} className="text-danger mt-1" />      
+                                <div className="col-md-2 text-center p-0 pt-4">
+                                    <p className="text-center textSmall  text-right mb-0">Documents</p>
+                                    <FaCheckCircle size={25} className="text-success" />     
                                 </div>
-                                <div className="col-md-2 text-center m-auto">
-                                    <p className="mb-0 textSmall  PanelTitle text-center">Background</p>
-                                    <FaCheckCircle size={25} className="text-success mt-1" />
+                                <div className="col-md-2 text-center p-0 pt-4">
+                                    <p className="mb-0 textSmall text-right">Background</p>
+                                    <FaExclamationCircle className="hold_icon" />
                                 </div>
-                                <div className="col-md-2 m-auto">
-                                    <p className="mb-0 textSmall  PanelTitle text-center">Status</p>
-                                    <p className="mb-0 mt-2 textSmall text-danger text-center">Not Joined</p>
+                                <div className="col-md-2 text-right pt-4">
+                                    <p className="mb-0 textSmall ">Hired</p>
+                                        <FaRegCircle size={20} className="mr-1"/>
                                 </div>
                             </div>
                             <hr />
@@ -119,52 +109,52 @@ const HiredcandidateDashboard = () => {
                             <div className="col-md-2">
                                     <Image src="../profile1.png" roundedCircle className="hiredImg" />
                                 </div>
-                                <div className="col-md-4 px-0">
-                                    <p className="mb-0 HiredtextColor">Sheron Mathews</p>
-                                    <p className="mb-1 textSmall">Senior Java Programmer @ Infosys</p>
-                                    <p className="mb-1 textSmall  PanelTitle">Jazz Recruiter</p>
+                                <div className="col-md-4 p-0">
+                                   <Link to="/RequireterMainPage" className="mb-0 text-dark font-weight-bold"> Sheron Mathews </Link>
+
                                     <p className="mb-0 textSmall  PanelTitle">10 mins ago</p>
+                                    <p className="mb-1 textSmall">UI Designer @ Accenture</p>
+                                    <p className="mb-1 textSmall  PanelTitle">Jazz Recruiter</p>
                                 </div>
-                                <div className="col-md-2 text-center m-auto">
-                                    <p className="text-center textSmall text-center  PanelTitle mb-0">Documents</p>
-                                    <FaCheckCircle size={25} className="text-success mt-1" />      
+                                <div className="col-md-2 text-center p-0 pt-4">
+                                    <p className="text-center textSmall  text-right mb-0">Documents</p>
+                                    <FaCheckCircle size={25} className="text-success" />     
                                 </div>
-                                <div className="col-md-2 text-center m-auto">
-                                    <p className="mb-0 textSmall  PanelTitle text-center">Background</p>
-                                    <FaCheckCircle size={25} className="text-success mt-1" />
+                                <div className="col-md-2 text-center p-0 pt-4">
+                                    <p className="mb-0 textSmall text-right">Background</p>
+                                    <FaExclamationCircle className="hold_icon" />
                                 </div>
-                                <div className="col-md-2 ">
-                                    <p className="mb-0 textSmall text-center mt-3  PanelTitle">Status</p>
-                                    <p className="mb-0 mt-1 textSmall text-success text-center">Joined</p>
-                                    <p className="mb-0 textSmall text-success text-center">02/12/2019</p>
+                                <div className="col-md-2 text-right pt-4">
+                                    <p className="mb-0 textSmall ">Hired</p>
+                                    <FaRegCircle size={20} className="mr-1"/>
                                 </div>
-                            </div>  
-                           <hr />
-                           <div className="row ">
+                            </div>
+                            <hr />
+                            <div className="row pb-1">
                             <div className="col-md-2">
                                     <Image src="../profile1.png" roundedCircle className="hiredImg" />
                                 </div>
-                                <div className="col-md-4 px-0">
-                                    <p className="mb-0 HiredtextColor">Sheron Mathews</p>
-                                    <p className="mb-1 textSmall">Senior Java Programmer @ Infosys</p>
-                                    <p className="mb-1 textSmall  PanelTitle">Jazz Recruiter</p>
+                                <div className="col-md-4 p-0">
+                                   <Link to="/RequireterMainPage" className="mb-0 text-dark font-weight-bold"> Sheron Mathews </Link>
+
                                     <p className="mb-0 textSmall  PanelTitle">10 mins ago</p>
+                                    <p className="mb-1 textSmall">UI Designer @ Accenture</p>
+                                    <p className="mb-1 textSmall  PanelTitle">Jazz Recruiter</p>
                                 </div>
-                                <div className="col-md-2 text-center m-auto">
-                                    <p className="text-center textSmall  PanelTitle text-center mb-0">Documents</p>
-                                    <FaCheckCircle size={25} className="text-success mt-1" />      
+                                <div className="col-md-2 text-center p-0 pt-4">
+                                    <p className="text-center textSmall  text-right mb-0">Documents</p>
+                                    <FaCheckCircle size={25} className="text-success" />     
                                 </div>
-                                <div className="col-md-2 text-center m-auto">
-                                    <p className="mb-0 textSmall text-center  PanelTitle">Background</p>
-                                    <FaCheckCircle size={25} className="text-success mt-1" />
+                                <div className="col-md-2 text-center p-0 pt-4">
+                                    <p className="mb-0 textSmall text-right">Background</p>
+                                    <FaExclamationCircle className="hold_icon" />
                                 </div>
-                                <div className="col-md-2 ">
-                                    <p className="mb-0 textSmall text-center  PanelTitle mt-3">Status</p>
-                                    <p className="mb-0 mt-1 textSmall text-success text-center">Joined</p>
-                                    <p className="mb-0 textSmall text-success text-center">02/12/2019</p>
+                                <div className="col-md-2 text-right pt-4">
+                                    <p className="mb-0 textSmall ">Hired</p>
+                                    <FaCheckCircle size={25} className="text-success" />     
                                 </div>
                             </div>
-                            
+                            <hr />
                         </Card.Body>
                     </Card>
                 </div>

@@ -47,14 +47,11 @@ const ResumeTimeline = () => {
                             <div className="col-md-12" style={cardstyle}>
 
                                 <div className="col-wid">
-                                    <div>
-                                        <p className="mb-0 resume-timeline">1998</p>
+                                         <p className="mb-0 resume-timeline">1998</p>
                                         <p className="month">March</p>
-                                    </div>
-                                    <div className="">
-                                        <div>  <div className="circle"></div>
-                                            <div className="line"></div>  </div>
-                                    </div></div>
+                                           <div className="circlemarch"></div>
+                                            <div className="line"></div>  
+                                 </div>
                                 <div className="col-wid">
                                     <p className="mb-0 resume-timeline">1999</p>
                                     <p className="month" >January</p>

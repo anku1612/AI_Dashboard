@@ -303,6 +303,29 @@ const PanellistDashboard = () => {
                                 <p className="mb-0">Completes enrolments by analyzing documents and tapes.</p>
                             </div>
                         </Row>
+                        <Row className=" py-2 px-1 mx-3 d-flex">
+                            <div className="col-md-1 ">
+                                <Button variant="danger" size="sm" className="my-auto mb-0 ">
+                                    <small>CANCELLED</small></Button>
+                            </div>
+                            <div className="col-md-2">
+                                <p className="mb-0 font-weight-bold">21/08/2019</p>
+                            </div>
+                            <div className="col-md-2">
+                                <p className="mb-0 font-weight-bold text-center">Cognizant Interview</p>
+
+                            </div>
+                            <div className="col-md-1 text-center">
+                                <p className="mb-0">20 </p>
+
+                            </div>
+                            <div className="col-md-1 text-center ">
+                                <p className="mb-0">$ 2000</p>
+                            </div>
+                            <div className="col-md-5 text-center">
+                                <p className="mb-0 circleDot rounded-circle">.</p>
+                            </div>
+                        </Row>
 
                     </Card.Body>
 

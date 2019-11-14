@@ -10,3 +10,13 @@
 .headerText{
     font-size: 18px;
 }
+.intel-stl{
+    padding: 100px 100px;
+}
+
+.intel-title{
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 35px;
+}
