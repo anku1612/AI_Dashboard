@@ -16,7 +16,7 @@ const Header = () => {
     <Nav className="links w-50 d-flex justify-content-around">
       <Link to="/" className="Navctive nav-link">Dashboard</Link>
       <Link to="/MyRequirements" className="nav-link">My Requirement</Link>
-      <Link to="/ISearch" className="nav-link">iSearch</Link>
+      <Link to="/RecIntelligentSearch" className="nav-link">iSearch</Link>
       <Link to="/HotCVs" className="nav-link">Hot CV's</Link>
       <Link to="/MyReava" className="nav-link">My ReAVA</Link>
       <Link to="/InMail" className="nav-link">In-Mail</Link>

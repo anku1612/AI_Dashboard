@@ -4,8 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import  '../node-module/anychart-react/dist/anychart-react.min.js';
-// import anychart from '../node_modules/anychart-react/dist/anychart-react.min.js'
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

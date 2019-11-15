@@ -6,7 +6,7 @@ import CandidateSearch from './pages/CandidateSearch';
 import RequireterMainPage from './pages/RequireterMainPage';
 import candidate_complete_profile from './pages/candidate_complete_profile';
 import PanellistDashboard from './pages/PanellistDashboard'
-import RecruiterIntelligentSearch from './pages/RecruiterIntelligentSearch'
+import RecIntelligentSearch from './pages/RecruiterIntelligentSearch'
 import HiredcandidateDashboard from './pages/HiredcandidateDashboard'
 import Chartspage from './pages/Chartspage'
 import Charttest from './pages/Charttest'
@@ -15,6 +15,7 @@ import ISearch from './pages/ISearch'
 import HotCVs from './pages/HotCVs'
 import MyReava from './pages/MyReava'
 import InMail from './pages/InMail'
+import Reqlogin from './pages/Reqlogin'
 import SearchHeader from './pages/SearchHeader';
 import './App.css';
 
@@ -25,13 +26,14 @@ function App(){
       <Header />
       <SearchHeader/>
       <Switch> 
-      <Route path="/"  exact component={HiredcandidateDashboard} />
+      <Route path="/"   component={Reqlogin} />
+      <Route path="/HiredcandidateDashboard"  exact component={HiredcandidateDashboard} />
       <Route path="/CandidateSearch"  component={CandidateSearch} />
       <Route path="/Dashboard"  component={Dashboard} />
       <Route path="/RequireterMainPage"  component={RequireterMainPage} />
       <Route path="/candidate_complete_profile"  component={candidate_complete_profile} />
       <Route path="/panelList" component={PanellistDashboard} />
-      <Route path="/recruiter" component={RecruiterIntelligentSearch} /> 
+      <Route path="/RecIntelligentSearch" component={RecIntelligentSearch} /> 
       <Route path="/Chartspage" component={Chartspage} />
       <Route path="/Charttest" component={Charttest} />
       <Route path="/MyRequirements" component={MyRequirements} />
@@ -39,8 +41,6 @@ function App(){
       <Route path="/HotCVs" component={HotCVs} />
       <Route path="/MyReava" component={MyReava} />
       <Route path="/InMail" component={InMail} />
-      <Route path="/RecruiterIntelligentSearch" component={RecruiterIntelligentSearch} />
-      
     </Switch>
  </div>
     </BrowserRouter>
