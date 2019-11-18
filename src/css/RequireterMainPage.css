@@ -1,4 +1,4 @@
-.btn-req {
+/* .btn-req {
     font-size: 12px !important;
     color: black !important;
     border-color: transparent !important;
@@ -6,6 +6,13 @@
     padding:0px 15px 0px 15px !important;
     margin-left: 5px;
   
+} */
+.btn-req{
+    color: #848484 !important;
+    border: 1px solid #848484 !important;
+    border-radius: 20px !important;
+    padding: 2px 23px !important;
+    font-size: 13px !important;
 }
 .img_req{
     width: 50px;
@@ -109,7 +116,8 @@
         margin-left: 5px;
     }
     .reqstyle{
-        background-color:#64c9f3 !important;
+        background-color:#0057ff !important;
+        border-color:#0057ff !important;
         color: white !important;
     }
     .mail{

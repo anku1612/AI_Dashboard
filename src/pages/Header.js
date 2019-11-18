@@ -14,7 +14,7 @@ const Header = () => {
          <div className="sub_dev">
          <Navbar variant="light" className="headtwo"> 
     <Nav className="links w-50 d-flex justify-content-around">
-      <Link to="/" className="Navctive nav-link">Dashboard</Link>
+      <Link to="/Reqhome" className="Navctive nav-link">Dashboard</Link>
       <Link to="/MyRequirements" className="nav-link">My Requirement</Link>
       <Link to="/RecIntelligentSearch" className="nav-link">iSearch</Link>
       <Link to="/HotCVs" className="nav-link">Hot CV's</Link>

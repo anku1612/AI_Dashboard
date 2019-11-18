@@ -42,7 +42,7 @@ const ResumeTimeline = () => {
                     </Card.Header>
 
 
-                    <Card.Body  >
+                    <Card.Body>
                         <div className="">
                             <div className="col-md-12" style={cardstyle}>
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter , Route ,Switch} from 'react-router-dom';
 import Header from './pages/Header';
-import Dashboard from './pages/Dashboard';
+import Dashboard from './pages/ProfileSummary';
 import CandidateSearch from './pages/CandidateSearch';
 import RequireterMainPage from './pages/RequireterMainPage';
 import candidate_complete_profile from './pages/candidate_complete_profile';

@@ -2,7 +2,7 @@
 import React from 'react';
 import { Row, Col, Button, Image, ButtonToolbar, Dropdown, DropdownButton } from 'react-bootstrap';
 import { Pie, } from '../../node_modules/react-chartjs-2/es/index'
-import { FaSpinner, FaPencilAlt, FaPaperPlane, FaSearch, FaEllipsisV, FaCheck, FaExclamationCircle, FaCircle, FaRegEnvelope, FaPaperclip, FaRegCheckCircle, FaStar, FaRegTrashAlt } from 'react-icons/fa';
+import { FaEllipsisH ,FaSpinner, FaPencilAlt, FaPaperPlane, FaSearch, FaEllipsisV, FaCheck, FaExclamationCircle, FaCircle, FaRegEnvelope, FaPaperclip, FaRegCheckCircle, FaStar, FaRegTrashAlt } from 'react-icons/fa';
 import '../css/RequireterMainPage.css';
 import Calendar from './Calendar'
 import AmChart from './New_chart'
@@ -103,49 +103,44 @@ class Welcome extends React.Component {
                     <Col md="3">
                         <div className="card">
                             <div className="bg-white py-3 px-1 d-flex card-header ">
-                                <div className="col-md-6">
-                                    <h6 className="font-weight-bold head">Top 10</h6>
+                                <div className="col-md-9">
+                                    <h6 className="font-weight-bold text-dark">Top Ten</h6>
                                 </div>
-                                <div className="col-md-6 d-flex">
-                                    <div className="col-md-7">
-                                        <h6 className="float-right"><FaSearch /></h6>
-                                    </div>
-                                    <div className="col-md-5">
-                                        <h6 className="float-right"><FaEllipsisV /></h6>
-                                    </div>
+                                <div className="col-md-3">
+                                      <h6 className="float-right"><FaEllipsisH /></h6>
                                 </div>
                             </div>
-                            <div className="bg-white p-2 d-flex card-header ">
-                                <div className="">
-                                    <Button variant="outline-primary rounded-pill" className="btn-req">Req 1</Button>
-                                </div>
-                                <div className="">
-                                    <Button variant="outline-primary rounded-pill" className="btn-req reqstyle">Req 1</Button>
-                                </div>
-                                <div className="">
-                                    <Button variant="outline-primary rounded-pill" className="btn-req">Req 1</Button>
-                                </div>
-                                <div className="">
-                                    <Button variant="outline-primary rounded-pill" className="btn-req">Req 1</Button>
-                                </div>
+                            <div className="bg-white p-2 d-flex justify-content-around">
+                          
+                                    <Button variant="" className="btn-req">Req</Button>
+                         
+                            
+                                    <Button variant="" className="btn-req reqstyle">Req </Button>
+                       
+                            
+                                    <Button variant="" className="btn-req">Req </Button>
+                             
+                             
                             </div>
                             <div className="card-body d-flex">
                                 <div className="col-md-2 p-0">
                                     <Image src="../profile1.png" roundedCircle className="img_req" />
                                 </div>
                                 <div className="col-md-6 p-0 ml-3">
-                                    <p className="mb-0 pc">Sharon Mathews </p>
+                                    <p className="mb-0 text-dark font-weight-bold">Sharon Mathews </p>
+                                    <p className="mb-0 ">10 mins ago</p>
                                     <p className="mb-0 ">UI Designer</p>
-                                    <p className="mb-0 pc">10 mins ago</p>
+                                 
                                 </div>
                                 <div className="col-md-3 p-0 sec">
+                                <FaEllipsisH />
                                     <p className="UsreName mb-0">100%</p>
                                     <p className="mb-0 mat pc">match</p>
                                 </div>
 
-                                <div className="col-md-1 p-0 mt-3">
-                                    <FaEllipsisV />
-                                </div> </div>
+                               
+                                
+                                </div>
 
                             <div className="card-body d-flex">
                                 <div className="col-md-2 p-0">

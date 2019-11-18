@@ -4,38 +4,34 @@ import { Card, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
 import '../css/CandidateSearch.css';
 import Dashboard from './Dashboard';
+import {FaPhone ,FaEnvelope,FaComment} from 'react-icons/fa';
 
 const CandidateSearch = () => {
     return (
         <Card className="candidateSearch p-2 font-weight-bold mx-4 mt-4">
-            <Card.Header className="bg-white">Candidate Search</Card.Header>
-            <Card.Body className="p-2">
-                <div className="col-12 rowodd d-flex p-0 ">
-                    <div className="col-md-3">
-                        <Card className="my_card" style={{ width: '20.1rem' }}>
-                            <Card.Body className="profle_info pl-2 pb-1">
-                                <div className="profile d-flex pt-0">
+            <Card.Header className="bg-white pb-3">Candidate Search</Card.Header>
+           
+            <Card.Body className="p-4 pt-5">
+            <div className="row main-compo d-flex">
+                    <div className="col-md-3" style={{borderRight:"1px solid #ededef",padding: "15px 5px 5px 5px"}}>
+                                <div className="d-flex">
                                     <div className="pro_image">
                                         <Image src="../profile1.png" roundedCircle className="img_pro" />
                                     </div>
-                                    <div className="my_pro  dropdown">
-                                        <Link to="/Dashboard" className="profile_name mb-0 pl-4 dropbtn"> Sharon Mathews </Link>
+                                    <div className="ml-2 dropdown">
+                                        <Link to="/Dashboard" className="profile_name mb-0 dropbtn"> Sharon Mathews </Link>
                                         <div className="dropdown-content">
                                             <Dashboard  style={{margin:"0 auto"}}/>
                                         </div>
 
-                                        <p className="mb-0 pl-4">Senior Java Developer @ infosys</p>
-                                        <div className="exp_adj_main d-flex pb-3">
-                                            <div className="exp_adj">
-                                                <p className="mb-0 pl-4 my_exp">Exp:</p>
-                                            </div>
-                                            <div className="exp_adj">
-                                                <p className="mb-0 pl-2">26 Years</p>
-                                            </div>
-                                        </div>
-                                        <div className="my_icons pl-3 d-flex">
+                                        <p className="mb-0" style={{fontWeight:"400"}}>Senior Java Developer @ infosys</p>
+                                        <div className=" d-flex pb-3">
+                                           <p className="mb-0 my_exp">Exp:</p>
+                                          <p className="mb-0 pl-2" style={{fontWeight:"400"}}>20 Years</p>
+                                           </div>
+                                        <div className="my_icons d-flex">
                                             <div>
-                                                <p className="resume pr-3 pl-2">Resume</p>
+                                                <p className="text-dark pr-2 font-weight-bold">Resume</p>
                                             </div>
                                             <p className="px-1 mb-0">
                                                 <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -63,100 +59,88 @@ const CandidateSearch = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </Card.Body>
-                        </Card>
+                     
                     </div>
-                    <div className="col-md-8 my_col pr-0 ">
-                        <div className="col-md-12 p-0">
-                            <Card className="my_card">
-                                <div className=" prfile_content">
-                                    <div className="col-md-3 skillSet">
-                                        <Card.Body className="my_card_body">Primary Skills</Card.Body>
-                                        <p className="subSkill mb-2">JAVA,PHP</p>
+                    <div className="col-md-8 p-0" style={{borderRight:"1px solid #ededef"}}>
+                        <div className="col-md-12 p-0" style={{borderBottom:"1px solid #ededef"}}>
+                             <div className="row d-flex stl-body">
+                                    <div className="col-md-3">
+                                        <p className="mb-0 pcolor">Primary Skills</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>JAVA,PHP</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Role</Card.Body>
-                                        <p className="subSkill mb-2">Project Manager</p>
+                                    <div className="col-md-2">
+                                        <p className="mb-0 pcolor">Role</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>Project Manager</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Current CTC</Card.Body>
-                                        <p className="subSkill mb-2">INR 2,00,000</p>
+                                    <div className="col-md-2 ">
+                                    <p className="mb-0 pcolor">Current CTC</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>INR 2,00,000 /-</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Expected CTC</Card.Body>
-                                        <p className="subSkill mb-2">INR 2,30,000</p>
+                                    <div className="col-md-2">
+                                    <p className="mb-0 pcolor">Expected CTC</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>INR 2,30,000/-</p>
                                     </div>
-                                    <div className="col-md-3 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Email</Card.Body>
-                                        <p className="subSkill mb-2">hello@gamil.com</p>
-                                    </div>
-                                </div>
-                            </Card>
-                        </div>
-                        <div className="col-md-12 p-0">
-                            <Card className="my_card">
-                                <div className=" prfile_content">
-                                    <div className="col-md-3 skillSet">
-                                        <Card.Body className="my_card_body">Notice Period</Card.Body>
-                                        <p className="subSkill mb-2">2 Months</p>
-                                    </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Visa</Card.Body>
-                                        <p className="subSkill mb-2">H1B</p>
-                                    </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Location</Card.Body>
-                                        <p className="subSkill mb-2">Hyderabad</p>
-                                    </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Employed</Card.Body>
-                                        <p className="subSkill mb-2">Agency</p>
-                                    </div>
-                                    <div className="col-md-3 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Phone</Card.Body>
-                                        <p className="subSkill mb-2">+91-897-847-8546</p>
+                                    <div className="col-md-3">
+                                    <p className="mb-0 pcolor">Email</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>sharan.mathew@gamil.com</p>
                                     </div>
                                 </div>
-                            </Card>
                         </div>
+                        <div className="col-md-12 p-0 ">
+                             <div className="row d-flex stl-body">
+                                    <div className="col-md-3">
+                                        <p className="mb-0 pcolor">Notice Period</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>2 Months</p>
+                                    </div>
+                                    <div className="col-md-2">
+                                        <p className="mb-0 pcolor">Visa</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>H1B</p>
+                                    </div>
+                                    <div className="col-md-2 ">
+                                    <p className="mb-0 pcolor">Location</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>Hyderabad</p>
+                                    </div>
+                                    <div className="col-md-2">
+                                    <p className="mb-0 pcolor">Employed</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>Agency</p>
+                                    </div>
+                                    <div className="col-md-3">
+                                    <p className="mb-0 pcolor">Phone</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>+91-897-847-8546</p>
+                                    </div>
+                                </div>
+                        </div>
+                      
+                    </div>
+                    <div className="col-md-1 pt-3 text-center">
+                    <p><FaPhone size ={25}/></p>
+                    <p><FaEnvelope size ={25} /></p>
+                    <p><FaComment size ={25} /></p>
+                    
+                    </div>
+                </div>
+        
+         
+                <div className="row main-compo d-flex bg-white">
+                    <div className="col-md-3" style={{borderRight:"1px solid #ededef",padding: "15px 5px 5px 5px"}}>
+                                <div className="d-flex">
+                                    <div className="pro_image">
+                                        <Image src="../profile1.png" roundedCircle className="img_pro" />
+                                    </div>
+                                    <div className="ml-2 dropdown">
+                                        <Link to="/Dashboard" className="profile_name mb-0 dropbtn"> Sharon Mathews </Link>
+                                        <div className="dropdown-content">
+                                            <Dashboard  style={{margin:"0 auto"}}/>
+                                        </div>
 
-                    </div>
-                    <div className="col-md-1 my_col pl-0">
-                        <Card className="my_card">
-                            {/* <Card.Body>This is some</Card.Body> */}
-                            <img className="my_fa_icons" alt="" src="https://img.icons8.com/dotty/50/000000/phone.png"></img>
-                            <img className="my_fa_icons" alt="" src="https://img.icons8.com/color/48/000000/send-mass-email.png"></img>
-                            <img className="my_fa_icons" alt="" src="https://img.icons8.com/ultraviolet/40/000000/delete-message.png"></img>
-                        </Card>
-                    </div>
-                </div>
-            </Card.Body>
-            <Card.Body className="p-2">
-                <div className="col-12 d-flex p-0">
-                    <div className="col-md-3 ">
-                        <Card className="my_card" style={{ width: '20.1rem' }}>
-                            <Card.Body className="profle_info pl-2 pb-1">
-                                <div className="profile d-flex pt-0">
-                                    <div className="pro_image">
-                                        <Image src="../profile1.png" roundedCircle className="img_pro" />
-                                    </div>
-                                    <div className="my_pro  dropdown">
-                                        <Link to="/Dashboard" className="profile_name mb-0 pl-4 dropbtn"> Sharon Mathews </Link>
-                                        <div className="dropdown-content">
-                                            <Dashboard  style={{margin:"0 auto"}}/>
-                                        </div>
-                                        <p className="mb-0 pl-4">Senior Java Developer @ infosys</p>
-                                        <div className="exp_adj_main d-flex pb-3">
-                                            <div className="exp_adj">
-                                                <p className="mb-0 pl-4 my_exp">Exp:</p>
-                                            </div>
-                                            <div className="exp_adj">
-                                                <p className="mb-0 pl-2">26 Years</p>
-                                            </div>
-                                        </div>
-                                        <div className="my_icons pl-3 d-flex">
+                                        <p className="mb-0" style={{fontWeight:"400"}}>Senior Java Developer @ infosys</p>
+                                        <div className=" d-flex pb-3">
+                                           <p className="mb-0 my_exp">Exp:</p>
+                                          <p className="mb-0 pl-2" style={{fontWeight:"400"}}>20 Years</p>
+                                           </div>
+                                        <div className="my_icons d-flex">
                                             <div>
-                                                <p className="resume pr-3 pl-2">Resume</p>
+                                                <p className="text-dark pr-2 font-weight-bold">Resume</p>
                                             </div>
                                             <p className="px-1 mb-0">
                                                 <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -184,99 +168,89 @@ const CandidateSearch = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </Card.Body>
-                        </Card>
+                     
                     </div>
-                    <div className="col-md-8 my_col pr-0">
-                        <div className="col-md-12 p-0">
-                            <Card className="my_card">
-                                <div className=" prfile_content">
-                                    <div className="col-md-3 skillSet">
-                                        <Card.Body className="my_card_body">Primary Skills</Card.Body>
-                                        <p className="subSkill mb-2">JAVA,PHP</p>
+                    <div className="col-md-8 p-0" style={{borderRight:"1px solid #ededef"}}>
+                        <div className="col-md-12 p-0" style={{borderBottom:"1px solid #ededef"}}>
+                             <div className="row d-flex stl-body">
+                                    <div className="col-md-3">
+                                        <p className="mb-0 pcolor">Primary Skills</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>JAVA,PHP</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Role</Card.Body>
-                                        <p className="subSkill mb-2">Project Manager</p>
+                                    <div className="col-md-2">
+                                        <p className="mb-0 pcolor">Role</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>Project Manager</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Current CTC</Card.Body>
-                                        <p className="subSkill mb-2">INR 2,00,000</p>
+                                    <div className="col-md-2 ">
+                                    <p className="mb-0 pcolor">Current CTC</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>INR 2,00,000 /-</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Expected CTC</Card.Body>
-                                        <p className="subSkill mb-2">INR 2,30,000</p>
+                                    <div className="col-md-2">
+                                    <p className="mb-0 pcolor">Expected CTC</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>INR 2,30,000/-</p>
                                     </div>
-                                    <div className="col-md-3 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Email</Card.Body>
-                                        <p className="subSkill mb-2">hello@gamil.com</p>
+                                    <div className="col-md-3">
+                                    <p className="mb-0 pcolor">Email</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>sharan.mathew@gamil.com</p>
                                     </div>
                                 </div>
-                            </Card>
                         </div>
-                        <div className="col-md-12 p-0">
-                            <Card className="my_card">
-                                <div className=" prfile_content">
-                                    <div className="col-md-3 skillSet">
-                                        <Card.Body className="my_card_body">Notice Period</Card.Body>
-                                        <p className="subSkill mb-2">2 Months</p>
+                        <div className="col-md-12 p-0 ">
+                             <div className="row d-flex stl-body">
+                                    <div className="col-md-3">
+                                        <p className="mb-0 pcolor">Notice Period</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>2 Months</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Visa</Card.Body>
-                                        <p className="subSkill mb-2">H1B</p>
+                                    <div className="col-md-2">
+                                        <p className="mb-0 pcolor">Visa</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>H1B</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Location</Card.Body>
-                                        <p className="subSkill mb-2">Hyderabad</p>
+                                    <div className="col-md-2 ">
+                                    <p className="mb-0 pcolor">Location</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>Hyderabad</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Employed</Card.Body>
-                                        <p className="subSkill mb-2">Agency</p>
+                                    <div className="col-md-2">
+                                    <p className="mb-0 pcolor">Employed</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>Agency</p>
                                     </div>
-                                    <div className="col-md-3 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Phone</Card.Body>
-                                        <p className="subSkill mb-2">+91-897-847-8546</p>
+                                    <div className="col-md-3">
+                                    <p className="mb-0 pcolor">Phone</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>+91-897-847-8546</p>
                                     </div>
                                 </div>
-                            </Card>
                         </div>
+                      
                     </div>
-                    <div className="col-md-1 my_col pl-0">
-                        <Card className="my_card">
-                            {/* <Card.Body>This is some</Card.Body> */}
-                            <img className="my_fa_icons" alt="" src="https://img.icons8.com/dotty/50/000000/phone.png"></img>
-                            <img className="my_fa_icons" alt="" src="https://img.icons8.com/color/48/000000/send-mass-email.png"></img>
-                            <img className="my_fa_icons" alt="" src="https://img.icons8.com/ultraviolet/40/000000/delete-message.png"></img>
-                        </Card>
+                    <div className="col-md-1 pt-3 text-center">
+                    <p><FaPhone size ={25}/></p>
+                    <p><FaEnvelope size ={25} /></p>
+                    <p><FaComment size ={25} /></p>
+                    
                     </div>
                 </div>
-            </Card.Body>
-            <Card.Body className="p-2">
-                <div className="col-12 d-flex p-0">
-                    <div className="col-md-3 ">
-                        <Card className="my_card" style={{ width: '20.1rem' }}>
-                            <Card.Body className="profle_info pl-2 pb-1">
-                                <div className="profile d-flex pt-0">
+        
+         
+
+                <div className="row main-compo d-flex">
+                    <div className="col-md-3" style={{borderRight:"1px solid #ededef",padding: "15px 5px 5px 5px"}}>
+                                <div className="d-flex">
                                     <div className="pro_image">
                                         <Image src="../profile1.png" roundedCircle className="img_pro" />
                                     </div>
-                                    <div className="my_pro  dropdown">
-                                        <Link to="/Dashboard" className="profile_name mb-0 pl-4 dropbtn"> Sharon Mathews </Link>
+                                    <div className="ml-2 dropdown">
+                                        <Link to="/Dashboard" className="profile_name mb-0 dropbtn"> Sharon Mathews </Link>
                                         <div className="dropdown-content">
                                             <Dashboard  style={{margin:"0 auto"}}/>
                                         </div>
-                                        <p className="mb-0 pl-4">Senior Java Developer @ infosys</p>
-                                        <div className="exp_adj_main d-flex pb-3">
-                                            <div className="exp_adj">
-                                                <p className="mb-0 pl-4 my_exp">Exp:</p>
-                                            </div>
-                                            <div className="exp_adj">
-                                                <p className="mb-0 pl-2">26 Years</p>
-                                            </div>
-                                        </div>
-                                        <div className="my_icons pl-3 d-flex">
+
+                                        <p className="mb-0" style={{fontWeight:"400"}}>Senior Java Developer @ infosys</p>
+                                        <div className=" d-flex pb-3">
+                                           <p className="mb-0 my_exp">Exp:</p>
+                                          <p className="mb-0 pl-2" style={{fontWeight:"400"}}>20 Years</p>
+                                           </div>
+                                        <div className="my_icons d-flex">
                                             <div>
-                                                <p className="resume pr-3 pl-2">Resume</p>
+                                                <p className="text-dark pr-2 font-weight-bold">Resume</p>
                                             </div>
                                             <p className="px-1 mb-0">
                                                 <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -304,99 +278,89 @@ const CandidateSearch = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </Card.Body>
-                        </Card>
+                     
                     </div>
-                    <div className="col-md-8 my_col pr-0">
-                        <div className="col-md-12 p-0">
-                            <Card className="my_card">
-                                <div className=" prfile_content">
-                                    <div className="col-md-3 skillSet">
-                                        <Card.Body className="my_card_body">Primary Skills</Card.Body>
-                                        <p className="subSkill mb-2">JAVA,PHP</p>
+                    <div className="col-md-8 p-0" style={{borderRight:"1px solid #ededef"}}>
+                        <div className="col-md-12 p-0" style={{borderBottom:"1px solid #ededef"}}>
+                             <div className="row d-flex stl-body">
+                                    <div className="col-md-3">
+                                        <p className="mb-0 pcolor">Primary Skills</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>JAVA,PHP</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Role</Card.Body>
-                                        <p className="subSkill mb-2">Project Manager</p>
+                                    <div className="col-md-2">
+                                        <p className="mb-0 pcolor">Role</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>Project Manager</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Current CTC</Card.Body>
-                                        <p className="subSkill mb-2">INR 2,00,000</p>
+                                    <div className="col-md-2 ">
+                                    <p className="mb-0 pcolor">Current CTC</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>INR 2,00,000 /-</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Expected CTC</Card.Body>
-                                        <p className="subSkill mb-2">INR 2,30,000</p>
+                                    <div className="col-md-2">
+                                    <p className="mb-0 pcolor">Expected CTC</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>INR 2,30,000/-</p>
                                     </div>
-                                    <div className="col-md-3 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Email</Card.Body>
-                                        <p className="subSkill mb-2">hello@gamil.com</p>
+                                    <div className="col-md-3">
+                                    <p className="mb-0 pcolor">Email</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>sharan.mathew@gamil.com</p>
                                     </div>
                                 </div>
-                            </Card>
                         </div>
-                        <div className="col-md-12 p-0">
-                            <Card className="my_card">
-                                <div className=" prfile_content">
-                                    <div className="col-md-3 skillSet">
-                                        <Card.Body className="my_card_body">Notice Period</Card.Body>
-                                        <p className="subSkill mb-2">2 Months</p>
+                        <div className="col-md-12 p-0 ">
+                             <div className="row d-flex stl-body">
+                                    <div className="col-md-3">
+                                        <p className="mb-0 pcolor">Notice Period</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>2 Months</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Visa</Card.Body>
-                                        <p className="subSkill mb-2">H1B</p>
+                                    <div className="col-md-2">
+                                        <p className="mb-0 pcolor">Visa</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>H1B</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Location</Card.Body>
-                                        <p className="subSkill mb-2">Hyderabad</p>
+                                    <div className="col-md-2 ">
+                                    <p className="mb-0 pcolor">Location</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>Hyderabad</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Employed</Card.Body>
-                                        <p className="subSkill mb-2">Agency</p>
+                                    <div className="col-md-2">
+                                    <p className="mb-0 pcolor">Employed</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>Agency</p>
                                     </div>
-                                    <div className="col-md-3 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Phone</Card.Body>
-                                        <p className="subSkill mb-2">+91-897-847-8546</p>
+                                    <div className="col-md-3">
+                                    <p className="mb-0 pcolor">Phone</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>+91-897-847-8546</p>
                                     </div>
                                 </div>
-                            </Card>
                         </div>
+                      
                     </div>
-                    <div className="col-md-1 my_col pl-0">
-                        <Card className="my_card">
-                            {/* <Card.Body>This is some</Card.Body> */}
-                            <img className="my_fa_icons" alt="" src="https://img.icons8.com/dotty/50/000000/phone.png"></img>
-                            <img className="my_fa_icons" alt="" src="https://img.icons8.com/color/48/000000/send-mass-email.png"></img>
-                            <img className="my_fa_icons" alt="" src="https://img.icons8.com/ultraviolet/40/000000/delete-message.png"></img>
-                        </Card>
+                    <div className="col-md-1 pt-3 text-center">
+                    <p><FaPhone size ={25}/></p>
+                    <p><FaEnvelope size ={25} /></p>
+                    <p><FaComment size ={25} /></p>
+                    
                     </div>
                 </div>
-            </Card.Body>
-            <Card.Body className="p-2">
-                <div className="col-12 d-flex p-0">
-                    <div className="col-md-3 ">
-                        <Card className="my_card" style={{ width: '20.1rem' }}>
-                            <Card.Body className="profle_info pl-2 pb-1">
-                                <div className="profile d-flex pt-0">
+        
+         
+
+                <div className="row main-compo d-flex bg-white">
+                    <div className="col-md-3" style={{borderRight:"1px solid #ededef",padding: "15px 5px 5px 5px"}}>
+                                <div className="d-flex">
                                     <div className="pro_image">
                                         <Image src="../profile1.png" roundedCircle className="img_pro" />
                                     </div>
-                                    <div className="my_pro  dropdown">
-                                        <Link to="/Dashboard" className="profile_name mb-0 pl-4 dropbtn"> Sharon Mathews </Link>
+                                    <div className="ml-2 dropdown">
+                                        <Link to="/Dashboard" className="profile_name mb-0 dropbtn"> Sharon Mathews </Link>
                                         <div className="dropdown-content">
                                             <Dashboard  style={{margin:"0 auto"}}/>
                                         </div>
-                                        <p className="mb-0 pl-4">Senior Java Developer @ infosys</p>
-                                        <div className="exp_adj_main d-flex pb-3">
-                                            <div className="exp_adj">
-                                                <p className="mb-0 pl-4 my_exp">Exp:</p>
-                                            </div>
-                                            <div className="exp_adj">
-                                                <p className="mb-0 pl-2">26 Years</p>
-                                            </div>
-                                        </div>
-                                        <div className="my_icons pl-3 d-flex">
+
+                                        <p className="mb-0" style={{fontWeight:"400"}}>Senior Java Developer @ infosys</p>
+                                        <div className=" d-flex pb-3">
+                                           <p className="mb-0 my_exp">Exp:</p>
+                                          <p className="mb-0 pl-2" style={{fontWeight:"400"}}>20 Years</p>
+                                           </div>
+                                        <div className="my_icons d-flex">
                                             <div>
-                                                <p className="resume pr-3 pl-2">Resume</p>
+                                                <p className="text-dark pr-2 font-weight-bold">Resume</p>
                                             </div>
                                             <p className="px-1 mb-0">
                                                 <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -424,71 +388,75 @@ const CandidateSearch = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </Card.Body>
-                        </Card>
+                     
                     </div>
-                    <div className="col-md-8 my_col pr-0">
-                        <div className="col-md-12 p-0">
-                            <Card className="my_card">
-                                <div className=" prfile_content">
-                                    <div className="col-md-3 skillSet">
-                                        <Card.Body className="my_card_body">Primary Skills</Card.Body>
-                                        <p className="subSkill mb-2">JAVA,PHP</p>
+                    <div className="col-md-8 p-0" style={{borderRight:"1px solid #ededef"}}>
+                        <div className="col-md-12 p-0" style={{borderBottom:"1px solid #ededef"}}>
+                             <div className="row d-flex stl-body">
+                                    <div className="col-md-3">
+                                        <p className="mb-0 pcolor">Primary Skills</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>JAVA,PHP</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Role</Card.Body>
-                                        <p className="subSkill mb-2">Project Manager</p>
+                                    <div className="col-md-2">
+                                        <p className="mb-0 pcolor">Role</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>Project Manager</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Current CTC</Card.Body>
-                                        <p className="subSkill mb-2">INR 2,00,000</p>
+                                    <div className="col-md-2 ">
+                                    <p className="mb-0 pcolor">Current CTC</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>INR 2,00,000 /-</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Expected CTC</Card.Body>
-                                        <p className="subSkill mb-2">INR 2,30,000</p>
+                                    <div className="col-md-2">
+                                    <p className="mb-0 pcolor">Expected CTC</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>INR 2,30,000/-</p>
                                     </div>
-                                    <div className="col-md-3 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Email</Card.Body>
-                                        <p className="subSkill mb-2">hello@gamil.com</p>
+                                    <div className="col-md-3">
+                                    <p className="mb-0 pcolor">Email</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>sharan.mathew@gamil.com</p>
                                     </div>
                                 </div>
-                            </Card>
                         </div>
-                        <div className="col-md-12 p-0">
-                            <Card className="my_card">
-                                <div className=" prfile_content">
-                                    <div className="col-md-3 skillSet">
-                                        <Card.Body className="my_card_body">Notice Period</Card.Body>
-                                        <p className="subSkill mb-2">2 Months</p>
+                        <div className="col-md-12 p-0 ">
+                             <div className="row d-flex stl-body">
+                                    <div className="col-md-3">
+                                        <p className="mb-0 pcolor">Notice Period</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>2 Months</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Visa</Card.Body>
-                                        <p className="subSkill mb-2">H1B</p>
+                                    <div className="col-md-2">
+                                        <p className="mb-0 pcolor">Visa</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>H1B</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Location</Card.Body>
-                                        <p className="subSkill mb-2">Hyderabad</p>
+                                    <div className="col-md-2 ">
+                                    <p className="mb-0 pcolor">Location</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>Hyderabad</p>
                                     </div>
-                                    <div className="col-md-2 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Employed</Card.Body>
-                                        <p className="subSkill mb-2">Agency</p>
+                                    <div className="col-md-2">
+                                    <p className="mb-0 pcolor">Employed</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>Agency</p>
                                     </div>
-                                    <div className="col-md-3 p-0 skillSet">
-                                        <Card.Body className="my_card_body">Phone</Card.Body>
-                                        <p className="subSkill mb-2">+91-897-847-8546</p>
+                                    <div className="col-md-3">
+                                    <p className="mb-0 pcolor">Phone</p>
+                                        <p className="mb-0" style={{fontWeight:"400"}}>+91-897-847-8546</p>
                                     </div>
                                 </div>
-                            </Card>
                         </div>
+                      
                     </div>
-                    <div className="col-md-1 my_col pl-0">
-                        <Card className="my_card">
-                            <img className="my_fa_icons" alt="" src="https://img.icons8.com/dotty/50/000000/phone.png"></img>
-                            <img className="my_fa_icons" alt="" src="https://img.icons8.com/color/48/000000/send-mass-email.png"></img>
-                            <img className="my_fa_icons" alt="" src="https://img.icons8.com/ultraviolet/40/000000/delete-message.png"></img>
-                        </Card>
+                    <div className="col-md-1 pt-3 text-center">
+                    <p><FaPhone size ={25}/></p>
+                    <p><FaEnvelope size ={25} /></p>
+                    <p><FaComment size ={25} /></p>
+                    
                     </div>
                 </div>
+        
+         
+
+
+
+
+
+
+       
             </Card.Body>
 
 

@@ -69,7 +69,7 @@ class Welcome extends React.Component {
     }
   render() {
         return (
-            <div className="mt-5 mx-4">
+            <div className="card-body">
                 <Row>
                     <Col md="3">
                         <div className="card">
@@ -129,7 +129,7 @@ class Welcome extends React.Component {
                         </div>
                     </Col>
                 </Row>
-                <Row className="mt-5 mb-5">
+                <Row className="mt-2 mb-2">
                     <Col md="6">
                         <div className="card">
                             <h6 className="card-header bg-white">Career Progress</h6>

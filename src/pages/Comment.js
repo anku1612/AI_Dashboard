@@ -7,7 +7,7 @@ import { FaSearch} from 'react-icons/fa';
 
 const Comments = () => {
     return (
-        <Card className="mx-4 mb-4 mt-4 px-2">
+      <div>
             <Card.Header className="bg-white py-3 px-1 d-flex">
                 <div className="col-md-6">
                     <h6 className="font-weight-bold">Observations / Comment History</h6>
@@ -67,7 +67,7 @@ const Comments = () => {
                     </div>
                 </Row>
             </Card.Body>
-        </Card>
+            </div>
     )
 }
 export default Comments;
