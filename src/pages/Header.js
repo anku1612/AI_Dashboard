@@ -21,6 +21,7 @@ const Header = () => {
       <Link to="/MyReava" className="nav-link">My ReAVA</Link>
       <Link to="/InMail" className="nav-link">In-Mail</Link>
       <Link to="/panelList" className="nav-link">Panel List</Link>
+      <Link to="/CandidateSearch" className="nav-link">Candidate Search</Link>
     </Nav>
     <Nav>
  <Nav.Link href="#memes"><FaSistrix className="icon"/> </Nav.Link>

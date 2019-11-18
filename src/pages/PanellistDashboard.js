@@ -1,62 +1,57 @@
 import React from 'react';
-import { Row, Card, Button, Image } from 'react-bootstrap';
+import { Row, Card, Button, Image ,FormControl } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
 import '../css/Panellist.css';
-import { FaSearch, FaExclamationCircle } from 'react-icons/fa';
+import { FaSearch, FaExclamationCircle ,FaArrowDown } from 'react-icons/fa';
 
 const PanellistDashboard = () => {
     return (
-        <div className="mx-4 px-4">
-            <div className="row ">
+        <div className="container-fluid">
+            <div className="row mb-4">
                 <Card className="mt-4 w-100">
-                    <div className="bg-white py-3 px-4 d-flex">
-                            <h6 className="font-weight-bold PanelTitle">Panellist Dashboard</h6>                
-                    </div>
-                    < hr className="my-0" />
+                    <div className="p-4"><h6 className="font-weight-bold text-dark pl-3 mb-0">Panellist Dashboard</h6></div>
+                        < hr className="my-0 mx-4" />
 
-                    <Card.Body>
-
-                        <Row className=" ">
-                            
-                            <div className="col-md-3 d-flex">
-                                <div className="col-md-4 d-flex align-items-center">
+                    <Card.Body className="p-3">
+                 <Row className="">  
+                            <div className="col-md-4 d-flex align-items-center">
+                                <div className="col-md-2">
                                     <div className="panellistImg">
                                         <Image src="../profile1.png" roundedCircle className="panellistImg" />
                                     </div>
                                 </div>
-                                <div className="col-md-8 d-flex align-items-center">
-                                    <h6 className="textColor">Panellist Name</h6>
+                                <div className="col-md-10">
+                                <h6 className="mb-0 textColor">Sarrah Connor</h6>
+                                <p className="mb-0">JAVA, PHP</p>
                                 </div>
                             </div>
-                            <div className="col-md-4 d-flex align-items-center">
-                                <div className='col-md-6 '>
-                                    <p className="mb-0">Toatal Earnings</p>
-                                    <h6 className="mb-0 textColor">$ 200</h6>
+                            <div className="col-md-3 d-flex align-items-center">
+                                <div className="col-md-6">
+                                    <p className="p_stl">Toatal Earnings</p>
+                                    <p className="mb-0 text-dark font-weight-bold">$ 3,000.00</p>
                                 </div>
                                 <div className='col-md-6 align-items-center'>
-                                    <p className="mb-0 ">Pending Invoices</p>
-                                    <h6 className="mb-0 textColor">20</h6>
+                                    <p className="p_stl">Pending Invoices</p>
+                                    <p className="mb-0 text-dark font-weight-bold">22</p>
                                 </div>
                             </div>
-                            <div className="col-md-5 p-2 d-flex panellistbg d-flex justify-content-around">
-                                <div className="col-md-4 d-flex align-items-center">
-                                    <div className="mr-2 text-danger" ><FaExclamationCircle size={25} /></div>
+                           
+                            <div className="col-md-5 p-2 panellistbg d-flex justify-content-around">
+                                <div className="col-md-4 d-flex  align-items-center">
+                                    <div className="mr-2 text-danger" ><FaExclamationCircle size={30} /></div>
                                     <div>
-                                        <p className="mb-0 ">Interview Alert</p>
-                                        <p className="mb-0">30/12/2019</p>
+                                        <p className="p_stl">Interview Alert</p>
+                                        <p className="mb-0 text-dark font-weight-bold" style={{fontSize:"14px"}} >20/10/2019</p>
                                     </div>
                                 </div>
-                                <div className="col-md-2 mx-0 px-0 d-flex align-items-end">
-                                    <p className="mb-0 ">00.15.02</p>
+                                <div className="col-md-4 p-0 d-flex align-items-end">
+                                <p className="mb-2 text-dark font-weight-bold" style={{fontSize:"14px"}} >01.30.05</p>
                                 </div>
-                                <div className="col-md-3 d-flex mx-0 p-2 align-items-center">
-                                    <Button variant="primary" size="sm" className="rounded-pill text-center mb-0">
-                                        <small>START INTERVIEW</small>
-                                    </Button>
-                                </div>
-                                <div className="col-md-3 d-flex mx-0 p-1 align-items-center">
-                                    <Button variant="primary" size="sm" className="rounded-pill text-center mb-0 ">
-                                        <small >CANCEL</small></Button>
+                                <div className="col-md-2 d-flex align-items-center">
+                                    <p className="multi-skill">Start</p>
+                               </div>
+                                <div className="col-md-2 pl-0 d-flex align-items-center">
+                                <p className="multi-skill">Cancel</p>
                                 </div>
 
                             </div>
@@ -64,107 +59,112 @@ const PanellistDashboard = () => {
                     </Card.Body>
                 </Card>
             </div>
-            <div className="row">
-                <Card className=" mt-4 w-100">
-                    <Card.Header className="bg-white py-3 px-1 d-flex">
-                        <div className="col-md-6">
-                            <h6 className="font-weight-bold PanelTitle  px-2">Interview Schedule</h6>
+            <div className="row mb-4">
+                <Card className="w-100">
+                    <div className="d-flex p-3">
+                        <div className="col-md-6 pt-2">
+                            <h6 className="font-weight-bold text-dark px-2">Interview Schedule</h6>
                         </div>
                         <div className="col-md-6 d-flex">
-                            <div className="col-md-7">
-                                <h6 className="float-right text-teal"><FaSearch /></h6>
-                            </div>
-                            <div className="col-md-5">
-                                <h6 className="float-right font-weight-bold text-success">Add new comment</h6>
-                            </div>
-                        </div>
-                    </Card.Header>
-                    <Card.Body>
-                        <Row className="commentsTitles py-3 px-1 mx-3">
-                            <div className="col-md-2">
-                                <p className="mb-0">Date</p>
-                            </div>
-                            <div className="col-md-2 font-weight-bold">
-                                <p className="mb-0">Interview Title</p>
+                        <div className="col-md-6 pt-2">
+                                <Link to="" className="float-right textColor" style={{borderBottom:"1px solid #00adef"}}>Add new comment</Link>
                             </div>
                             <div className="col-md-6">
-                                <p className="mb-0">Comments</p>
+                            <FormControl type="text" placeholder="" className="mr-sm-2" />
+                               <p className="search_icon" > <FaSearch /></p> 
+                            </div>
+                        
+                        </div>
+                        </div>
+                        < hr className="my-0 mx-4" />
+
+                  
+                    <Card.Body >
+                        <Row className="sec_title">
+                            <div className="col-md-2 d-flex">
+                                <p className="p_stl">DATE</p>
+                                <p className="ml-3"> <FaArrowDown/> </p> 
+                            </div>
+                     
+                            <div className="col-md-2">
+                                <p className="p_stl">INTERVIEW TITLE</p>
+                            </div>
+                            <div className="col-md-6">
+                                <p className="p_stl">COMMENTS</p>
                             </div>
                             <div className="col-md-2">
 
                             </div>
                         </Row>
-                        <Row className="py-4 px-1 mx-3">
-                            <div className="col-md-2 m-auto fontsize">
-                                <p className="font-weight-bold">21/08/2019</p>
+                        <Row className="row_cls">
+                            <div className="col-md-2 m-auto">
+                                <p className="p_stl">21/08/2019</p>
                             </div>
-                            <div className="col-md-2 fontsize">
-                                <p className="font-weight-bold m-auto">Cognizant Interview</p>
+                            <div className="col-md-2">
+                                <p className="p_stl">Cognizant Interview</p>
                                 <div className="text-primary d-flex">
                                     <Link to=" "><p className="textColor m-auto">Resume</p></Link>
                                     <Link to=" "> <p className="textColor m-auto">| JD | </p></Link>
                                     <Link to=" "><p className="textColor m-auto">Video Interview</p></Link>
                                 </div>
                             </div>
-                            <div className="col-md-5 month m-auto">
-                                <p>Pass in the url prop of your social network, and the icon will be rendered social network, and the icon will be rendered.</p>
+                            <div className="col-md-4">
+                                <p className="p_stl">Pass in the url prop of your social network, and the icon will be rendered social network, and the icon will be rendered.</p>
                             </div>
-                            <div className="col-md-3 m-auto d-flex justify-content-around text-center">
-                                <p className="mr-2 m-auto">< Link to =" " className="text-success fontsize float-left">Comment</Link></p>
-                                <Button variant="primary" size="sm" className="rounded-pill h-50 text-center my-auto mr-2 mb-0 ">
-                                    <small>START INTERVIEW</small></Button>
-                                <Button variant="primary" size="sm" className="rounded-pill h-50 my-auto mb-0 ">
-                                    <small>CANCEL</small></Button>
+                            <div className="col-md-4 m-auto d-flex justify-content-around">
+                           
+                                <Link to =" " className="multi-skill">Comment</Link>
+                                <Link to =" " className="multi-skill">Start Interview</Link>
+                            <Link to =" " className="multi-skill">Cancel</Link>
+                       
                             </div>
                         </Row>
                         < hr className="my-0" />
-                        <Row className="py-4 px-1 mx-3">
-                            <div className="col-md-2 fontsize">
-                                <p className="font-weight-bold">21/08/2019</p>
+                        <Row className="row_cls">
+                        <div className="col-md-2 m-auto ">
+                                <p className="p_stl">21/08/2019</p>
                             </div>
-                            <div className="col-md-2 fontsize">
-                                <p className="font-weight-bold mb-0">Cognizant Interview</p>
-                                <div className="text-primary d-flex">
-                                    <Link to=" "><p className="textColor">Resume</p></Link>
-                                    <Link to=" "> <p className="textColor">| JD | </p></Link>
-                                    <Link to=" "><p className="textColor">Video Interview</p></Link>
-
-                                </div>
-                            </div>
-                            <div className="col-md-5 month m-auto">
-                                <p>Pass in the url prop of your social network, and the icon will be rendered social network, and the icon will be rendered.</p>
-                            </div>
-                            <div className="col-md-3 d-flex justify-content-around text-center">
-                                <p className="mr-2 m-auto">< Link to =" " className="text-success fontsize float-left">Comment</Link></p>
-                                <Button variant="primary" size="sm" className="rounded-pill h-50 text-center my-auto mr-2 mb-0 ">
-                                    <small>START INTERVIEW</small></Button>
-                                <Button variant="primary" size="sm" className="rounded-pill h-50 my-auto mb-0 ">
-                                    <small>CANCEL</small></Button>
-                            </div>
-                        </Row>
-                        <hr className="my-0" />
-                        <Row className="py-4 px-1 mx-3">
-                            <div className="col-md-2 fontsize">
-                                <p className="font-weight-bold m-auto">21/08/2019</p>
-                            </div>
-                            <div className="col-md-2 fontsize m-auto">
-                                <p className="font-weight-bold mb-0">Cognizant Interview</p>
+                            <div className="col-md-2 ">
+                                <p className="p_stl">Cognizant Interview</p>
                                 <div className="text-primary d-flex">
                                     <Link to=" "><p className="textColor m-auto">Resume</p></Link>
                                     <Link to=" "> <p className="textColor m-auto">| JD | </p></Link>
-                                    <Link to=" "><p className="textColor">Video Interview</p></Link>
-
+                                    <Link to=" "><p className="textColor m-auto">Video Interview</p></Link>
                                 </div>
                             </div>
-                            <div className="col-md-5 month m-auto">
-                                <p>Pass in the url prop of your social network, and the icon will be rendered social network, and the icon will be rendered.</p>
+                            <div className="col-md-4">
+                                <p className="p_stl">Pass in the url prop of your social network, and the icon will be rendered social network, and the icon will be rendered.</p>
                             </div>
-                            <div className="col-md-3 d-flex justify-content-around text-center">
-                                <p className="mr-2 m-auto">< Link to =" " className="text-success fontsize float-left">Comment</Link></p>
-                                <Button variant="primary" size="sm" className="rounded-pill h-50 text-center my-auto mr-2 mb-0 ">
-                                    <small>START INTERVIEW</small></Button>
-                                <Button variant="primary" size="sm" className="rounded-pill h-50 my-auto mb-0 ">
-                                    <small>CANCEL</small></Button>
+                            <div className="col-md-4 m-auto d-flex justify-content-around">
+                           
+                                <Link to =" " className="multi-skill">Comment</Link>
+                                <Link to =" " className="multi-skill">Start Interview</Link>
+                            <Link to =" " className="multi-skill">Cancel</Link>
+                       
+                            </div>
+                        </Row>
+                        <hr className="my-0" />
+                        <Row className="row_cls sec_title">
+                        <div className="col-md-2 m-auto ">
+                                <p className="p_stl">21/08/2019</p>
+                            </div>
+                            <div className="col-md-2 ">
+                                <p className="p_stl">Cognizant Interview</p>
+                                <div className="text-primary d-flex">
+                                    <Link to=" "><p className="textColor m-auto">Resume</p></Link>
+                                    <Link to=" "> <p className="textColor m-auto">| JD | </p></Link>
+                                    <Link to=" "><p className="textColor m-auto">Video Interview</p></Link>
+                                </div>
+                            </div>
+                            <div className="col-md-4">
+                                <p className="p_stl">Pass in the url prop of your social network, and the icon will be rendered social network, and the icon will be rendered.</p>
+                            </div>
+                            <div className="col-md-4 m-auto d-flex justify-content-around">
+                           
+                                <Link to =" " className="multi-skill">Comment</Link>
+                                <Link to =" " className="multi-skill">Start Interview</Link>
+                            <Link to =" " className="multi-skill">Cancel</Link>
+                       
                             </div>
 
                         </Row>
@@ -172,29 +172,28 @@ const PanellistDashboard = () => {
                 </Card>
 
             </div>
+           
             <div className="row mb-4">
-                <Card className=" mt-4 w-100">
-                    <h4 className="bg-white pt-4 pb-0 px-1 d-flex">
-                        <div className="col-md-6">
-                            <h6 className="font-weight-bold PanelTitle px-2">Transactions</h6>
-                        </div>
-                    </h4>
+                <Card className="w-100">
+                <div className="p-4"><h6 className="font-weight-bold text-dark pl-3 mb-0">Create Invoice</h6></div>
+                        < hr className="my-0 mx-4" />
                     <div>
-                        <Row className="commentsTitles py-3 px-1 mx-3">
-                            <div className="col-md-2 mr-3">
-                                <p className="mb-0">Date</p>
+                        <Row className="pt-3 pl-3 pr-3">
+                            <div className="col-md-1 mr-3">
+                                <p className="p_stl">Date</p>
+                                <p className="border_stl">21/08/2019</p>
                             </div>
                             <div className="col-md-2  mr-3font-weight-bold">
-                                <p className="mb-0">Interview Title</p>
+                                <p className="p_stl">Interview Title</p>
                             </div>
                             <div className="col-md-1 mr-3">
-                                <p className="mb-0">Hours</p>
+                                <p className="p_stl">Hours</p>
                             </div>
                             <div className="col-md-1 mr-3">
-                                <p className="mb-0">Amount</p>
+                                <p className="p_stl">Amount</p>
                             </div>
                             <div className="col-md-4 mr-3">
-                                <p className="mb-0">Comments</p>
+                                <p className="p_stl">Comments</p>
                             </div>
                             <div className="col-md-2">
                             </div>
