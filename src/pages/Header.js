@@ -16,7 +16,7 @@ const Header = () => {
   <Link to="/Reqhome" className="navbar-brand active">Dashboard</Link>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto links active">
+    <Nav className="mr-auto links">
       <Link to="/MyRequirements" className="nav-link">My Requirement</Link>
       <Link to="/RecIntelligentSearch" className="nav-link">iSearch</Link>
       <Link to="/HotCVs" className="nav-link">Hot CV's</Link>
