@@ -25,10 +25,7 @@
     height: 35px;
 }
 
-.navbar-list a.chosen,
-.navbar-list a:hover {
-  border-bottom: 1px solid #F14B31;
-}
+
 .active{
     border-bottom: 2px solid black;
     position: relative;

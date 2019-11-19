@@ -13,11 +13,11 @@ const Header = () => {
      <div className="header">
          <div className="sub_dev">
          <Navbar expand="lg" className="headtwo">
-  <Link to="/Reqhome" className="navbar-brand Navctive">Dashboard</Link>
+  <Link to="/Reqhome" className="navbar-brand active">Dashboard</Link>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto links Navctive">
-      <Link to="/MyRequirements" className="nav-link" activeClassName="chosen">My Requirement</Link>
+    <Nav className="mr-auto links active">
+      <Link to="/MyRequirements" className="nav-link">My Requirement</Link>
       <Link to="/RecIntelligentSearch" className="nav-link">iSearch</Link>
       <Link to="/HotCVs" className="nav-link">Hot CV's</Link>
       <Link to="/MyReava" className="nav-link">My ReAVA</Link>

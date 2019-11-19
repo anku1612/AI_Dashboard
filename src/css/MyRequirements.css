@@ -3,13 +3,13 @@
     font-weight: bold;
 }
 .req{
-    color: black;
+    color: black !important;
     font-weight: bold;
     font-size: 1rem;
 }
 .req1{
     font-size: 1rem;
-    color: #595959;
+    color: #595959 !important;
 }
 .req_stl{
     border-bottom: 2px solid black;
@@ -29,26 +29,26 @@
 }
 .req-det {
     border-top: 1px solid rgba(0,0,0,.125);
-    background: #f9f9f9;
+    background: #f9f9f9 !important;
     margin-bottom: 0;
-    color: black;
+    color: black !important;
     font-size: 15px;
     padding: 5px;
     /* padding-left: 0; */
     
 }
 .inf-stl{
-    color: #2e6ebe;
+    color: #2e6ebe !important;
     font-weight: bold;
     font-size: 15px;
     border: 1px solid transparent !important;
     border-radius: 20px;
     padding: 2px 11px;
-    background: #ececec;
+    background: #ececec !important;
     margin-bottom: 0px;
 }
 .req-pro{
-    color: #2e6ebe;
+    color: #2e6ebe !important;
     font-weight: bold;
     font-size: 15px;  
 }
@@ -62,8 +62,8 @@
 }
 
 .multi-skill{
-    color: #848484;
-    border: 1px solid #848484;
+    color: #848484 !important;
+    border: 1px solid #848484 !important;
     border-radius: 20px;
     padding: 3px 18px;
     font-size: 13px;
@@ -71,7 +71,7 @@
 .python-skill{
     color: white !important;
     background: #1473e7;
-    border: 1px solid #1473e7;
+    border: 1px solid #1473e7 !important;
     border-radius: 20px;
     padding: 3px 18px;
     font-weight: bold;
@@ -81,14 +81,14 @@
     margin-right: 0px !important;
 }
 .hw{
-    color: #adadad;
+    color: #adadad !important;
     width: 25px;
     height: 25px;
 }
 .icon-search{
     width: 17px;
     height: 17px;
-    color: #495057;
+    color: #495057 !important;
     position: absolute;
     top:18px;
     right: 40%;
@@ -101,7 +101,7 @@
 }
 .cv-title{
     font-size: 15px;
-    color: #a4a4a4;
+    color: #a4a4a4 !important;
     font-weight: bold;
     margin-bottom: 0 !important;
 }
@@ -116,7 +116,7 @@
 }
 .cv-header{
     font-size: 1rem;
-    color:#4b4b4b;
+    color:#4b4b4b !important;
     font-weight: bold;
 }
 .drp-cv{
@@ -133,10 +133,10 @@
     color: black;
 }
 .reava{
-    background: #f8f8f8;
+    background: #f8f8f8 !important;
 }
 .text-reava{
-    color:#53d0f7;
+    color:#53d0f7 !important;
     font-weight: bold;
     font-size: 15px;
     padding: 12px;
@@ -148,7 +148,7 @@
     height: 400px;
 }
 .chat-back{
-    background: #f8f8f8;
+    background: #f8f8f8 !important;
     height: 300px;
 }
 .reava_chat{
