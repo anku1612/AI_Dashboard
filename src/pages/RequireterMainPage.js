@@ -8,6 +8,7 @@ import { FaTrash, FaEnvelopeOpen, FaEnvelope, FaEllipsisH, FaRegCircle, FaSpinne
 import '../css/RequireterMainPage.css';
 import Calendar from './Calendar'
 import AmChart from './New_chart'
+import Hirechart from './Hirechart'
 
 const cardstyle = {
     background: "white",
@@ -421,10 +422,11 @@ class Welcome extends React.Component {
                                 </div>
 
                             </div>
-
+                            <Hirechart/>
                             <div className="card-body pb-4 pt-1">
                                 <div className="my-2">
-                                    <AmChart />
+                                    {/* <AmChart /> */}
+                                    
                                 </div>
                             </div>
                         </div>

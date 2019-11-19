@@ -3,7 +3,7 @@ import React from 'react';
 import { Card, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
 import '../css/CandidateSearch.css';
-import Dashboard from './Dashboard';
+import Dashboard from './Hirechart';
 import {FaPhone ,FaEnvelope,FaComment} from 'react-icons/fa';
 
 const CandidateSearch = () => {
