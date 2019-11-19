@@ -11,10 +11,9 @@
 
 }
 .links{
-    margin: 0 auto;
-    font-size: 12px;
-    font-weight: bold;
-    margin-left: 0px !important;
+    font-size: 13px;
+    font-weight: 600;
+    color: #4f4f4f !important;
 }
 .linksearch{
     margin: 0 auto;
@@ -25,8 +24,15 @@
     width: 35px;
     height: 35px;
 }
-.Navctive{
+
+.navbar-list a.chosen,
+.navbar-list a:hover {
+  border-bottom: 1px solid #F14B31;
+}
+.active{
     border-bottom: 2px solid black;
+    position: relative;
+    bottom: -10px;
 }
 .search{
     font-style: italic;
@@ -37,4 +43,7 @@
     width: 25px;
     height: 25px;
 }
+
+
+
 

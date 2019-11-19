@@ -25,10 +25,10 @@ function Apphome(){
       <Header />
       <SearchHeader/>
       <Switch> 
-      <Route path="/Reqhome"  exact component={HiredcandidateDashboard} />
+      <Route path="/Reqhome"  exact component={RequireterMainPage} />
       <Route path="/CandidateSearch"  component={CandidateSearch} />
       <Route path="/Dashboard"  component={Dashboard} />
-      <Route path="/RequireterMainPage"  component={RequireterMainPage} />
+      <Route path="/HiredcandidateDashboard"  component={HiredcandidateDashboard} />
       <Route path="/candidate_complete_profile"  component={candidate_complete_profile} />
       <Route path="/panelList" component={PanellistDashboard} />
       <Route path="/RecIntelligentSearch" component={RecIntelligentSearch} /> 

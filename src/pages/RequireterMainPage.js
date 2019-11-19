@@ -1,11 +1,18 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { Row, Col, Button, Image, ButtonToolbar, Dropdown, DropdownButton } from 'react-bootstrap';
+import "react-step-progress-bar/styles.css";
+import { ProgressBar, Step } from "react-step-progress-bar";
+import { Row, Col, Button, Image, Form, ButtonToolbar, Dropdown, DropdownButton, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { Pie, } from '../../node_modules/react-chartjs-2/es/index'
-import { FaEllipsisH ,FaSpinner, FaPencilAlt, FaPaperPlane, FaSearch, FaEllipsisV, FaCheck, FaExclamationCircle, FaCircle, FaRegEnvelope, FaPaperclip, FaRegCheckCircle, FaStar, FaRegTrashAlt } from 'react-icons/fa';
+import { FaTrash, FaEnvelopeOpen, FaEnvelope, FaEllipsisH, FaRegCircle, FaSpinner, FaCheckCircle, FaPencilAlt, FaPaperPlane, FaSearch, FaEllipsisV, FaCheck, FaExclamationCircle, FaCircle, FaRegEnvelope, FaPaperclip, FaRegCheckCircle, FaStar, FaRegTrashAlt } from 'react-icons/fa';
 import '../css/RequireterMainPage.css';
 import Calendar from './Calendar'
 import AmChart from './New_chart'
+
+const cardstyle = {
+    background: "white",
+    padding: "20px 20px 0px 20px"
+}
 
 class Welcome extends React.Component {
 
@@ -91,7 +98,7 @@ class Welcome extends React.Component {
             },
         };
         // Create chart instance
- 
+
     }
     render() {
         return (
@@ -101,26 +108,25 @@ class Welcome extends React.Component {
                 <Row>
                     {/* For Top 10 Requirements */}
                     <Col md="3">
-                        <div className="card">
+                        <div className="card pl-3 pr-3 pb-3">
                             <div className="bg-white py-3 px-1 d-flex card-header ">
-                                <div className="col-md-9">
+                                <div className="col-md-9 p-0">
                                     <h6 className="font-weight-bold text-dark">Top Ten</h6>
                                 </div>
                                 <div className="col-md-3">
-                                      <h6 className="float-right"><FaEllipsisH /></h6>
+                                    <h6 className="float-right"><FaEllipsisH /></h6>
                                 </div>
                             </div>
-                            <div className="bg-white p-2 d-flex justify-content-around">
-                          
-                                    <Button variant="" className="btn-req">Req</Button>
-                         
-                            
-                                    <Button variant="" className="btn-req reqstyle">Req </Button>
-                       
-                            
-                                    <Button variant="" className="btn-req">Req </Button>
-                             
-                             
+                            <div className="bg-white pt-3 pb-2 d-flex justify-content-around">
+
+                                <Button variant="" className="btn-req">Req</Button>
+
+
+                                <Button variant="" className="btn-req reqstyle">Req </Button>
+
+
+                                <Button variant="" className="btn-req">Req </Button>
+
                             </div>
                             <div className="card-body d-flex">
                                 <div className="col-md-2 p-0">
@@ -130,88 +136,64 @@ class Welcome extends React.Component {
                                     <p className="mb-0 text-dark font-weight-bold">Sharon Mathews </p>
                                     <p className="mb-0 ">10 mins ago</p>
                                     <p className="mb-0 ">UI Designer</p>
-                                 
+
                                 </div>
-                                <div className="col-md-3 p-0 sec">
-                                <FaEllipsisH />
-                                    <p className="UsreName mb-0">100%</p>
-                                    <p className="mb-0 mat pc">match</p>
+                                <div className="col-md-3 p-0 text-right">
+                                    <p className="mb-0"><FaEllipsisH size={22} /> </p>
+                                    <p className="pc">100%</p>
+                                    <p className="pc">match</p>
                                 </div>
 
-                               
-                                
-                                </div>
 
+
+                            </div>
                             <div className="card-body d-flex">
                                 <div className="col-md-2 p-0">
                                     <Image src="../profile1.png" roundedCircle className="img_req" />
                                 </div>
                                 <div className="col-md-6 p-0 ml-3">
-                                    <p className="mb-0 pc">Sharon Mathews </p>
+                                    <p className="mb-0 text-dark font-weight-bold">Sharon Mathews </p>
+                                    <p className="mb-0 ">10 mins ago</p>
                                     <p className="mb-0 ">UI Designer</p>
-                                    <p className="mb-0 pc">10 mins ago</p>
+
                                 </div>
-                                <div className="col-md-3 p-0 sec">
-                                    <p className="UsreName mb-0">100%</p>
-                                    <p className="mb-0 mat pc">match</p>
+                                <div className="col-md-3 p-0 text-right">
+                                    <p className="mb-0"><FaEllipsisH size={22} /> </p>
+                                    <p className="pc">100%</p>
+                                    <p className="pc">match</p>
                                 </div>
 
-                                <div className="col-md-1 p-0 mt-3">
-                                    <FaEllipsisV />
-                                </div> </div>
 
+
+                            </div>
                             <div className="card-body d-flex">
                                 <div className="col-md-2 p-0">
                                     <Image src="../profile1.png" roundedCircle className="img_req" />
                                 </div>
                                 <div className="col-md-6 p-0 ml-3">
-                                    <p className="mb-0 pc">Sharon Mathews </p>
+                                    <p className="mb-0 text-dark font-weight-bold">Sharon Mathews </p>
+                                    <p className="mb-0 ">10 mins ago</p>
                                     <p className="mb-0 ">UI Designer</p>
-                                    <p className="mb-0 pc">10 mins ago</p>
-                                </div>
-                                <div className="col-md-3 p-0 sec">
-                                    <p className="UsreName mb-0 ">100%</p>
-                                    <p className="mb-0 mat pc">match</p>
-                                </div>
 
-                                <div className="col-md-1 p-0 mt-3">
-                                    <FaEllipsisV />
-                                </div> </div>
-
-                            <div className="card-body d-flex">
-                                <div className="col-md-2 p-0">
-                                    <Image src="../profile1.png" roundedCircle className="img_req" />
                                 </div>
-                                <div className="col-md-6 p-0 ml-3">
-                                    <p className="mb-0 pc">Sharon Mathews </p>
-                                    <p className="mb-0">UI Designer</p>
-                                    <p className="mb-0 pc">10 mins ago</p>
+                                <div className="col-md-3 p-0 text-right">
+                                    <p className="mb-0"><FaEllipsisH size={22} /> </p>
+                                    <p className="pc">100%</p>
+                                    <p className="pc">match</p>
                                 </div>
-                                <div className="col-md-3 p-0 sec">
-                                    <p className="UsreName mb-0">100%</p>
-                                    <p className="mb-0 mat pc">match</p>
-                                </div>
-
-                                <div className="col-md-1 p-0 mt-3">
-                                    <FaEllipsisV />
-                                </div> </div>
+                            </div>
                         </div>
                     </Col>
 
                     {/* Live Action section */}
                     <Col md="6">
-                        <div className="card">
+                        <div className="card pl-3 pr-3">
                             <div className="bg-white py-3 px-1 d-flex card-header ">
-                                <div className="col-md-5 d-flex">
-                                    <div className="col-md-7">
-                                        <h6 className="font-weight-bold head">Live Actions</h6>
-                                    </div>
-                                    <div className="col-md-2">
-                                        <h6 className="float-right"><FaSpinner /></h6>
-                                    </div>
+                                <div className="col-md-5 p-0">
+                                    <h6 className="font-weight-bold text-dark">Live Actions</h6>
                                 </div>
                                 <div className="col-md-7">
-                                    <h6 className="float-right"><FaEllipsisV /></h6>
+                                    <h6 className="float-right"><FaEllipsisH /></h6>
 
                                 </div>
                             </div>
@@ -226,45 +208,80 @@ class Welcome extends React.Component {
 
                     {/* Live Screening Status section */}
                     <Col md="3">
-                        <div className="card">
-                            <div className="bg-white py-3 px-1 d-flex card-header ">
-                                <div className="col-md-11 d-flex">
-                                    <div className="col-md-10">
-                                        <h6 className="font-weight-bold head">Live Screening Status</h6>
+                        <div className="card pl-3 pr-3">
+                            <div className="bg-white d-flex card-header pl-0 pr-0">
+                                <div className="col-md-11 d-flex pl-0 p-1">
+                                    <div className="col-md-10 p-0">
+                                        <h6 className="font-weight-bold text-dark">Live Screening Status</h6>
                                     </div>
                                     <div className="col-md-1">
                                         <h6 className="float-right"><FaSpinner /></h6>
                                     </div>
                                 </div>
                                 <div className="col-md-1">
-                                    <h6 className="float-right"><FaEllipsisV /></h6>
+                                    <h6 className="float-right"><FaEllipsisH /></h6>
 
                                 </div>
                             </div>
-                            <div className="">
-                                <Image src="../XYZ-01.jpg" style={{ width: "100%" }} />
+                            <div className="pt-3">
+                                <Image src="../XYZ-01.jpg" style={{ width: "100%", borderRadius: "8px", height: "140px" }} />
                             </div>
-                            <div className="card-body pb-0">
-
-                                <p className="UserName mb-0">Daniel Howard </p>
-                                <p className="mb-0">UI Designer </p>
-                                <p className="pc">Infosys Pvt Ltd</p>
+                            <div className="pt-4 pl-2">
+                                <p className="mb-0 text-dark">Daniel Howard </p>
+                                <p className="mb-2">UI Designer </p>
+                                <p className="">Infosys Technologies Pvt Ltd</p>
                             </div>
-                            <div className="card-body">
-                                <FaCheck className="right_icon" />
-                                < div className="dot_icon" />
-                                <FaCheck className="right_icon" />
-                                < div className="dotone_icon" />
-                                <FaCheck className="right_icon" />
-                                < div className="dottwo_icon" />
-                                <FaExclamationCircle className="hold_icon" />
-                                < div className="dotthree_icon" />
-                                <FaCircle className="circle_icon" />
+                            <div className="p-3 pt-4 pb-4">
+                                <ProgressBar
+                                    percent={75}
+                                    fillBackground="linear-gradient(to right, #fefb72, #f0bb31)"
+                                >
+                                    <Step transition="scale">
+                                        {({ accomplished }) => (
 
+                                            < FaRegCircle className="dot_icon" />
+
+                                        )}
+                                    </Step>
+
+                                    <Step transition="scale">
+                                        {({ accomplished }) => (
+                                            < FaRegCircle className="dot_icon" />
+                                        )}
+                                    </Step>
+                                    <Step transition="scale">
+                                        {({ accomplished }) => (
+                                            < FaRegCircle className="dot_icon" />
+                                        )}
+                                    </Step>
+                                    <Step transition="scale">
+                                        {({ accomplished }) => (
+                                            <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">On Hold</Tooltip>}>
+                                                <span className="d-inline-block">
+                                                    < FaRegCircle className="red_cir" disabled style={{ pointerEvents: 'none' }} />
+                                                </span>
+                                            </OverlayTrigger>
+                                        )}
+                                    </Step>
+                                    <Step transition="scale">
+                                        {({ accomplished }) => (
+                                            < FaRegCircle className="cir_icon" />
+                                        )}
+                                    </Step>
+                                </ProgressBar>
+
+                                {/* 
+                                <div className="right_icon" />
+
+                                < FaRegCircle className="dot_icon" />
+
+                                < FaRegCircle className="dot_icon" />
+                                < FaRegCircle className="dot_icon" />
+                                < FaRegCircle className="" /> */}
 
                             </div>
-                            <div className="card-body p-0">
-                                <p className="float-right pr-4">NEXT</p>
+                            <div className="p-2">
+                                <p className="btn-req float-right ">NEXT</p>
                             </div>
                         </div>
                     </Col>
@@ -276,128 +293,114 @@ class Welcome extends React.Component {
                     {/* In-Mail section   */}
                     <Col md="9">
                         <div className="card">
-                            <div className="bg-white py-3 px-1 d-flex card-header ">
-                                <div className="col-md-9 ">
-                                    <h6 className="font-weight-bold head">In-Mail</h6>
-                                </div>
-                                <div className="col-md-3">
-                                    <h6 className="float-right"><FaEllipsisV /></h6>
-                                </div>
-                            </div>
-                            <div className="bg-white p-3 d-flex card-body">
-                                <div className="d-flex justify-content-around">
-                                    <div className="">
-                                        <Button variant="outline-primary rounded-pill" className="mail_btn">Account Manager</Button>
+                            <div style={cardstyle}>
+                                <div className="row d-flex req-skil-head">
+                                    <div className="col-md-10 p-0">
+                                        <p className="req font-weight-bold text-dark"> In-Mail  </p>
                                     </div>
-                                    <div className="">
-                                        <Button variant="outline-primary rounded-pill" className="mail_btn" active>Client</Button>
+                                    <div className="col-md-2 text-right">
+                                        <FaEllipsisH />
                                     </div>
-                                    <div className="">
-                                        <Button variant="outline-primary rounded-pill" className="mail_btn reqstyle">candidate</Button>
-                                    </div>
-                                    <div className="">
-                                        <Button variant="outline-primary rounded-pill" className="mail_btn">Requiements</Button>
-                                    </div>
-                                    <div className="">
-                                        <Button variant="outline-primary rounded-pill" className="mail_btn">Interviews</Button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="bg-white p-2 d-flex card-body">
-
-                                <div className="col-md-2"><p className="mb-0"><FaRegEnvelope style={{ width: "60px", height: "50px", color: "#64c9f3" }} /></p>
-                                    <p className="mb-0" style={{ color: "#64c9f3", marginLeft: "12px" }}>Inbox</p>
-                                </div>
-                                <div className="col-md-7">
-                                    <p className="mb-0 mail">Sarah Connors</p>
-                                    <p className="mb-0" style={{ color: "#717171", fontWeight: "bold" }}>Sub UI Designer <FaPaperclip /></p>
-                                    <p className="mb-0 mail">Crafted with love to help Designer
-                                     build great mobile apps quickly. crafted with
-                                      love to help Designer build great mobile apps
-  quickly.</p>
-
-
-                                </div>
-
-                                <div className="col-md-2">
-                                    <p className="mail" style={{ textAlign: "right" }}>10 mins ago</p>
-                                </div>
-                                <div className=" mail_icons" >
-                                    <div> <FaRegCheckCircle /></div>
-                                    <div> <FaStar /></div>
-                                    <div> <FaRegTrashAlt /></div>
-
-
                                 </div>
 
                             </div>
+                            <div className="p-3">
+                                <div className="req-skil-head">
+                                    <div className="row d-flex justify-content-around w-75">
+                                        <p className="multi-skill">Account Manager</p>
+                                        <p className="multi-skill">Client</p>
+                                        <p className="python-skill">Candidate</p>
+                                        <p className="multi-skill">Requiements</p>
+                                        <p className="multi-skill">Interviews</p>
 
-                            <div className="bg-white p-2 d-flex card-body">
-
-                                <div className="col-md-2"><p className="mb-0"><FaPaperPlane style={{ width: "50px", height: "40px" }} /></p>
-                                    <p className="mb-0" style={{ marginLeft: "12px" }}>sent</p>
-                                </div>
-                                <div className="col-md-7">
-                                    <p className="mb-0 mail">Sarah Connors</p>
-                                    <p className="mb-0" style={{ color: "#717171", fontWeight: "bold" }}>Sub UI Designer <FaPaperclip /></p>
-                                    <p className="mb-0 mail">Crafted with love to help Designer
-                                     build great mobile apps quickly. crafted with
-                                      love to help Designer build great mobile apps
-  quickly.</p>
-
-
+                                    </div>
                                 </div>
 
-                                <div className="col-md-2">
-                                    <p className="mail" style={{ textAlign: "right" }}>10 mins ago</p>
+                                <div className="row d-flex">
+                                    <div className="col-md-1 p-0">
+                                        <div className="mail-first">
+                                            <FaEnvelope size={40} style={{ color: "#1474e5", marginBottom: "40px" }} />
+                                            <FaPaperPlane size={40} style={{ color: "#b1b1b1", marginBottom: "40px" }} />
+                                            <FaEnvelopeOpen size={40} style={{ color: "#b1b1b1", marginBottom: "40px" }} />
+                                            <FaTrash size={40} style={{ color: "#b1b1b1", marginBottom: "40px" }} />
+                                        </div>
+                                    </div>
+                                    <div className="col-md-11 p-0">
+                                        <div className="row mail-sec">
+                                            <div className="col-md-3 p-0 d-flex justify-content-around">
+                                                <FaCheck style={{ color: "#b1b1b1" }} />
+                                                <FaStar style={{ color: "#b1b1b1" }} />
+                                                <FaTrash style={{ color: "#b1b1b1" }} />
+                                                <p> Jazz Recruiters </p></div>
+
+                                            <p> Crafted with love to help desiners build great mobile apps quickly </p>
+                                            <FaPaperclip />
+                                            <p>10 mins ago</p>
+                                        </div>
+
+                                        <div className="row mail-sec">
+                                            <div className="col-md-3 p-0 d-flex justify-content-around">
+                                                <FaCheck style={{ color: "#b1b1b1" }} />
+                                                <FaStar style={{ color: "#b1b1b1" }} />
+                                                <FaTrash style={{ color: "#b1b1b1" }} />
+                                                <p> Jazz Recruiters </p></div>
+
+                                            <p> Crafted with love to help desiners build great mobile apps quickly </p>
+                                            <FaPaperclip />
+                                            <p>10 mins ago</p>
+                                        </div>
+
+                                        <div className="row mail-sec">
+                                            <div className="col-md-3 p-0 d-flex justify-content-around">
+                                                <FaCheck style={{ color: "#b1b1b1" }} />
+                                                <FaStar style={{ color: "#b1b1b1" }} />
+                                                <FaTrash style={{ color: "#b1b1b1" }} />
+                                                <p> Jazz Recruiters </p></div>
+
+                                            <p> Crafted with love to help desiners build great mobile apps quickly </p>
+                                            <FaPaperclip />
+                                            <p>10 mins ago</p>
+                                        </div>
+
+                                        <div className="row mail-sec">
+                                            <div className="col-md-3 p-0 d-flex justify-content-around">
+                                                <FaCheck style={{ color: "#b1b1b1" }} />
+                                                <FaStar style={{ color: "#b1b1b1" }} />
+                                                <FaTrash style={{ color: "#b1b1b1" }} />
+                                                <p> Jazz Recruiters </p></div>
+
+                                            <p> Crafted with love to help desiners build great mobile apps quickly </p>
+                                            <FaPaperclip />
+                                            <p>10 mins ago</p>
+                                        </div>
+
+                                        <div className="row mail-sec">
+                                            <div className="col-md-3 p-0 d-flex justify-content-around">
+                                                <FaCheck style={{ color: "#b1b1b1" }} />
+                                                <FaStar style={{ color: "#b1b1b1" }} />
+                                                <FaTrash style={{ color: "#b1b1b1" }} />
+                                                <p> Jazz Recruiters </p></div>
+
+                                            <p> Crafted with love to help desiners build great mobile apps quickly </p>
+                                            <FaPaperclip />
+                                            <p>10 mins ago</p>
+                                        </div>
+
+                                        <div className="row mail-sec">
+                                            <div className="col-md-3 p-0 d-flex justify-content-around">
+                                                <FaCheck style={{ color: "#b1b1b1" }} />
+                                                <FaStar style={{ color: "#b1b1b1" }} />
+                                                <FaTrash style={{ color: "#b1b1b1" }} />
+                                                <p> Jazz Recruiters </p></div>
+
+                                            <p> Crafted with love to help desiners build great mobile apps quickly </p>
+                                            <FaPaperclip />
+                                            <p>10 mins ago</p>
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <div className=" mail_icons" >
-                                    <div> <FaRegCheckCircle /></div>
-                                    <div> <FaStar /></div>
-                                    <div> <FaRegTrashAlt /></div>
 
-
-                                </div>
-
-                            </div>
-
-                            <div className="bg-white p-2 d-flex card-body">
-
-                                <div className="col-md-2"><p className="mb-0">
-                                    <FaPencilAlt style={{ width: "50px", height: "40px" }} /></p>
-                                    <p className="mb-0" style={{ marginLeft: "12px" }}>Draft</p>
-                                </div>
-                                <div className="col-md-7">
-                                    <p className="mb-0 mail">Sarah Connors</p>
-                                    <p className="mb-0" style={{ color: "#717171", fontWeight: "bold" }}>Sub UI Designer <FaPaperclip /></p>
-                                    <p className="mb-0 mail">Crafted with love to help Designer
-                                     build great mobile apps quickly. crafted with
-                                      love to help Designer build great mobile apps
-  quickly.</p>
-
-
-                                </div>
-
-                                <div className="col-md-2">
-                                    <p className="mail" style={{ textAlign: "right" }}>10 mins ago</p>
-                                </div>
-                                <div className=" mail_icons" >
-                                    <div> <FaRegCheckCircle /></div>
-                                    <div> <FaStar /></div>
-                                    <div> <FaRegTrashAlt /></div>
-
-
-                                </div>
-
-                            </div>
-
-                            <div className="bg-white p-2 d-flex card-body">
-
-                                <div className="col-md-2"><p className="mb-0">
-                                    <FaRegTrashAlt style={{ width: "50px", height: "40px" }} /></p>
-                                    <p className="mb-0" style={{ marginLeft: "12px" }}>Delete</p>
-                                </div>
 
                             </div>
                         </div>
@@ -407,17 +410,21 @@ class Welcome extends React.Component {
 
                     <Col md="3">
                         <div className="card">
-                            <div className="bg-white py-3 px-1 d-flex card-header ">
-                                <div className="col-md-9 ">
-                                    <h6 className="font-weight-bold head">Hire Analytics</h6>
+                            <div style={cardstyle}>
+                                <div className="row d-flex req-skil-head">
+                                    <div className="col-md-10 p-0">
+                                        <p className="req font-weight-bold text-dark"> Hire Analytics </p>
+                                    </div>
+                                    <div className="col-md-2 text-right">
+                                        <FaEllipsisH />
+                                    </div>
                                 </div>
-                                <div className="col-md-3">
-                                    <h6 className="float-right"><FaEllipsisV /></h6>
-                                </div>
+
                             </div>
+
                             <div className="card-body pb-4 pt-1">
                                 <div className="my-2">
-                               <AmChart/>
+                                    <AmChart />
                                 </div>
                             </div>
                         </div>
@@ -429,199 +436,164 @@ class Welcome extends React.Component {
                 <Row className="mt-4 mb-5">
                     <Col md="6">
                         <div className="card">
-                            <div className="bg-white py-3 px-1 d-flex card-header ">
-                                <div className="col-md-9">
-                                    <h6 className="font-weight-bold head">Interview scheduler</h6>
+                            <div style={cardstyle} className="pb-4">
+                                <div className="row d-flex req-skil-head">
+                                    <div className="col-md-10 p-0">
+                                        <p className="req font-weight-bold text-dark"> Interview scheduler </p>
+                                    </div>
+                                    <div className="col-md-2 text-right">
+                                        <FaEllipsisH />
+                                    </div>
                                 </div>
-                                <div className="col-md-3">
-                                    <h6 className="float-right"><FaEllipsisV /></h6>
+
+
+
+                                <div className="row d-flex req-skil-head pt-3">
+                                    <div className="col-md-5 p-0">
+                                        <Calendar />
+                                    </div>
+                                    <div className="col-md-7 p-2">
+                                        <div className="row d-flex">
+                                            <div className="col-md-3 p-0 pt-2" ><p>Company</p></div>
+                                            <div className="col-md-9 p-0" >
+                                                <Form.Group controlId="exampleForm.ControlSelect1">
+                                                    <Form.Control as="select" className="drp-cv font-int">
+                                                        <option>Cognizant Technologies</option>
+                                                        <option>Ui Developer</option>
+                                                        <option> Web Developer</option>
+                                                        <option> JS Developer</option>
+                                                    </Form.Control>
+                                                </Form.Group></div>
+                                        </div>
+
+                                        <div className="d-flex">
+                                            <div className="col-md-6 p-1 ">
+                                                <div className="d-flex int_time">
+                                                    <p className="mb-0 mail mr-3"> 02:00 PM</p>
+                                                    <p className="confirm_stl"> Confirm</p>
+                                                </div>
+                                                <div className="d-flex int_time">
+                                                    <p className="mb-0 mail mr-3"> 02:00 PM</p>
+                                                    <p className="confirm_stl"> Confirm</p>
+                                                </div>
+                                                <div className="d-flex int_time">
+                                                    <p className="mb-0 mail mr-3"> 02:00 PM</p>
+                                                    <p className="confirm_stl"> Confirm</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 p-1">
+                                                <div className="d-flex int_time">
+                                                    <p className="mb-0 mail mr-3"> 02:00 PM</p>
+                                                    <p className=" confirm_stl"> Confirm</p>
+                                                </div>
+                                                <div className="d-flex int_time">
+                                                    <p className="mb-0 mail mr-3"> 02:00 PM</p>
+                                                    <p className="confirm_stl"> Confirm</p>
+                                                </div>
+                                                <div className="d-flex int_time">
+                                                    <p className="mb-0 mail mr-3"> 02:00 PM</p>
+                                                    <p className="confirm_stl"> Confirm</p>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div className="d-flex int_sch_stl">
+
+
+                                    <div className="col-md-4 pt-2">
+                                        <p className="mb-0 ">Interview  With Marks</p>
+                                        <p className=""></p>
+                                    </div>
+
+                                    <div className="col-md-4 pt-2">
+                                        <p className="">Congnizant Technologies</p>
+                                    </div>
+                                    <div className="col-md-4 pt-2" >
+                                        <p className="text-center"> 02:00 PM</p>
+                                    </div>
+
+                                </div>
+                                <div className="d-flex int_sch_stl">
+                                    <div className="col-md-4 pt-2">
+                                        <p className="">Interview  With Marks</p>
+                                    </div>
+
+                                    <div className="col-md-4 pt-2">
+                                        <p className="">Congnizant Technologies</p>
+                                    </div>
+                                    <div className="col-md-4 pt-2">
+                                        <p className="text-center"> 02:00 PM</p>
+                                    </div>
+
+                                </div>
+                                <div className="d-flex int_sch_stl">
+                                    <div className="col-md-4 pt-2">
+                                        <p className="">Interview  With Marks</p>
+                                    </div>
+                                    <div className="col-md-4 pt-2">
+                                        <p className="">Congnizant Technologies</p>
+                                    </div>
+                                    <div className="col-md-4 pt-2" >
+                                        <p className="text-center"> 02:00 PM</p>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </Col>
 
-                            <div className="bg-white d-flex card-body p-0 pb-4">
-                                <div className="col-md-6">
-                                    <Calendar />
-                                </div>
-                                <div className="col-md-6 p-2">
-                                    <div className="">
-                                        <h6 className="d-flex my_title_head">Congnizant Technologies
-                                                    <Dropdown>
-                                                    <Dropdown.Toggle id="dropdown-basic" className="drop_down">
-                                                    </Dropdown.Toggle>
-                                                    <Dropdown.Menu>
-                                                        <Dropdown.Item href="#/action-1">Infosys</Dropdown.Item>
-                                                        <Dropdown.Item href="#/action-2">Wipro</Dropdown.Item>
-                                                        <Dropdown.Item href="#/action-3">TCS</Dropdown.Item>
-                                                    </Dropdown.Menu>
-
-                                                </Dropdown>
-                                            </h6>
+                    <Col md="3">
+                        <div className="card">
+                            <div style={cardstyle} className="pb-5">
+                                <div className="row d-flex req-skil-head">
+                                    <div className="col-md-10 p-0">
+                                        <p className="req font-weight-bold text-dark"> Interview Status </p>
                                     </div>
+                                    <div className="col-md-2 text-right">
+                                        <FaEllipsisH />
+                                    </div>
+                                </div>
+
+                                <div className="pt-3 pb-3 req-skil-head ">
                                     <div className="d-flex">
-                                        <div className="col-md-6 p-1 ">
-                                            <div className="d-flex int_time">
-                                                <p className="mb-0 mail mr-4"> 02:00 PM</p>
-                                                <p className="mb-0  success"> Confirm</p>
-                                            </div>
-                                            <div className="d-flex int_time">
-                                                <p className="mb-0 mail mr-4"> 02:00 PM</p>
-                                                <p className="mb-0  success"> Confirm</p>
-                                            </div>
-                                            <div className="d-flex int_time">
-                                                <p className="mb-0 mail mr-4"> 02:00 PM</p>
-                                                <p className="mb-0  success"> Confirm</p>
-                                            </div>
+                                        <div className="col-md-8 p-0">
+                                            <p className="text-dark font-weight-bold mb-1">Sarrah Conner</p>
+                                            <p className="mail pb-3" >10 mins ago </p>
+                                            <p className="mail mb-0 " >UI Designer</p>
+                                            <p className="mb-0">@ Cognizant Technologies</p>
+                                            <p className="mail">Jazz Requireters</p>
                                         </div>
-                                        <div className="col-md-6 p-1">
-                                            <div className="d-flex int_time">
-                                                <p className="mb-0 mail mr-4"> 02:00 PM</p>
-                                                <p className=" mb-0 success"> Confirm</p>
-                                            </div>
-                                            <div className="d-flex int_time">
-                                                <p className="mb-0 mail mr-4"> 02:00 PM</p>
-                                                <p className=" mb-0 success"> Confirm</p>
-                                            </div>
-                                            <div className="d-flex int_time">
-                                                <p className="mb-0 mail mr-4"> 02:00 PM</p>
-                                                <p className=" mb-0 success"> Confirm</p>
-                                            </div>
-
-
+                                        <div className="col-md-4 p-0 text-right">
+                                            <p className="pc"><FaCheckCircle /></p>
+                                            <p className="pc" >100%</p>
                                         </div>
-
                                     </div>
                                 </div>
 
-                            </div>
-
-
-                            <div className="bg-white p-3 d-flex card-body">
-
-                                <div className="col-md-1">
-                                    <h5 className="text_line">|</h5>
-                                </div>
-                                <div className="col-md-5 p-0">
-                                    <p className="mb-0" style={{ color: "#717171", fontWeight: "bold", fontSize: "12px" }}>Interview schedule With Marks</p>
-                                </div>
-
-                                <div className="col-md-4">
-                                    <p className="mail" style={{ textAlign: "center" }}>Congnizant Technologies</p>
-                                </div>
-                                <div className="col-md-2" >
-                                    <p className="mb-0 mail"> 02:00 PM</p>
-                                </div>
-
-                            </div>
-
-                            <div className="bg-white p-3 d-flex card-body">
-
-                                <div className="col-md-1">
-                                    <h5 className="text_line">|</h5>
-
-                                </div>
-                                <div className="col-md-5 p-0">
-                                    <p className="mb-0" style={{ color: "#717171", fontWeight: "bold", fontSize: "12px" }}>Interview schedule With Marks</p>
-                                </div>
-
-                                <div className="col-md-4">
-                                    <p className="mail" style={{ textAlign: "center" }}>Congnizant Technologies</p>
-                                </div>
-                                <div className="col-md-2" >
-                                    <p className="mb-0 mail"> 02:00 PM</p>
-                                </div>
-
-                            </div>
-                            <div className="bg-white p-3 d-flex card-body ">
-
-                                <div className="col-md-1">
-                                    <h5 className="text_line">|</h5>
-                                </div>
-                                <div className="col-md-5 p-0">
-                                    <p className="mb-0" style={{ color: "#717171", fontWeight: "bold", fontSize: "12px" }}>Interview schedule With Marks</p>
-                                </div>
-
-                                <div className="col-md-4">
-                                    <p className="mail" style={{ textAlign: "center" }}>Congnizant Technologies</p>
-                                </div>
-                                <div className="col-md-2" >
-                                    <p className="mb-0 mail"> 02:00 PM</p>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                    </Col>
-
-                    <Col md="3">
-                        <div className="card">
-                            <div className="bg-white py-3 px-1 d-flex card-header ">
-                                <div className="col-md-9 ">
-                                    <h6 className="font-weight-bold head">Interview Status</h6>
-                                </div>
-                                <div className="col-md-3">
-                                    <h6 className="float-right"><FaEllipsisV /></h6>
-                                </div>
-                            </div>
-                            <div className="bg-white p-1  card-body">
-                                <div className="d-flex">  <div className="col-md-7">
-                                    <p className="mb-0" style={{ color: "#717171", fontWeight: "bold" }}>Sankar</p>
-                                    <p className="mb-0" >UI Developer </p>
-                                    <p className="mb-0 mail">@ Cognizant Technologies</p>
-                                    <p>Jazz Requireters</p>
-                                </div>
-                                    <div className="col-md-5 int_status">
-                                        <p className="mb-0" style={{ color: "#717171" }}>Status</p>
-                                        <p className="mb-0 success">Successful</p>
-                                        <p className="mb-0 mail">10 mins ago</p>
+                                <div className="pt-3 pb-3 req-skil-head">
+                                    <div className="d-flex">
+                                        <div className="col-md-8 p-0">
+                                            <p className="text-dark font-weight-bold mb-1">Sarrah Conner</p>
+                                            <p className="mail pb-3" >10 mins ago </p>
+                                            <p className="mail mb-0 " >UI Designer </p>
+                                            <p className="mb-0">@ Cognizant Technologies</p>
+                                            <p className="mail">Jazz Requireters</p>
+                                        </div>
+                                        <div className="col-md-4 p-0 text-right">
+                                            <p className="pc"><FaCheckCircle /></p>
+                                            <p className="pc" >100%</p>
+                                        </div>
                                     </div>
-                                     </div>
-                            </div>
-
-                            <div className="bg-white p-1  card-body">
-                                <div className="d-flex">  <div className="col-md-7">
-                                    <p className="mb-0" style={{ color: "#717171", fontWeight: "bold" }}>Sankar</p>
-                                    <p className="mb-0" >UI Developer </p>
-                                    <p className="mb-0 mail">@ Cognizant Technologies</p>
-                                    <p>Jazz Requireters</p>
                                 </div>
-                                    <div className="col-md-5 int_status">
-                                        <p className="mb-0" style={{ color: "#717171" }}>Status</p>
-                                        <p className="mb-0 success">Successful</p>
-                                        <p className="mb-0 mail">10 mins ago</p>
-                                    </div>
-                                     </div>
-                            </div>
 
-                            <div className="bg-white p-1  card-body">
-                                <div className="d-flex">  <div className="col-md-7">
-                                    <p className="mb-0" style={{ color: "#717171", fontWeight: "bold" }}>Sankar</p>
-                                    <p className="mb-0" >UI Developer </p>
-                                    <p className="mb-0 mail">@ Cognizant Technologies</p>
-                                    <p>Jazz Requireters</p>
-                                </div>
-                                    <div className="col-md-5 int_status">
-                                        <p className="mb-0" style={{ color: "#717171" }}>Status</p>
-                                        <p className="mb-0 denger">UnSuccessful</p>
-                                        <p className="mb-0 mail">10 mins ago</p>
-                                    </div>
-                                     </div>
-                            </div>
 
-                            <div className="bg-white p-1  card-body">
-                                <div className="d-flex">  <div className="col-md-7">
-                                    <p className="mb-0" style={{ color: "#717171", fontWeight: "bold" }}>Sankar</p>
-                                    <p className="mb-0" >UI Developer </p>
-                                    <p className="mb-0 mail">@ Cognizant Technologies</p>
-                                    <p>Jazz Requireters</p>
-                                </div>
-                                    <div className="col-md-5 int_status">
-                                        <p className="mb-0" style={{ color: "#717171" }}>Status</p>
-                                        <p className="mb-0 success">Successful</p>
-                                        <p className="mb-0 mail">10 mins ago</p>
-                                    </div>
-                                     </div>
+
                             </div>
                         </div>
                     </Col>
@@ -629,76 +601,43 @@ class Welcome extends React.Component {
 
                     <Col md="3">
                         <div className="card">
-                            <div className="bg-white py-3 px-1 d-flex card-header ">
-                                <div className="col-md-9 ">
-                                    <h6 className="font-weight-bold head">Live Interviews</h6>
-                                </div>
-                                <div className="col-md-3">
-                                    <h6 className="float-right"><FaEllipsisV /></h6>
-                                </div>
-                            </div>
-                            <div className="card-body p-0">
-                                <div className="d-flex">
-                                    <div className="col-md-6 p-3">
-                                        <Image src="../XYZ-01.jpg" style={{ width: "100%" }} />
-                                        <p className="mb-0" style={{ color: "#717171", fontWeight: "bold" }}>Ram</p>
-                                        <p className="mb-0 mail">Congnizant Technologies</p>
-                                        <p className="mb-0 mail">Java Developer</p>
-                                        <p className="mb-0 success">In Progress</p>
+                            <div style={cardstyle} className="pb-4">
+                                <div className="row d-flex req-skil-head">
+                                    <div className="col-md-10 p-0">
+                                        <p className="req font-weight-bold text-dark">Live Interviews</p>
                                     </div>
-                                    <div className="col-md-6 p-3">
-                                        <Image src="../XYZ-01.jpg" style={{ width: "100%" }} />
-                                        <p className="mb-0" style={{ color: "#717171", fontWeight: "bold" }}>Ram</p>
-                                        <p className="mb-0 mail">Congnizant Technologies</p>
-                                        <p className="mb-0 mail">Java Developer</p>
-                                        <p className="mb-0 success">In Progress</p>
-                                    </div> 
-                                      </div>
+                                    <div className="col-md-2 text-right">
+                                        <FaEllipsisH />
+                                    </div>
+                                </div>
+
+
+                                <div className="pt-4 mb-1">
+                                    <Image src="../XYZ-01.jpg" style={{ width: "100%", borderRadius: "8px", height: "140px" }} />
+                                </div>
+                                <div className="pt-4 d-flex req-skil-head">
+                                    <div className="col-md-9 p-0">
+                                        <p className="mb-0 text-dark font-weight-bold">Ram </p>
+                                        <p className="mb-0">UI Designer </p>
+                                        <p className="">Infosys</p> </div>
+                                    <div className="col-md-3 p-0 text-right">
+                                        <FaCircle className="circle_int" />
+                                    </div>
+                                </div>
+                                <div className="pt-4 d-flex req-skil-head">
+                                    <div className="col-md-4 p-0">
+                                        <Image src="../XYZ-01.jpg" className="img_liveint" />
+                                    </div>
+                                    <div className="col-md-6 p-0">
+                                        <p className="mb-0 text-dark font-weight-bold">Ram</p>
+                                        <p className="mb-0">UI Designer </p>
+                                        <p className="">Infosys</p>
+                                    </div>
+                                    <div className="col-md-2 p-0 text-right">
+                                        <FaCircle className="circle_int" />
+                                    </div>
+                                </div>
                             </div>
-
-
-                            <div className="card-body d-flex p-0 pb-1 px-2">
-                                <div className="col-md-3 p-2">
-                                    <Image src="../XYZ-01.jpg" className="img_req" />
-                                </div>
-                                <div className="col-md-7 p-2">
-                                    <p className="mb-0" style={{ color: "#717171", fontWeight: "bold" }}>Ram</p>
-                                    <p className="mb-0 mail">Congnizant Technologies</p>
-                                    <p className="mb-0 mail">Java Developer</p>
-                                </div>
-                                <div className="col-md-2 p-2">
-                                    <FaCircle className="circle_int" />
-                                </div> 
-                                </div>
-
-                            <div className="card-body d-flex p-0 pb-1 px-2">
-                                <div className="col-md-3 p-2">
-                                    <Image src="../XYZ-01.jpg" className="img_req" />
-                                </div>
-                                <div className="col-md-7 p-2">
-                                    <p className="mb-0" style={{ color: "#717171", fontWeight: "bold" }}>Ram</p>
-                                    <p className="mb-0 mail">Congnizant Technologies</p>
-                                    <p className="mb-0 mail">Java Developer</p>
-                                </div>
-                                <div className="col-md-2 p-2">
-                                    <FaCircle className="circle_int" />
-                                </div>
-                                 </div>
-
-                            <div className="card-body d-flex p-0 pb-1 px-2">
-                                <div className="col-md-3 p-2">
-                                    <Image src="../XYZ-01.jpg" className="img_req" />
-                                </div>
-                                <div className="col-md-7 p-2">
-                                    <p className="mb-0" style={{ color: "#717171", fontWeight: "bold" }}>Ram</p>
-                                    <p className="mb-0 mail">Congnizant Technologies</p>
-                                    <p className="mb-0 mail">Java Developer</p>
-                                </div>
-                                <div className="col-md-2 p-2">
-                                    <FaCircle className="circle_int" />
-                                </div>
-                                </div>
-
                         </div>
                     </Col>
 

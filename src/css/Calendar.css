@@ -1,11 +1,11 @@
 .tail-datetime-calendar {
-    /* width: 200px; */
+    width: 200px; 
     height: auto;
-    margin: 15px;
+    margin: 10px; 
     padding: 0;
     display: block;
     overflow: hidden;
-    position: absolute;
+    /* position: absolute; */
     border-collapse: separate;
     font-family: "Open Sans", Calibri, Arial, sans-serif;
     background-color: #ffffff;

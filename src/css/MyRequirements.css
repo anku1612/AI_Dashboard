@@ -69,7 +69,7 @@
     font-size: 13px;
 }
 .python-skill{
-    color: white;
+    color: white !important;
     background: #1473e7;
     border: 1px solid #1473e7;
     border-radius: 20px;
