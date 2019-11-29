@@ -6,7 +6,7 @@ import { FaEllipsisH, FaPhone, FaEnvelope, FaWhatsapp, FaCommentDots } from 'rea
 
 const cardstyle = {
   background: "white",
-  padding: "20px 20px 0px 20px"
+  padding: "15px 20px 5px 20px"
 }
 
 const wtspstyle = {
@@ -18,7 +18,7 @@ export default function HotCVs() {
   return (
 
     <div className="container-fluid">
-      <div className="row profile d-flex pb-5">
+      <div className="row profile d-flex">
         <div className="col-md-6" >
           <Card  >
           <div style={cardstyle}>
@@ -28,7 +28,7 @@ export default function HotCVs() {
                   <span className="req-pro"> Ui Designer (3)</span>  </p>
                 </div>
                 <div className="col-md-3 p-0">
-                <Form.Group controlId="exampleForm.ControlSelect1">
+                <Form.Group controlId="exampleForm.ControlSelect1" className="mb-0">
     <Form.Control as="select" className ="drp-cv">
       <option>Ui Designer</option>
       <option>Ui Developer</option>
@@ -152,11 +152,9 @@ export default function HotCVs() {
                 <FaEllipsisH />
                 </div>
               </div>
-            </div>
-
-<Card.Body style={cardstyle}>
-  <div className="req-skil-head pb-3">
-    <div className="d-flex justify-content-around pt-2" >
+          
+<div className="pb-1 mb-1 pt-3 mt-2">
+    <div className="d-flex justify-content-around " >
       <div className="row col-md-3 p-0">
       <Image src="../profile2.jpg" className="cv-pro-img"  />
        </div>
@@ -199,7 +197,7 @@ export default function HotCVs() {
    
     </div>  
      </div>
-</Card.Body>
+</div>
 </Card>
 
 

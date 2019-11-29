@@ -1,8 +1,8 @@
 .container-fluid{
-     background:#f8f8fa;   
+     background:#f8f8fa !important;   
 }
 .profile{
-    padding: 20px 0px 60px 0px;
+    padding: 20px 20px 20px 20px;
   }
   
 .card {
@@ -11,7 +11,7 @@
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
+    background-color: #fff !important;
     /* background-clip: border-box; */
     border: none;
     border-radius: 0 !important;
@@ -21,11 +21,11 @@
     width: 110px;
     margin-top: -6px;
     height: 35px;
-    color: #00adef;
-    border-color: #84949b;
+    color: #00adef !important;
+    border-color: #84949b !important;
 }
 .resume{
-    color: #00adef;
+    color: #00adef !important;
     font-size: 14px;
 }
 .img_pro{
@@ -33,7 +33,7 @@
     height: 60px;
 }
 .UsreName{
-    color: #00adef;
+    color: #00adef !important;
     font-size: 25px;
     font-weight: 400;
 }
@@ -45,18 +45,18 @@
     line-height: 0.3;
 }
 .login{
-  color: #04d10a;
+  color: #04d10a !important;
   }
 .agency{
-  color:  #0c0ce8
+  color:  #0c0ce8 !important;
 }
 .reject{
-    color:#fe4543;
+    color:#fe4543 !important;
 }
 .head_con{
     font-size: 17px;
     font-weight: bold;
-    color:#717171; 
+    color:#717171 !important; 
 }
 p{
     font-size: 13px;
@@ -76,10 +76,10 @@ p{
     margin-top: 10px;
 }
 .icon{
-    color:  #a6a6a6;  
+    color:  #a6a6a6 !important;  
 }
 .yr{
-    color: #707070;
+    color: #707070 !important;
     font-size: 11px;
     height: 0px;
 }
@@ -87,8 +87,8 @@ p{
     align-items: center;
 }
 .year_exp{
-    border: 1px solid #ddd;
-    background: #f8f8fa;
+    border: 1px solid #ddd !important;
+    background: #f8f8fa !important;
     margin-bottom: 0;
     padding: 5px;
 }
@@ -96,13 +96,13 @@ p{
     margin-bottom: 20px;
 }
 .c_body{
-    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-bottom: 1px solid rgba(0,0,0,.125) !important;
 }
 .skills {
-    border: 1px solid #ddd;
-    background: #f8f8fa;
+    border: 1px solid #ddd !important;
+    background: #f8f8fa !important;
     margin-bottom: 0;
-    color: black;
+    color: black !important;
     font-size: 15px;
     padding: 5px;
     /* padding-left: 0; */
@@ -122,10 +122,10 @@ padding: .60rem !important;
     margin-bottom: 0;
     font-size: 12px;
     padding: 10px;
-    height: 85%;
+    height: 70%;
 }
 .Doc{
-    color: #04d10a;
+    color: #04d10a !important;
 }
 svg#line_2{
     position: absolute;
@@ -143,7 +143,7 @@ svg#line_2{
     text-align: center;
 }
 .card-title{
-    color: #717171;
+    color: #717171 !important;
     font-weight: bold;
 }
 .btn-outline-primary {

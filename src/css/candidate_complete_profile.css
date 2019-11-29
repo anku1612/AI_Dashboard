@@ -330,3 +330,62 @@ h6{
     background-color: #87ceec !important;
     color: white !important;
 }
+.Rej_stl{
+    color: #ff3f3e !important;
+    font-weight: bold;
+    margin-bottom: 0 !important;
+}
+.req_feed{
+    font-style: italic;
+    color: #4b4b4b!important;
+    font-size: 11px !important;
+}
+.Live_inputtwo{
+    position: absolute;
+    bottom: 120px;
+    width: 85%;
+    right: 0px;
+}
+.live_font{
+    font-size: 12px !important;
+}
+.Live_inputone{
+    position: absolute;
+    bottom: 55px;
+    width: 85%;
+}
+.Live_bor-left{
+    border-left: 1px solid rgba(0,0,0,.125);
+    height: 338px;
+}
+.Live_chatinput{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.ict_stl{
+    color: #1473e6 !important;
+    padding-right: 15px;
+    border-right: 2px solid #1473e6;
+}
+.ictc_stl{
+    color: #1473e6 !important;
+    padding-left: 15px;
+}
+.profile_con{
+    padding: 25px;
+    background:#fbfbfb !important;
+}
+.pro_stl{
+    font-weight: 400 !important;
+    margin-bottom: 0px !important;
+    font-size: 35px !important;
+    color: #53d0f7  !important;
+}
+.ui_stl{
+    font-size: 15px;
+    padding-bottom: 70px;
+}
+
+
+

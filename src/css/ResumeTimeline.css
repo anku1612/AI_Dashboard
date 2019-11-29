@@ -3,7 +3,7 @@
 }
 .resume-timeline{
     font-size: 17px;
-    color: #707070;
+    color: #707070 !important;
     font-weight: bold;
 }
 .month{
@@ -15,25 +15,24 @@
     width:15%;
 }
 .line{
-    border:1px solid #f56b82;
+    border:1px solid #f56b82 !important;
     border-radius:0 ;
-    width: 70%;
+    width: 95%;
     margin-left: 20px;
 }
 .circlemarch{
-    border: 3px solid #f56b82;
+    border: 3px solid #f56b82 !important;
     border-radius: 100px;
     width: 12px;
     height: 12px;
-    background:  #f56b82;
+    background: #f56b82 !important;
     position: absolute;
-    bottom: 5px;
-    left: 40px;
+    margin-top: -5px;
 }
 .lineone{
-    border:1px solid  #61ddbb;
+    border:1px solid  #61ddbb !important;
     border-radius:0 ;
-    width: 70%;
+    width: 95%;
     margin-left: 20px;  
 }
 .circleone{
@@ -41,15 +40,14 @@
     border-radius: 100px;
     width: 12px;
     height: 12px;
-    background: #61ddbb;
+    background: #61ddbb !important;
     position: absolute;
-    bottom: 5px;
-    left: 12.0rem;
+    margin-top: -5px;
 }
 .linetwo{
     border:1px solid #f198ce;
     border-radius:0 ;
-    width: 70%;
+    width: 95%;
     margin-left: 20px;    
 }
 
@@ -60,14 +58,14 @@
     height: 12px;
     background: #f198ce;
     position: absolute;
-    bottom: 5px;
-    left: 21.4rem;
+    margin-top: -5px;
+
 }
 
 .linethree{
     border:1px solid #b3e081;
     border-radius:0 ;
-    width: 70%; 
+    width: 95%; 
     margin-left: 20px;     
 }
 
@@ -78,14 +76,14 @@
     height: 12px;
     background:  #b3e081;
     position: absolute;
-    bottom: 5px;
-    left: 31.0rem;
+    margin-top: -5px;
+
 }
 
 .linefour{
     border:1px solid #b2a4ef;
     border-radius:0 ;
-    width: 70%; 
+    width: 95%; 
     margin-left: 20px;     
 }
 .circlefour{
@@ -95,8 +93,8 @@
     height: 12px;
     background:   #b2a4ef;
     position: absolute;
-    bottom: 5px;
-    left: 40.4rem;
+    margin-top: -5px;
+
 }
 .circlefive{
     border: 3px solid   #f198ce;
@@ -105,8 +103,8 @@
     height: 12px;
     background:  #f198ce;
     position: absolute;
-    bottom: 5px;
-    left: 50.0rem;
+    margin-top: -5px;
+
 }
 .circlesix{
     border: 3px solid  #b3e081;
@@ -115,8 +113,8 @@
     height: 12px;
     background:  #b3e081;
     position: absolute;
-    bottom: 5px;
-    left: 59.4rem;
+    margin-top: -5px;
+
 }
 .circleseven{
     border: 3px solid  #b3e081;
@@ -125,11 +123,11 @@
     height: 12px;
     background:  #b3e081;
     position: absolute;
-    bottom: 5px;
-    left: 69.0rem;
+    margin-top: -5px;
+
 }
 .loc{
-    color: red;
+    color: red !important;
 }
 .map-loc{
     font-size: 22px;
@@ -139,7 +137,8 @@
     margin-top:15px
 }
 .comp{
-    color: #a5a5a5;
+    color: #a5a5a5 !important;
     font-weight: bold;
     font-size: 12px;
+    padding-top :10px;
 }

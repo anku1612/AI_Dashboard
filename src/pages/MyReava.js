@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/MyRequirements.css';
 import { Card, Image, InputGroup } from 'react-bootstrap';
 import { FaEllipsisH, FaCircle, FaPaperPlane, FaPaperclip } from 'react-icons/fa';
+import { Link, BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 const cardstyle = {
   background: "white",
@@ -10,7 +11,6 @@ const cardstyle = {
 
 export default function MyReava() {
   return (
-
     <div className="container-fluid">
       <div className="profile">
         <Card>
@@ -23,14 +23,25 @@ export default function MyReava() {
                 <FaEllipsisH />
               </div>
             </div>
-
-          </div>
-
-          <Card.Body className="pt-2">
-            <div className="req-skil-head">
+          <div className="row req-skil-head ">
+                       <Router>
+                                        <div className="d-flex justify-content-around pt-2 w-50">
+                                        <Link to="/Reqhome"> <p className="ReAva_stl mb-0">Candidate</p> </Link>
+                                       <Link to="/Reqhome"> <p className="mb-0">Client</p> </Link>
+                                       <Link to=""> <p className="mb-0">Panelist</p> </Link>
+                                       <Link to=""> <p className="mb-0">CV Screening</p> </Link>
+                                       <Link to=""> <p className="mb-0">Schedule</p> </Link>
+                                        </div>
+                                        <Switch>
+                      <Route path="/Reqhome">
+                      </Route>
+                    </Switch> </Router>
+                  </div>
+                
+            <div className="">
               <div className="d-flex">
                 <div className="col-md-3 p-0">
-                  <div className="card-body d-flex p-2  pb-3 pt-3 reava">
+                  <div className="card-body d-flex p-2  pb-2 pt-2 reava">
                     <div className="col-md-3 p-2">
                       <Image src="../XYZ-01.jpg" roundedCircle className="img_req" />
                     </div>
@@ -44,7 +55,7 @@ export default function MyReava() {
                     </div>
                   </div>
 
-                  <div className="card-body d-flex p-2 pb-3 pt-3">
+                  <div className="card-body d-flex p-2 pb-2 pt-2">
                     <div className="col-md-3 p-2">
                       <Image src="../XYZ-01.jpg" roundedCircle className="img_req" />
                     </div>
@@ -57,7 +68,7 @@ export default function MyReava() {
                       <FaCircle className="circle_int" />
                     </div>
                   </div>
-                  <div className="card-body d-flex p-2 pb-3 pt-3">
+                  <div className="card-body d-flex p-2 pb-2 pt-2">
                     <div className="col-md-3 p-2">
                       <Image src="../XYZ-01.jpg" roundedCircle className="img_req" />
                     </div>
@@ -100,8 +111,7 @@ export default function MyReava() {
                 </div>
               </div>
             </div>
-
-          </Card.Body>
+          </div>
         </Card>
       </div>
     </div>

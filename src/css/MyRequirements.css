@@ -121,7 +121,7 @@
 }
 .drp-cv{
     font-style: italic;
-    font-size: 14px;
+    font-size: 13px !important;
 }
 .img_emp{
     width: 60px;

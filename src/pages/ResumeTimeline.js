@@ -49,21 +49,21 @@ const ResumeTimeline = () => {
                                 <div className="col-wid">
                                          <p className="mb-0 resume-timeline">1998</p>
                                         <p className="month">March</p>
-                                           <div className="circlemarch"></div>
-                                            <div className="line"></div>  
+                                           {/* <div className="circlemarch"></div>
+                                            <div className="line"></div>   */}
                                  </div>
                                 <div className="col-wid">
                                     <p className="mb-0 resume-timeline">1999</p>
                                     <p className="month" >January</p>
-                                    <div className="circleone"></div>
-                                    <div className="lineone"></div>
+                                    {/* <div className="circleone"></div>
+                                    <div className="lineone"></div> */}
 
                                 </div>
                                 <div className="col-wid">
                                     <p className="mb-0 resume-timeline">2001</p>
                                     <p className="month">September</p>
-                                    <div className="circletwo"></div>
-                                    <div className="linetwo"></div>
+                                    {/* <div className="circletwo"></div>
+                                    <div className="linetwo"></div> */}
 
 
 
@@ -71,38 +71,38 @@ const ResumeTimeline = () => {
                                 <div className="col-wid">
                                     <p className="mb-0 resume-timeline" >2002</p>
                                     <p className="month">March</p>
-                                    <div className="circlethree"></div>
-                                    <div className="linethree"></div>
+                                    {/* <div className="circlethree"></div>
+                                    <div className="linethree"></div> */}
 
                                 </div>
                                 <div className="col-wid">
                                     <p className="mb-0 resume-timeline">2004</p>
                                     <p className="month" >January</p>
-                                    <div className="circlefour"></div>
-                                    <div className="linefour"></div>
+                                    {/* <div className="circlefour"></div>
+                                    <div className="linefour"></div> */}
 
 
                                 </div>
                                 <div className="col-wid">
                                     <p className="mb-0 resume-timeline">2006</p>
                                     <p className="month" >September</p>
-                                    <div className="circlefive"></div>
-                                    <div className="linetwo"></div>
+                                    {/* <div className="circlefive"></div>
+                                    <div className="linetwo"></div> */}
 
 
                                 </div>
                                 <div className="col-wid">
                                     <p className="mb-0 resume-timeline">2010</p>
                                     <p className="month" >September</p>
-                                    <div className="circlesix"></div>
-                                    <div className="linethree"></div>
+                                    {/* <div className="circlesix"></div>
+                                    <div className="linethree"></div> */}
 
                                 </div>
                                 <div className="col-wid">
                                     <p className="mb-0 resume-timeline">2019</p>
                                     <p className="month" >September</p>
-                                    <div className="circleseven"></div>
-                                    <div className="linethree"></div>
+                                    {/* <div className="circleseven"></div>
+                                    <div className="linethree"></div> */}
 
 
                                 </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/MyRequirements.css';
 import { Card } from 'react-bootstrap';
 import { FaEllipsisH, FaPhone, FaEnvelope, FaWhatsapp, FaCommentDots } from 'react-icons/fa';
-
+import { Link} from 'react-router-dom';
 const cardstyle = {
   background: "white",
   // display:"flex",
@@ -40,7 +40,7 @@ export default function ISearch() {
             <div className="req-skil-head">
               <div className="d-flex justify-content-around">
                 <div className="col-md-2">
-                  <p className="req-pro inteli-search">Sharon Mathews</p>
+                <Link to="/Dashboard"> <p className="req-pro inteli-search">Sharon Mathews</p></Link>
                 </div>
                 <div className="col-md-2">
                   <p className="req-pro inteli-search">Senior Java Programmer</p>
@@ -105,7 +105,7 @@ export default function ISearch() {
               <div className="req-skil-head pt-3">
               <div className="d-flex justify-content-around">
                 <div className="col-md-2">
-                  <p className="req-pro inteli-search">Sharon Mathews</p>
+                <Link to="/Dashboard"> <p className="req-pro inteli-search">Sharon Mathews</p></Link>
                 </div>
                 <div className="col-md-2">
                   <p className="req-pro inteli-search">Senior Java Programmer</p>
@@ -169,7 +169,7 @@ export default function ISearch() {
               <div className="pt-3">
               <div className="d-flex justify-content-around">
                 <div className="col-md-2">
-                  <p className="req-pro inteli-search">Sharon Mathews</p>
+                <Link to="/Dashboard"> <p className="req-pro inteli-search">Sharon Mathews</p></Link>
                 </div>
                 <div className="col-md-2">
                   <p className="req-pro inteli-search">Senior Java Programmer</p>

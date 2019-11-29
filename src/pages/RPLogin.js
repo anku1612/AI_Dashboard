@@ -28,7 +28,7 @@ export default function LoginPage() {
     <Form.Control type="password" placeholder="Password"  className="input_stl"/>
     <span className="pwd_icon"> <FaLock /></span> 
   </Form.Group>
-    <Link to="/Reqhome"  className="btn_login"> LOG IN </Link>
+    <Link to="/ReqViewPanelDash"  className="btn_login"> LOG IN </Link>
 </Form>
 <div className="text-center pt-3">
 <p className="">OR</p>

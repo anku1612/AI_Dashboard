@@ -11,7 +11,7 @@
 
 }
 .links{
-    font-size: 13px;
+    font-size: 13px !important;
     font-weight: 600;
     color: #4f4f4f !important;
 }
@@ -26,10 +26,9 @@
 }
 
 
-.active{
+.Nactive{
     border-bottom: 2px solid black;
     position: relative;
-    /* bottom: -10px; */
 }
 .search{
     font-style: italic;
@@ -40,7 +39,23 @@
     width: 25px;
     height: 25px;
 }
-
+.lan_page{
+    padding-right: 20px !important;
+    padding-left:35px !important;
+}
+.pricing_banner{
+    width: 100%;
+    height: 400px;
+}
+.pric_stl{
+    position: absolute;
+    top: 35%;
+    color: white;
+    right: 33%;
+}
+.main{
+    background-color: #f4f4f4;
+}
 
 
 

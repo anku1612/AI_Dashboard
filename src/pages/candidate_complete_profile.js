@@ -1,546 +1,513 @@
 import React from 'react';
-import { Card, ListGroup, Button, Dropdown, Image,InputGroup } from 'react-bootstrap';
+import { Card, Button , Image, InputGroup, OverlayTrigger, Tooltip ,Form} from 'react-bootstrap';
 import '../css/candidate_complete_profile.css';
+import { ProgressBar, Step } from "react-step-progress-bar";
+import { Link} from 'react-router-dom';
 import { Icon } from 'react-icons-kit';
-import { androidSearch } from 'react-icons-kit/ionicons/androidSearch';
-import { androidMoreVertical } from 'react-icons-kit/ionicons/androidMoreVertical';
+import { FaEllipsisH, FaSearch ,FaRegCircle ,FaCircle ,FaPaperclip ,FaPaperPlane} from 'react-icons/fa';
 import { thumbsup } from 'react-icons-kit/ionicons/thumbsup';
 import { thumbsdown } from 'react-icons-kit/ionicons/thumbsdown';
-import { iosLightbulbOutline } from 'react-icons-kit/ionicons/iosLightbulbOutline';
 import { videocamera } from 'react-icons-kit/ionicons/videocamera';
-import { iosPersonadd } from 'react-icons-kit/ionicons/iosPersonadd';
 import Calendar from './Calendar'
-import {ic_send} from 'react-icons-kit/md/ic_send'
-import {ic_attachment} from 'react-icons-kit/md/ic_attachment'
 
 class candidate_complete_profile extends React.Component {
     render() {
         return (
             <div className="my_super_candidate">
-                <div className="my_candidate">
+                <div className="row my_candidate">
                     <div className="col-md-3">
                         <Card>
                             <Card.Body>
-                                <div className="my_icon">
-                                    <Card.Title className="my_titel">Interview view</Card.Title>
-                                    <Icon className="Search" size={28} icon={androidSearch} />
-                                    <Icon size={30} icon={androidMoreVertical} />
+                                <div className="bg-white d-flex req-skil-head">
+                                    <div className="col-md-12 d-flex pl-0 p-1 pb-2">
+                                        <div className="col-md-10 p-0">
+                                            <h6 className="font-weight-bold text-dark">Interview View</h6>
+                                        </div>
+                                        <div className="col-md-1">
+                                            <h6 className="float-right"><FaSearch /></h6>
+                                        </div>
+                                        <div className="col-md-1">
+                                            <h6 className="float-right"><FaEllipsisH /></h6>
+                                        </div>
+                                    </div>
                                 </div>
-                                <ListGroup variant="flush">
-                                    <ListGroup.Item>
-                                        <div className="head_titl" >
-                                            Congnizant Technologies
-                                            </div>
-                                        <p className="m-1" style={{ fontSize: "15px", color: "#b14037" }}>Rejected</p>
-                                        <p className="my_status">10 mins ago</p>
-                                        <p className="">Organization (Direct)</p>
-                                        <div className="my_progress">
-                                            <div className="my_dots">
-                                            </div>
-                                            <div className="horizantal_line">
-                                            </div>
-                                            <div className="my_dotsv">
-                                            </div>
-                                            <div className="horizantal_linev">
-                                            </div>
-                                            <div className="dotsv">
-                                            </div>
-                                            <div className="linev">
-                                            </div>
-                                            <div className="dotsv_end">
-                                            </div>
-                                            <div className="linev_end">
-                                            </div>
-                                            <div className="_ended">
-                                            </div>
+
+                                <div className="pt-2 pb-2 req-skil-head ">
+                                    <div className="d-flex">
+                                        <div className="col-md-8 p-0">
+                                        <Link to="/"><p className="text-dark font-weight-bold mb-1">Cognizant</p></Link>  
+                                            <p className="mail pb-2" >10 mins ago </p>
+                                            <p className="mb-0">Rajeev Chouhan / Agency</p>
                                         </div>
-                                    </ListGroup.Item>
-                                    <ListGroup.Item>
-                                        <div className="head_titl" >Congnizant Technologies</div>
-                                        <p className="m-1" style={{ fontSize: "15px", color: "#282c34" }}>Pending</p>
-                                        <p className="my_status">10 mins ago</p>
-                                        <p className="">Organization (Direct)</p>
-                                        <div className="my_progress">
-                                            <div className="my_dots">
-                                            </div>
-                                            <div className="horizantal_line">
-                                            </div>
-                                            <div className="my_dotsv">
-                                            </div>
-                                            <div className="horizantal_linev">
-                                            </div>
-                                            <div className="dotsv">
-                                            </div>
-                                            <div className="linev">
-                                            </div>
-                                            <div className="dotsv_end">
-                                            </div>
-                                            <div className="linev_end">
-                                            </div>
-                                            <div className="_ended">
-                                            </div>
+                                        <div className="col-md-4 p-0 text-right">
+                                            <p className="Rej_stl" >Rejected</p>
                                         </div>
-                                    </ListGroup.Item>
-                                    <ListGroup.Item>
-                                        <div className="head_titl" >
-                                            Congnizant Technologies
-                                            </div>
-                                        <p className="m-1" style={{ fontSize: "15px", color: "green" }}>Hired</p>
-                                        <p className="my_status">10 mins ago</p>
-                                        <p className="">Organization (Direct)</p>
-                                        <div className="my_progress">
-                                            <div className="my_dots">
-                                            </div>
-                                            <div className="horizantal_line">
-                                            </div>
-                                            <div className="my_dotsv">
-                                            </div>
-                                            <div className="horizantal_linev">
-                                            </div>
-                                            <div className="dotsv">
-                                            </div>
-                                            <div className="linev">
-                                            </div>
-                                            <div className="dotsv_end">
-                                            </div>
-                                            <div className="linev_end">
-                                            </div>
-                                            <div className="_ended">
-                                            </div>
+                                    </div>
+                                    <div className="p-2 pt-4 pb-3">
+                                    <ProgressBar
+                                    percent={75}
+                                    fillBackground="linear-gradient(to right, #fefb72, #f0bb31)"
+                                >
+                                    <Step transition="scale">
+                                        {({ accomplished }) => (
+
+                                            < FaRegCircle className="dot_icon" />
+
+                                        )}
+                                    </Step>
+
+                                    <Step transition="scale">
+                                        {({ accomplished }) => (
+                                            < FaRegCircle className="dot_icon" />
+                                        )}
+                                    </Step>
+                                    <Step transition="scale">
+                                        {({ accomplished }) => (
+                                             <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Date: 02/06/2019
+                                            <br/> Accenture
+                                            <br/>Agency Rec :Naresh
+                                            <br/> Email :pavan@agency.Com
+                                            <br/> Ph:989897878</Tooltip>}>
+                                             <span className="d-inline-block">
+                                            < FaRegCircle className="dot_icon"  disabled style={{ pointerEvents: 'none' }} />
+                                            </span>
+                                            </OverlayTrigger>
+                                        )}
+                                    </Step>
+                                    <Step transition="scale">
+                                        {({ accomplished }) => (
+                                                    < FaRegCircle className="red_cir" />
+                                        )}
+                                    </Step>
+                                    <Step transition="scale">
+                                        {({ accomplished }) => (
+                                            < FaRegCircle className="cir_icon" />
+                                        )}
+                                    </Step>
+                                </ProgressBar>
+                                </div>
+                                </div>
+
+                                <div className="pt-2 pb-2 req-skil-head">
+                                    <div className="d-flex">
+                                        <div className="col-md-8 p-0">
+                                        <Link to="/Dashboard"><p className="text-dark font-weight-bold mb-1">Infosys</p></Link>  
+                                            <p className="mail pb-2" >10 mins ago </p>
+                                           
+                                            <p className="mb-0">Srikanth Chauhan / Agency</p>
                                         </div>
-                                    </ListGroup.Item>
-                                </ListGroup>
-                            </Card.Body>
+                                        <div className="col-md-4 p-0 text-right">
+                                            <p className="hired-stl mb-0">Hired</p>
+                                        </div>
+                                    </div>
+                                    <div className=" p-2 pt-4 pb-3">
+                                    <ProgressBar
+                                    percent={100}
+                                    fillBackground="linear-gradient(to right, #fefb72, #f0bb31)"
+                                >
+                                    <Step transition="scale">
+                                        {({ accomplished }) => (
+
+                                            < FaRegCircle className="dot_icon" />
+
+                                        )}
+                                    </Step>
+
+                                    <Step transition="scale">
+                                        {({ accomplished }) => (
+                                            < FaRegCircle className="dot_icon" />
+                                        )}
+                                    </Step>
+                                    <Step transition="scale">
+                                        {({ accomplished }) => (
+                                             <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Date: 02/06/2019
+                                            <br/> Accenture
+                                            <br/>Agency Rec :Naresh
+                                            <br/> Email :pavan@agency.Com
+                                            <br/> Ph:989897878</Tooltip>}>
+                                             <span className="d-inline-block">
+                                            < FaRegCircle className="dot_icon"  disabled style={{ pointerEvents: 'none' }} />
+                                            </span>
+                                            </OverlayTrigger>
+                                        )}
+                                    </Step>
+                                    <Step transition="scale">
+                                        {({ accomplished }) => (
+                                                    < FaRegCircle className="dot_icon" />
+                                        )}
+                                    </Step>
+                                    <Step transition="scale">
+                                        {({ accomplished }) => (
+                                            < FaRegCircle className="dot_icon" />
+                                        )}
+                                    </Step>
+                                </ProgressBar>
+                                </div>
+                                </div>
+                                    <div className="pt-2 d-flex">
+                                        <div className="col-md-8 p-0">
+                                        <Link to="/Dashboard"><p className="text-dark font-weight-bold mb-1">Accenture</p></Link>  
+                                            <p className="mail" >10 mins ago </p>
+                                        </div>
+                                        <div className="col-md-4 p-0 text-right">
+                                        <p className="mb-0"><FaEllipsisH /></p>
+                                            <p className="Rej_stl">Rejected</p>
+                                        </div>
+                                    </div>
+                               </Card.Body>
                         </Card>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-3">
                         <Card>
                             <Card.Body>
-                                <div className="items_ico">
-                                    <Card.Title>Recruiter Feedbacks</Card.Title>
-                                    <Icon size={30} icon={androidMoreVertical} />
+                            <div className="pb-2 bg-white d-flex req-skil-head">
+                                    <div className="col-md-12 d-flex pl-0 p-1 pb-2">
+                                        <div className="col-md-10 p-0">
+                                            <h6 className="font-weight-bold text-dark">Recruiter Feedbacks</h6>
+                                        </div>
+                                        <div className="col-md-2">
+                                            <h6 className="float-right"><FaEllipsisH /></h6>
+                                        </div>
+                                    </div>
                                 </div>
-                                <ListGroup variant="flush">
-                                    <ListGroup.Item className="my_filters">
-                                        <Button variant="outline-info" className="my_button">filter 1</Button>
-                                        <Button variant="outline-info" className="my_button">filter 2</Button>
-                                        <Button variant="outline-info" className="my_button">filter 3</Button>
-                                        <Button variant="outline-info" className="my_button">filter 4</Button>
-                                    </ListGroup.Item>
-                                    <ListGroup.Item className="my_align">
-                                        <div className="col-md-2">
-                                            <Icon size={30} icon={thumbsup} style={{ color: "green" }} />
-                                        </div>
+                                    <div className="bg-white pt-3 pb-2 d-flex justify-content-around">
+                                        <Button variant="" className="btn-req">Req</Button>
+                                        <Button variant="" className="btn-req reqstyle">Req </Button>
+                                        <Button variant="" className="btn-req">Req </Button>
+                                    </div>
+                                <div className="pt-3 pb-2 req-skil-head ">
+                                <Link to="/Dashboard"><p className="text-dark font-weight-bold mb-1">Super Recruiters</p></Link>  
+                                            <p className="mail pb-3" >10 mins ago </p>
+                                    <div className="d-flex">
                                         <div className="col-md-8 p-0">
-                                            <p className="recruiter">Recruiter</p>
-                                            <p className="my_req" style={{ color: "green" }}>Interview @ Congnizant Technologies</p>
-                                            <p className="my_req">Excellent Keep up the Good work</p>
-                                            <p className="my_req">10 Mins ago</p>
+                                            <p className="mb-0">@ Cognizant Technologies</p>
+                                            <p className="req_feed">"Keep up the good work"</p>
                                         </div>
-                                        <div className="col-md-2">
-                                            <Icon size={30} icon={androidMoreVertical} />
+                                        <div className="col-md-4 p-0 text-right">
+                                <Icon size={30} icon={thumbsup} style={{ color: "#13db56" }} />
                                         </div>
-                                    </ListGroup.Item>
-                                    <ListGroup.Item className="my_align">
-                                        <div className="col-md-2">
-                                            <Icon size={30} icon={thumbsdown} style={{ color: "red" }} />
-                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="pt-3 pb-2 req-skil-head">
+                                <Link to="/Dashboard"><p className="text-dark font-weight-bold mb-1">Super Recruiters</p></Link>  
+                                            <p className="mail pb-3" >10 mins ago </p>
+                                    <div className="d-flex">
                                         <div className="col-md-8 p-0">
-                                            <p className="recruiter">Recruiter</p>
-                                            <p className="my_req" style={{ color: "red" }}>Interview @ Congnizant Technologies</p>
-                                            <p className="my_req">Excellent Keep up the Good work</p>
-                                            <p className="my_req">10 Mins ago</p>
+                                            <p className="mb-0">Infosys</p>
+                                            <p className="req_feed">"Need to improve"</p>
                                         </div>
-                                        <div className="col-md-2">
-                                            <Icon size={30} icon={androidMoreVertical} />
+                                        <div className="col-md-4 p-0 text-right">
+                                  <Icon size={30} icon={thumbsdown} style={{ color: "red" }} />
                                         </div>
-                                    </ListGroup.Item>
-                                    <ListGroup.Item className="my_align">
-                                        <div className="col-md-2">
-                                            <Icon size={30} icon={iosLightbulbOutline} style={{ color: "#12c2f5" }} />
-                                        </div>
-                                        <div className="col-md-8 p-0">
-                                            <p className="recruiter">Recruiter</p>
-                                            <p className="my_req" style={{ color: "#12c2f5" }}>Interview @ Congnizant Technologies</p>
-                                            <p className="my_req">Excellent Keep up the Good work</p>
-                                            <p className="my_req">10 Mins ago</p>
-                                        </div>
-                                        <div className="col-md-2">
-                                            <Icon size={30} icon={androidMoreVertical} />
-                                        </div>
-                                    </ListGroup.Item>
-                                    <ListGroup.Item className="my_align">
-                                        <div className="col-md-2">
-                                            <Icon size={30} icon={iosLightbulbOutline} style={{ color: "#12c2f5" }} />
-                                        </div>
-                                        <div className="col-md-8 p-0">
-                                            <p className="recruiter">Recruiter</p>
-                                            <p className="my_req" style={{ color: "#12c2f5" }}>Interview @ Congnizant Technologies</p>
-                                            <p className="my_req">Excellent Keep up the Good work</p>
-                                            <p className="my_req">10 Mins ago</p>
-                                        </div>
-                                        <div className="col-md-2">
-                                            <Icon size={30} icon={androidMoreVertical} />
-                                        </div>
-                                    </ListGroup.Item>
-                                </ListGroup>
+                                    </div>
+                                </div>
+
+
+
+                                 
                             </Card.Body>
                         </Card>
                     </div>
-                    <div className="col-md-5 p-0">
+                    <div className="col-md-6">
                         <Card>
-                            <Card.Body className="pr-2">
-                                <div className="main_body d-flex">
-                                    <div className=" d-flex">
+                            <Card.Body className="">
+                            <div className="pb-2 bg-white d-flex req-skil-head">
+                                    <div className="col-md-12 d-flex pl-0 p-1 pb-2">
+                                        <div className="col-md-10 p-0">
+                                            <h6 className="font-weight-bold text-dark">Live Chat</h6>
+                                        </div>
+                                        <div className="col-md-2 text-right">
                                         <Icon size={30} icon={videocamera} style={{ color: "#12c2f5" }} />
-                                        <Card.Title className="mb-0 pl-2">Live Chat</Card.Title>
-                                    </div>
-                                    <div className="">
-                                        <Icon size={50} icon={androidMoreVertical} />
+                                        </div>
                                     </div>
                                 </div>
-                                {/* <ListGroup.Item></ListGroup.Item> */}
-                                <ListGroup variant="flush">
-                                    <div className="col-md-12 p-0 d-flex">
-                                        <div className="col-md-5 p-0 finde_border">
-                                            <ListGroup.Item className="d-flex my_items p-1" style={{ background: "#87ceec" }}>
-                                                <div className="user_icon">
-                                                    <Icon size={20} icon={iosPersonadd} />
-                                                </div>
-                                                <div className="my_text">
-                                                    <p className="my_title mb-0 ml-3" style={{ color: "white" }}>ramakrishna<br /> Congnizant Technologies</p>
-                                                    <div className="my_circle">
-                                                    </div>
-                                                    <p className="my_title mb-0 ml-3" style={{ color: "white" }}>02:PM 17/10/2019</p>
-                                                </div>
-                                            </ListGroup.Item>
-                                            <ListGroup.Item className="d-flex my_items p-1" style={{ background: "white" }}>
-                                                <div className="user_icon">
-                                                    <Icon size={20} icon={iosPersonadd} />
-                                                </div>
-                                                <div className="my_text">
-                                                    <p className="my_title mb-0 ml-3" style={{ color: "black" }}>ramakrishna<br /> Congnizant Technologies</p>
-                                                </div>
-                                            </ListGroup.Item>
-                                            <ListGroup.Item className="d-flex my_items p-1" style={{ background: "white" }}>
-                                                <div className="user_icon">
-                                                    <Icon size={20} icon={iosPersonadd} />
-                                                </div>
-                                                <div className="my_text">
-                                                    <p className="my_title mb-0 ml-3" style={{ color: "black" }}>ramakrishna<br /> Congnizant Technologies</p>
-                                                </div>
-                                            </ListGroup.Item>
-                                        </div>
+                              
+                                <div className="">
+              <div className="d-flex">
+                <div className="col-md-5 p-0">
+                  <div className="card-body d-flex p-2 reava">
+                    <div className="col-md-3 p-1">
+                      <Image src="../XYZ-01.jpg" roundedCircle className="img_req" />
+                    </div>
+                    <div className="col-md-7 p-2">
+                      <p className="mb-0 text-dark font-weight-bold">Harikrishna</p>
+                      <p className="mb-0 mail">02:25 PM  02/12/2019</p>
+                      <p className="mb-0">Cognizant Technologies</p>
+                    </div>
+                    <div className="col-md-2 p-2">
+                      <FaCircle className="circle_int" />
+                    </div>
+                  </div>
 
-                                        <div className="col-md-7 p-0 vestibulum">
-                                            <ListGroup.Item>Ramakrishna</ListGroup.Item>
-                                            <div className="circle">
-                                            </div>
-                                            <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+                  <div className="card-body d-flex p-1">
+                    <div className="col-md-3 p-2">
+                      <Image src="../XYZ-01.jpg" roundedCircle className="img_req" />
+                    </div>
+                    <div className="col-md-7 p-2">
+                      <p className="mb-0 text-dark font-weight-bold">Harikrishna</p>
+                      <p className="mb-0 mail">02:25 PM  02/12/2019</p>
+                      <p className="mb-0">Accenture</p>
+                    </div>
+                    <div className="col-md-2 p-2">
+                      <FaCircle className="circle_int" />
+                    </div>
+                  </div>
+                  <div className="card-body d-flex p-1">
+                    <div className="col-md-3 p-2">
+                      <Image src="../XYZ-01.jpg" roundedCircle className="img_req" />
+                    </div>
+                    <div className="col-md-7 p-2">
+                      <p className="mb-0 text-dark font-weight-bold">Harikrishna</p>
+                      <p className="mb-0 mail">02:25 PM  02/12/2019</p>
+                      <p className="mb-0">Cognizant Technologies</p>
+                    </div>
+                    <div className="col-md-2 p-2">
+                      <FaCircle className="circle_int" />
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-7 p-0 Live_bor-left">
+                  <p className="text-reava p-2">Harikrishna</p>
+                
+                  <div className="chat-back">
 
-                                            <div className="d-flex chat_inputtwo">
+                    <div className="d-flex Live_inputtwo">
 
-<input className="form-control Chat_user_input text-white"  type ="text" placeholder="Tyep your message here...." />
-<Image src="../profile1.png" roundedCircle className="img_chat" />
-</div>
+                      <input className="form-control input-stl live_font" type="text" placeholder="Type your message here...." />
+                      <Image src="../profile1.png" roundedCircle className="img-reava" />
+                    </div>
 
 
-<div className="d-flex chat_inputone">
-<Image src="../profile1.png" roundedCircle className="img_chat" />
-<input className="form-control" type ="text" placeholder="Tyep your message here...." />
-</div>
+                    <div className="d-flex Live_inputone">
+                      <Image src="../profile1.png" roundedCircle className="img-reava" />
+                      <input className="form-control live_font" style={{'borderRadius':'10px'}} type="text" placeholder="Keep Up the good work" />
+                    </div>
 
-                                            <div className="chat_input">
-                                            <InputGroup className="">
-                                                <input className="form-control" type ="text" placeholder="Tyep your message here...." />
-                                                <Icon size={30} className="icon_chat" icon={ic_send} />
-                                                <Icon size={30} className="my_icon_lable" icon={ic_attachment} />
-                                                 </InputGroup> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </ListGroup>
-                            </Card.Body>
+                
+                  </div>
+                  <div className="Live_chatinput">
+                      <InputGroup className="">
+                        <input className="form-control search" type="text" placeholder="Keep Up the good work" />
+                        <FaPaperclip  style={{ color: "#717171",position: "absolute",right: "40px", top: "10px"}} />
+                        <FaPaperPlane style={{ color: "#53d0f7", position: "absolute",right: "15px", top: "10px"}} />
+                      </InputGroup>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            </Card.Body>
                         </Card>
                     </div>
                 </div>
-                <div className="candidate">
+                <div className="row candidate">
                     <div className="col-md-7">
                         <Card className="p-3">
-                            <div className="scheduler d-flex">
-                                <Card.Header className="border_my" style={{ color: "#717171", fontSize: "30px", fontWeight: "500" }}>Interview Scheduler</Card.Header>
-                                <Icon size={40} icon={androidMoreVertical} />
-                            </div>
-                            <ListGroup variant="flush">
-                                <ListGroup.Item className="d-flex my_claender">
-                                <div className="col-md-6 p-2">
-                                        <div className="confirm_intrview">
-                                        <Calendar/>
-                               </div>
+                        <div className="row d-flex req-skil-head">
+                                    <div className="col-md-10 p-0">
+                                        <p className="req font-weight-bold text-dark"> Interview scheduler </p>
                                     </div>
-                                    <div className="col-md-6 p-2">
-                                        <div className="confirm_intrview">
-                                            <h6 className="d-flex my_title_head">Congnizant Technologies
-                                                    <Dropdown>
-                                                    <Dropdown.Toggle id="dropdown-basic" className="drop_down">
-                                                    </Dropdown.Toggle>
-                                                    <Dropdown.Menu>
-                                                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                                                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                                                    </Dropdown.Menu>
+                                    <div className="col-md-2 text-right">
+                                        <FaEllipsisH />
+                                    </div>
+                                </div>
 
-                                                </Dropdown>
-                                            </h6>
-                                            <div className="items_alined d-flex">
-                                                <div className="main_content d-flex col-md-6 p-0 pb-1">
-                                                    <div className="dataset d-flex">
-                                                        <div className="my_confirmed">
-                                                            <p className="time_confirm mb-2 mt-2">02:00 PM</p>
-                                                        </div>
-                                                        <div className="my_confirmed">
-                                                            <p className="time_confirm mb-2 mt-2" style={{ color: "#40c351" }}>Confirm</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="main_content d-flex col-md-6 p-0 pb-1">
-                                                    <div className="dataset d-flex">
-                                                        <div className="my_confirmed">
-                                                            <p className="time_confirm mb-2 mt-2">02:00 PM</p>
-                                                        </div>
-                                                        <div className="my_confirmed">
-                                                            <p className="time_confirm mb-2 mt-2" style={{ color: "#40c351" }}>Confirm</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="items_alined d-flex">
-                                                <div className="main_content d-flex col-md-6 p-0 pb-1">
-                                                    <div className="dataset d-flex">
-                                                        <div className="my_confirmed">
-                                                            <p className="time_confirm mb-2 mt-2">02:00 PM</p>
-                                                        </div>
-                                                        <div className="my_confirmed">
-                                                            <p className="time_confirm mb-2 mt-2" style={{ color: "#40c351" }}>Confirm</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="main_content d-flex col-md-6 p-0 pb-1">
-                                                    <div className="dataset d-flex">
-                                                        <div className="my_confirmed">
-                                                            <p className="time_confirm mb-2 mt-2">02:00 PM</p>
-                                                        </div>
-                                                        <div className="my_confirmed">
-                                                            <p className="time_confirm mb-2 mt-2" style={{ color: "#40c351" }}>Confirm</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="items_alined d-flex">
-                                                <div className="main_content d-flex col-md-6 p-0 pb-1">
-                                                    <div className="dataset d-flex">
-                                                        <div className="my_confirmed">
-                                                            <p className="time_confirm mb-2 mt-2">02:00 PM</p>
-                                                        </div>
-                                                        <div className="my_confirmed">
-                                                            <p className="time_confirm mb-2 mt-2" style={{ color: "#40c351" }}>Confirm</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="main_content d-flex col-md-6 p-0 pb-1">
-                                                    <div className="dataset d-flex">
-                                                        <div className="my_confirmed">
-                                                            <p className="time_confirm mb-2 mt-2">02:00 PM</p>
-                                                        </div>
-                                                        <div className="my_confirmed">
-                                                            <p className="time_confirm mb-2 mt-2" style={{ color: "#40c351" }}>Confirm</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                
+                                <div className="row d-flex pb-2 pt-3">
+                                    <div className="col-md-5 p-0">
+                                        <Calendar />
                                     </div>
-                                </ListGroup.Item>
-                                <ListGroup.Item className="pl-0 pr-0">
-                                    <div className="p-0 boder_setting pl-2">
-                                        <Card.Title>
-                                            Interview @ Congnizant Technologies
-                                            </Card.Title>
-                                        <div className="col-md-12 d-flex p-0 pb-2">
-                                            <div className="col-md-3 pl-0 pr-3">
-                                                <div className="sub_itm d-flex">
-                                                    <h6 className="interview_time_slot pr-1">02:00 PM</h6>
-                                                    <h6 className="interview_time_slot pl-1">17/10/2019</h6>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-3 pl-0 pr-3">
-                                                <div className="sub_itm d-flex">
-                                                    <h6 className="interview_time_slot pr-1"> 02:00 PM</h6>
-                                                    <h6 className="interview_time_slot pl-1"> 17/10/2019</h6>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-3 pl-0 pr-3">
-                                                <div className="sub_itm d-flex">
-                                                    <h6 className="interview_time_slot pr-1"> 02:00 PM</h6>
-                                                    <h6 className="interview_time_slot pl-1"> 17/10/2019</h6>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-3 pl-0 pr-3">
-                                                <div className="sub_itm d-flex">
-                                                    <h6 className="interview_time_slot pr-1"> 02:00 PM</h6>
-                                                    <h6 className="interview_time_slot pl-1"> 17/10/2019</h6>
-                                                </div>
-                                            </div>
+                                    <div className="col-md-7 p-2">
+                                        <div className="row d-flex">
+                                            <div className="col-md-3 p-0 pt-2" ><p>Company</p></div>
+                                            <div className="col-md-9 p-0" >
+                                                <Form.Group controlId="exampleForm.ControlSelect1">
+                                                    <Form.Control as="select" className="drp-cv font-int">
+                                                        <option>Cognizant Technologies</option>
+                                                        <option>Ui Developer</option>
+                                                        <option> Web Developer</option>
+                                                        <option> JS Developer</option>
+                                                    </Form.Control>
+                                                </Form.Group></div>
                                         </div>
-                                    </div>
-                                    <div className="p-0 pl-3">
-                                        <div className="col-md-12 d-flex p-0">
-                                            <div className="col-md-3 pl-0 pr-3">
-                                                <div className="sub_itm d-flex">
-                                                    <h6 className="interview_time_slot pr-3">cancel </h6>|
-                                                    <h6 className="interview_time_slot pl-3"> Confirm</h6>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-3 pl-0 pr-3">
-                                                <div className="sub_itm d-flex">
-                                                    <h6 className="interview_time_slot pr-3"> cancel</h6>|
-                                                <h6 className="interview_time_slot pl-3"> Confirm</h6>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-3 pl-0 pr-3">
-                                                <div className="sub_itm d-flex">
-                                                    <h6 className="interview_time_slot pr-3"> cancel</h6>|
-                                                <h6 className="interview_time_slot pl-3"> Confirm</h6>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-3 pl-0 pr-3">
-                                                <div className="sub_itm d-flex">
-                                                    <h6 className="interview_time_slot pr-3"> cancel</h6>|
-                                                <h6 className="interview_time_slot pl-3"> Confirm</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </ListGroup.Item>
 
-                                <ListGroup.Item className="pl-0 pr-0">
-                                    <div className="p-0 boder_settings pl-2">
-                                        <Card.Title>
-                                            Interview @ Infosys
-                                            </Card.Title>
-                                        <div className="col-md-12 d-flex p-0 pb-2">
-                                            <div className="col-md-3 pl-0 pr-3">
-                                                <div className="sub_itm d-flex">
-                                                    <h6 className="interview_time_slot pr-1">02:00 PM</h6>
-                                                    <h6 className="interview_time_slot pl-1">17/10/2019</h6>
+                                        <div className="d-flex">
+                                            <div className="col-md-6 p-1 ">
+                                                <div className="d-flex int_time">
+                                                    <p className="mb-0 mail mr-3"> 02:00 PM</p>
+                                                    <p className="confirm_stl"> Confirm</p>
+                                                </div>
+                                                <div className="d-flex int_time">
+                                                    <p className="mb-0 mail mr-3"> 02:00 PM</p>
+                                                    <p className="confirm_stl"> Confirm</p>
+                                                </div>
+                                                <div className="d-flex int_time">
+                                                    <p className="mb-0 mail mr-3"> 02:00 PM</p>
+                                                    <p className="confirm_stl"> Confirm</p>
                                                 </div>
                                             </div>
+                                            <div className="col-md-6 p-1">
+                                                <div className="d-flex int_time">
+                                                    <p className="mb-0 mail mr-3"> 02:00 PM</p>
+                                                    <p className=" confirm_stl"> Confirm</p>
+                                                </div>
+                                                <div className="d-flex int_time">
+                                                    <p className="mb-0 mail mr-3"> 02:00 PM</p>
+                                                    <p className="confirm_stl"> Confirm</p>
+                                                </div>
+                                                <div className="d-flex int_time">
+                                                    <p className="mb-0 mail mr-3"> 02:00 PM</p>
+                                                    <p className="confirm_stl"> Confirm</p>
+                                                </div>
+
+
+                                            </div>
+
                                         </div>
                                     </div>
-                                    <div className="p-0 pl-3">
-                                        <div className="col-md-12 d-flex p-0">
-                                            <div className="col-md-3 pl-0 pr-3">
-                                                <div className="sub_itm d-flex">
-                                                    <h6 className="interview_time_slot pr-3">cancel </h6>|
-                                                    <h6 className="interview_time_slot pl-3"> Confirm</h6>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-3 pl-0 pr-3">
-                                                <div className="sub_itm d-flex">
-                                                    <h6 className="interview_time_slot pr-3"> cancel</h6>|
-                                                <h6 className="interview_time_slot pl-3"> Confirm</h6>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-3 pl-0 pr-3">
-                                                <div className="sub_itm d-flex">
-                                                    <h6 className="interview_time_slot pr-3"> cancel</h6>|
-                                                <h6 className="interview_time_slot pl-3"> Confirm</h6>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-3 pl-0 pr-3">
-                                                <div className="sub_itm d-flex">
-                                                    <h6 className="interview_time_slot pr-3"> cancel</h6>|
-                                                <h6 className="interview_time_slot pl-3"> Confirm</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </ListGroup.Item>
-                                <ListGroup.Item>
-                                </ListGroup.Item>
-                            </ListGroup>
+                                </div>
+
+
+                          
+                       <div className="req-skil-head pl-1 p-2">
+                       <p className="req font-weight-bold text-dark mb-0"> Interview @ Cognizant Technologies </p>
+                <div className="row d-flex">
+                    <div className="col-md-3 p-0">
+                        <div className="d-flex">
+                            <p className="mb-0 mr-3">02:00 PM</p>
+                            <p className="mb-0">17/10/2019</p>
+                        </div>
+                        <div className="d-flex">
+                            <p className="ict_stl"> Cancel</p>
+                            <p className="ictc_stl">Confirm</p>
+                        </div>
+                    </div> 
+                     <div className="col-md-2"></div>
+                    <div className="col-md-3 p-0">
+                        <div className="d-flex">
+                        <p className="mb-0 mr-3">02:00 PM</p>
+                            <p className="mb-0">17/10/2019</p>
+                        </div>
+                        <div className="d-flex">
+                            <p className="ict_stl">Cancel</p>
+                            <p className="ictc_stl">Confirm</p>
+                        </div>
+                    </div>
+                    <div className="col-md-1"></div>
+                    <div className="col-md-3 p-0">
+                        <div className="d-flex">
+                            <p className="mb-0 mr-3">02:00 PM</p>
+                            <p className="mb-0">17/10/2019</p>
+                        </div>
+                        <div className="d-flex">
+                            <p className="ict_stl">Cancel</p>
+                            <p className="ictc_stl">Confirm</p>
+                        </div>
+                    </div>
+                </div>
+                       </div>
+                       
+                       <div className="pl-1 p-2">
+                       <p className="req font-weight-bold text-dark"> Interview @ Cognizant Technologies </p>
+                       <div className="row d-flex">
+                    <div className="col-md-3 p-0">
+                        <div className="d-flex">
+                            <p className="mb-0 mr-3">02:00 PM</p>
+                            <p className="mb-0">17/10/2019</p>
+                        </div>
+                        <div className="d-flex">
+                            <p className="ict_stl"> Cancel</p>
+                            <p className="ictc_stl">Confirm</p>
+                        </div>
+                    </div> 
+                     <div className="col-md-2"></div>
+                    <div className="col-md-3 p-0">
+                        <div className="d-flex">
+                        <p className="mb-0 mr-3">02:00 PM</p>
+                            <p className="mb-0">17/10/2019</p>
+                        </div>
+                        <div className="d-flex">
+                            <p className="ict_stl">Cancel</p>
+                            <p className="ictc_stl">Confirm</p>
+                        </div>
+                    </div>
+                    <div className="col-md-1"></div>
+                    <div className="col-md-3 p-0">
+                        <div className="d-flex">
+                            <p className="mb-0 mr-3">02:00 PM</p>
+                            <p className="mb-0">17/10/2019</p>
+                        </div>
+                        <div className="d-flex">
+                            <p className="ict_stl">Cancel</p>
+                            <p className="ictc_stl">Confirm</p>
+                        </div>
+                    </div>
+                </div>
+                      
+                       </div>
                         </Card>
                     </div>
                     <div className="col-md-5 p-0">
-                        <Card className="p-2">
-                            <div className="scheduler d-flex">
-                                <Card.Header className="border_my" style={{ color: "#717171", fontSize: "30px", fontWeight: "500" }}>Profile</Card.Header>
-                                <Icon size={40} icon={androidMoreVertical} />
-                            </div>
-                            <ListGroup variant="flush">
-                                <ListGroup.Item className="pl-0 pr-0">
-                                    <div className="col-md-12 d-flex pl-2 pr-0">
-                                        <div className="col-md-6 p-0 pr-2">
-                                            <Image className="profile_pic" src="../XYZ-01.jpg" style={{ width: "100%" }} />
-                                            <div className="d-flex my_fattel">
-                                                <div className="userfile_exits">
-                                                    <h5 className="job_title" style={{ color: "#12c2f5" }}>Daniel Howard</h5>
-                                                    <h6 className="" >UX Designer</h6>
-                                                </div>
-                                                <div className="userfile_exits">
-                                                    <Button className="radius_button" variant="primary">Edit Profile</Button>
-                                                </div>
-                                            </div>
-                                            <ListGroup.Item className="p-0 pt-2">
-                                                <Card.Title className="resume_ranking">Resume Ranking</Card.Title>
-                                                <div className="col-md-12 d-flex p-0 my_resume">
-                                                    <div className="col-md-3 p-0 pr-2" style={{ fontSize: "25px" }}>20%</div>
-                                                    <div className="col-md-6 p-0 pr-2 pl-1">Update Resume for better result</div>
-
-                                                    <div className="col-md-3 p-0 pr-2">
-                                                        <Button className="pro_update" size="sm" variant="primary">Update</Button> </div>
-                                                </div>
-                                            </ListGroup.Item>
-                                            <ListGroup.Item style={{ paddingBottom: "8.3rem" }}></ListGroup.Item>
-                                        </div>
-                                            <div className="col-md-6 p-0">
-                                                <div className="">
-                                                    <p className=" test_skill mb-2">Test your skill</p>
-                                                    <p className="chances mb-2">Increase chances of your selection</p>
-                                                </div>
-                                                <div className="d-flex sub_title">
-                                                    <div className="">
-                                                        <p className="" style={{ color: "black" }}>Skill Test Score</p>
-                                                    </div>
-                                                    <div className="">
-                                                        <p className="" style={{ color: "#12c2f5" }}>10/10</p>
-                                                    </div>
-                                                </div>
-                                                <div className="your_skill pb-2">
-                                                <Button className="pro_update" variant="primary">Test Skills</Button>
-                                                </div>
-                                                <ListGroup.Item className="p-0">
-                                                <div className="">
-                                                    <p className=" test_skill mb-2">Test your skill</p>
-                                                    <p className="chances mb-2">Increase chances of your selection</p>
-                                                </div>
-                                                <div className="d-flex sub_title">
-                                                    <div className="">
-                                                        <p className="" style={{ color: "black" }}>Skill Test Score</p>
-                                                    </div>
-                                                    <div className="">
-                                                        <p className="" style={{ color: "#12c2f5" }}>10/10</p>
-                                                    </div>
-                                                </div>
-                                                <div className="your_skill pb-2">
-                                                <Button className="pro_update" variant="primary">Test Skills</Button>
-                                                </div>
-                                                </ListGroup.Item>
-                                            </div>
+                        <Card className="p-3">
+                        <div className="row d-flex req-skil-head">
+                                    <div className="col-md-10 p-0">
+                                        <p className="req font-weight-bold text-dark"> Profile </p>
                                     </div>
-                                </ListGroup.Item>
-                            </ListGroup>
-                        </Card>
+                                    <div className="col-md-2 text-right">
+                                        <FaEllipsisH />
+                                    </div>
+                                </div>
+                          
+                          <div className="row d-flex pb-4 pt-4">
+                              <div className="col-md-5 p-0">
+                              <Image src="../XYZ-01.jpg" style={{ width: "100%", borderRadius: "8px", height: "140px" }} />
+                             <div className="profile_con">
+                             <Link to="/">
+                             <p className="req font-weight-bold text-dark mb-0"> Daniel Howard </p>
+                             </Link>
+                              <p className="mb-5 ui_stl">UI Designer </p>
+                              <Button variant="" className="btn-req">Edit Profile</Button> 
+                                 </div> 
+                              </div>
+                              <div className="col-md-7">
+                             <p className="req font-weight-bold text-dark mb-0"> Test Your Skill </p>
+                             <div className="d-flex pb-3 req-skil-head">
+                                 <div className="col-md-5 p-0">
+                                 <p className="pro_stl">85%</p> 
+                                 <Button variant="" className="btn-req">Test Skills</Button> 
+                                 </div>
+                                 <div className="col-md-5 p-0">
+                                 <p className="pt-2">Increase chances of your selection</p>
+                                 </div>
+                            <div className="col-md-2"> </div>
+                              </div>
+                              <p className="req font-weight-bold text-dark mb-0 pt-3"> Resume Ranking </p>
+                             <div className="d-flex pb-3 req-skil-head mb-1">
+                                 <div className="col-md-5 p-0">
+                                 <p className="pro_stl">20%</p> 
+                                 <Button variant="" className="btn-req"> Edit Resume </Button> 
+                                 </div>
+                                 <div className="col-md-5 p-0">
+                                 <p className="pt-2">Update Resume for better results</p>
+                                 </div>
+                            <div className="col-md-2"> </div>
+                              </div>
+                              <p className="req font-weight-bold text-dark mb-0 pt-3"> Live Interview Panel </p>
+                             <div className="d-flex pb-4 req-skil-head">
+                                 <div className="col-md-6 p-0">
+                                 <p className="pro_stl"> 10/10 </p> 
+                                 <Button variant="" className="btn-req">Attend Interview</Button> 
+                                 </div>
+                                 <div className="col-md-5 p-0">
+                                 <p className="pt-2">Panel Interview Score</p>
+                                 </div>
+                            <div className="col-md-1"> </div>
+                              </div>
+                              </div>
+                          </div>
+                          
+                             </Card>
                     </div>
                 </div>
             </div>

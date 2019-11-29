@@ -8,7 +8,7 @@ import { FaSearch} from 'react-icons/fa';
 const Comments = () => {
     return (
       <div>
-            <Card.Header className="bg-white py-3 px-1 d-flex">
+            <Card.Header className="bg-white d-flex">
                 <div className="col-md-6">
                     <h6 className="font-weight-bold">Observations / Comment History</h6>
                 </div>
@@ -22,7 +22,7 @@ const Comments = () => {
                 </div>
             </Card.Header>
             <Card.Body>
-                <Row className="commentsTitles py-3 px-1 mx-3">
+                <Row className="commentsTitles">
                     <div className="col-md-2">
                         <p className="mb-0">Date</p>
                     </div>
@@ -36,7 +36,7 @@ const Comments = () => {
                         <p className="mb-0">Action</p>
                     </div>
                 </Row>
-                <Row className="py-4 px-1 mx-3">
+                <Row className="py-3">
                     <div className="col-md-2 fontsize">
                     <p className="font-weight-bold">21/08/2019</p>
             </div>
@@ -46,12 +46,12 @@ const Comments = () => {
                     <div className="col-md-6 month">
                         <p>Pass in the url prop of your social network, and the icon will be rendered.</p>
                     </div>
-                    <div className="col-md-2 d-flex text-center">
+                    <div className="col-md-2 p-0 d-flex">
                         <p className="mr-2"><Link to="" className="text-success fontsize float-left">Edit</Link></p>
                         <p className="ml-2"><Link to="" className="text-danger fontsize float-left">Delete</Link></p>
                     </div>
                 </Row>
-                <Row className="py-4 px-2 mx-3">
+                <Row className="">
                     <div className="col-md-2">
                         <p className="font-weight-bold">21/08/2019</p>
                     </div>
@@ -61,7 +61,7 @@ const Comments = () => {
                     <div className="col-md-6 month">
                         <p>Pass in the url prop of your social network, and the icon will be rendered.</p>
                     </div>
-                    <div className="col-md-2 d-flex">
+                    <div className="col-md-2 p-0 d-flex">
                     <p className="mr-2"><Link to="" className="text-success fontsize float-left">Edit</Link></p>
                         <p className="ml-2"><Link to="" className="text-danger fontsize float-left">Delete</Link></p>
                     </div>

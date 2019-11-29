@@ -69,13 +69,13 @@ class Welcome extends React.Component {
     }
   render() {
         return (
-            <div className="card-body">
+            <div className="card-body pt-2 pb-2">
                 <Row>
                     <Col md="3">
                         <div className="card">
-                            <h6 className="card-header  bg-white">Skills</h6>
+                            <h6 className="card-header pb-2 pt-2  bg-white">Skills</h6>
                             <div className="card-body d-flex item_align">
-                                <div className="col-md-5 my-3">
+                                <div className="col-md-5 p-0">
                                     <p className="mb-1">Java</p>
                                     <p className="mb-1">HTML</p>
                                     <p className="mb-1">UL Design</p>
@@ -83,7 +83,7 @@ class Welcome extends React.Component {
                                     <p className="mb-1">CSS</p>
                                     <p className="mb-1">Angular JS</p>
                                 </div>
-                                <div className="col-md-3 my-3">
+                                <div className="col-md-3 p-0">
                                     <p className="mb-1">10 Yrs</p>
                                     <p className="mb-1">10 Yrs</p>
                                     <p className="mb-1">10 Yrs</p>
@@ -91,7 +91,7 @@ class Welcome extends React.Component {
                                     <p className="mb-1">10 Yrs</p>
                                     <p className="mb-1">10 Yrs</p>
                                 </div>
-                                <div className="col-md-4 my-3">
+                                <div className="col-md-4 p-0">
                                     <p className="mb-1">2016-19</p>
                                     <p className="mb-1">2016-19</p>
                                     <p className="mb-1">2016-19</p>
@@ -104,16 +104,16 @@ class Welcome extends React.Component {
                     </Col>
                     <Col md="3">
                         <div className="card">
-                            <h6 className="card-header bg-white">Domain</h6>
-                            <div className="card-body">
+                            <h6 className="card-header pb-2 pt-2 bg-white">Domain</h6>
+                            <div className="pl-3 pr-3 pt-2 pb-1">
                             <Pie data={this.state.pieData} options={this.state.pieChartOptions} width={1000} height={580} redraw />
                             </div>
                         </div>
                     </Col>
                     <Col md="3">
                         <div className="card">
-                            <h6 className="card-header  bg-white">CV-Summarization Charts</h6>
-                            <div className="card-body">
+                            <h6 className="card-header pb-2 pt-2 bg-white">CV-Summarization Charts</h6>
+                            <div className="pl-3 pr-3 pt-2 pb-1">
                                 <Pie data={this.state.pieData} options={this.state.pieChartOptions} width={1000} height={580} redraw />
                             </div>
                         </div>
@@ -121,8 +121,8 @@ class Welcome extends React.Component {
 
                     <Col md="3">
                         <div className="card">
-                            <h6 className="card-header  bg-white">Designation/Roles</h6>
-                            <div className="card-body">
+                            <h6 className="card-header pb-2 pt-2 bg-white">Designation/Roles</h6>
+                            <div className="pl-3 pr-3 pt-2 pb-1">
                                 {/* <h5 className="card-title">Special</h5> */}
                                 <Pie data={this.state.pieData} options={this.state.pieChartOptions} width={1000} height={580} redraw />
                             </div>
@@ -132,8 +132,8 @@ class Welcome extends React.Component {
                 <Row className="mt-2 mb-2">
                     <Col md="6">
                         <div className="card">
-                            <h6 className="card-header bg-white">Career Progress</h6>
-                            <div className="card-body">
+                            <h6 className="card-header pb-2 pt-2 bg-white">Career Progress</h6>
+                            <div className="pl-3 pr-3 pt-2 pb-1">
                                 <Line data={this.state.lineData} width={1000} height={332} redraw />
                                 <p className="card-text"></p>
                             </div>
@@ -141,10 +141,10 @@ class Welcome extends React.Component {
                     </Col>
                     <Col md="3">
                         <div className="card">
-                            <h6 className="card-header  bg-white">Weightage</h6>
-                            <div className="card-body pb-4 pt-1">
+                            <h6 className="card-header pb-2 pt-2 bg-white">Weightage</h6>
+                            <div className="pl-3 pr-3 pt-3 pb-4">
                                 <div className="my-2">
-                                    <div className="adjest_items d-flex  pb-5 pt-5">
+                                    <div className="adjest_items d-flex  pb-5">
                                         <Col md="6 hlo">
                                             {/* <Pie data={this.state.dataFlow} height={350} /> */}
                                             <svg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
@@ -184,10 +184,10 @@ class Welcome extends React.Component {
                     </Col>
                     <Col md="3">
                         <div className="card">
-                            <h6 className="card-header  bg-white">Education / certifications</h6>
-                            <div className="card-body">
+                            <h6 className="card-header pb-2 pt-2 bg-white">Education / certifications</h6>
+                            <div className="pl-3 pr-3 pt-2 pb-1">
                                 <p className="card-title mb-1">Education</p>
-                                <Row>
+                                <Row className="req-skil-head pb-2">
                                     <Col md="6" className="font-weight-bold small col-md-6 pb-0 pb-1">
                                         <div>MTECH</div>
                                         <div>IIT</div>
@@ -199,8 +199,8 @@ class Welcome extends React.Component {
                                         <div className="font-weight-light">2008-2012</div>
                                     </Col>
                                 </Row>
-                                <hr />
-                                <p className="card-title mb-1">Certification</p>
+                              
+                                <p className="card-title mb-1 mt-1 pt-2">Certification</p>
                                 <Row>
                                     <Col md="6" className="font-weight-bold small pb-0 pb-1">
                                         <div>Diploma In Graphics</div>

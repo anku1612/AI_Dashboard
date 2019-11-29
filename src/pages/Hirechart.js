@@ -25,7 +25,7 @@ state = {
 render() {
     return (
     <MDBContainer>
-      <Doughnut data={this.state.dataDoughnut} options={{ responsive: true }} />
+      <Doughnut data={this.state.dataDoughnut} options={{ responsive: true }} width={900} height={960} />
     </MDBContainer>
     );
   }

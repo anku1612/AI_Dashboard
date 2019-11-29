@@ -1,7 +1,7 @@
 .tail-datetime-calendar {
-    width: 200px; 
+    width: 245px; 
     height: auto;
-    margin: 10px; 
+    /* margin: 10px;  */
     padding: 0;
     display: block;
     overflow: hidden;
@@ -9,10 +9,10 @@
     border-collapse: separate;
     font-family: "Open Sans", Calibri, Arial, sans-serif;
     background-color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3125);
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3125);
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3125);
     border-radius: 3px;
-    -webkit-border-radius: 3px;
+    -webkit-border-radius: 3px; */
   }
   .tail-datetime-calendar:after {
     clear: both;
@@ -28,24 +28,25 @@
   .tail-datetime-calendar .calendar-navi {
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 5px 0px 25px;
     display: table;
     border-spacing: 0;
     border-collapse: separate;
-    background-color: #3abd3d;
+    /* background-color: #3abd3d; */
     border-radius: 3px 3px 0 0;
     -webkit-border-radius: 3px 3px 0 0;
   }
   .tail-datetime-calendar .calendar-navi span {
     cursor: pointer;
-    color: #fff;
+    color: black;
     margin: 0;
     padding: 0;
     display: table-cell;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: bold;
     text-align: center;
     line-height: 30px;
-    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15);
+    /* text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15); */
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -93,13 +94,11 @@
   }
   .tail-datetime-calendar .calendar-date table thead tr > *,
   .tail-datetime-calendar .calendar-date table tbody tr > * {
-    /* color: #ffffff; */
-    color:  #a6a6a6; 
-    font-weight: 1000; 
+    color:  #555555; 
     width: 35px;
-    /* height: 35px; */
+    height: 35px;
     padding: 0;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
     font-weight: bold;
     /* line-height: 35px; */

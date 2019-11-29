@@ -109,8 +109,8 @@
         font-weight: 800;
     }
     .circle_int{
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         color:#3abd3d;
         border-radius: 1px solid#3abd3d;
         margin-top: 15px;
@@ -119,8 +119,6 @@
     .int_time{
         padding: 5px 8px 5px 8px;
     }
-  
-    
     .my_title_head{
         display: flex!important;
         align-items: center;
@@ -132,7 +130,8 @@
       }
 .mail-first{
  background: #f8f8f8;
-padding: 19px;
+ padding: 25px;
+ text-align: center;
 }
 .font-int{
     font-size: 12px !important;
@@ -154,7 +153,34 @@ padding: 19px;
     height: 40px;  
     border-radius: 5px;
  } 
+.can_stl{
+    border-bottom: 3px solid #04b6fd;
+    padding: 0px !important;
+    padding-bottom: 20px !important;
+    color: #04b6fd !important;
+    font-weight: bold;
+}
+.chart-scrollbar {
+    height: 140px;
+    overflow-y: scroll;
+  }
+  .chart-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  .chart-scrollbar::-webkit-scrollbar-track {
+    background:#dadada; 
+  }
+  .chart-scrollbar::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
 
+.ReAva_stl{
+    border-bottom: 3px solid #04b6fd;
+    padding: 0px !important;
+    padding-bottom: 15px !important;
+    color: #04b6fd !important;
+    font-weight: bold;
+}
 
 
  

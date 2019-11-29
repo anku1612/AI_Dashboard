@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/MyRequirements.css';
-import { Card } from 'react-bootstrap';
+import { Card} from 'react-bootstrap';
 import { FaEllipsisH } from 'react-icons/fa';
 import { Link , BrowserRouter as Router ,Switch,Route} from 'react-router-dom'
 const cardstyle = {
@@ -58,13 +58,13 @@ function RequirementsClient() {
     <Card.Body style={cardstyle} className="c_body">
     <div className="req-det">
       <div className="d-flex justify-content-around pt-2">
-        <div className="col-md-1">
+        <div className="col-md-1 pr-0">
           <p className="inf-stl">Infosys</p>
         </div>
         <div className="col-md-2">
           <p className="req-pro">Senior Java Programmer</p>
         </div>
-        <div className="col-md-9" >
+        <div className="col-md-9">
           <p className="text-dark font-weight-bold text-right">Expiry: 3 days</p>
         </div>
       </div>
@@ -174,7 +174,7 @@ function Skills() {
     <Card.Body style={cardstyle} className="c_body" >
 
 <div className="row d-flex justify-content-around">
-<p className="python-skill">Python (1)</p>
+ <Link to=""><p className="python-skill">Python (1)</p> </Link>
 <p className="multi-skill">Java (14)</p>
 <p className="multi-skill">HTML (14)</p>
 <p className="multi-skill">UI Developer (2)</p>

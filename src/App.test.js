@@ -7,7 +7,7 @@ import RequireterMainPage from './pages/RequireterMainPage';
 import candidate_complete_profile from './pages/candidate_complete_profile';
 import PanellistDashboard from './pages/PanellistDashboard'
 import RecIntelligentSearch from './pages/RecruiterIntelligentSearch'
-import HiredcandidateDashboard from './pages/HiredcandidateDashboard'
+import HiredMemDash from './pages/HiredcandidateDashboard'
 import Chartspage from './pages/Chartspage'
 import Charttest from './pages/Charttest'
 import MyRequirements from './pages/MyRequirements'
@@ -15,7 +15,6 @@ import ISearch from './pages/ISearch'
 import HotCVs from './pages/HotCVs'
 import MyReava from './pages/MyReava'
 import InMail from './pages/InMail'
-import SearchHeader from './pages/SearchHeader';
 import './App.css';
 
 function Apphome(){
@@ -23,13 +22,12 @@ function Apphome(){
     <BrowserRouter>
     <div >
       <Header />
-      <SearchHeader/>
       <Switch> 
       <Route path="/Reqhome"  exact component={RequireterMainPage} />
       <Route path="/CandidateSearch"  component={CandidateSearch} />
       <Route path="/Dashboard"  component={Dashboard} />
-      <Route path="/HiredcandidateDashboard"  component={HiredcandidateDashboard} />
-      <Route path="/candidate_complete_profile"  component={candidate_complete_profile} />
+      <Route path="/HiredMemDash"  component={HiredMemDash} />
+      <Route path="/Candidatehome"  component={candidate_complete_profile} />
       <Route path="/panelList" component={PanellistDashboard} />
       <Route path="/RecIntelligentSearch" component={RecIntelligentSearch} /> 
       <Route path="/Chartspage" component={Chartspage} />
