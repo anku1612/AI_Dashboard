@@ -238,14 +238,14 @@ const PanellistDashboard = () => {
                                         <div className="row d-flex">
                                             <div className="col-md-12 p-0 req-skil-head">
                                                 <div className="d-flex justify-content-around pt-2  w-75">
-                                                    <Link to="/panelList"> <p className="ReAva_stl mb-0">UpComing Today</p> </Link>
-                                                    <Link to="/panelList"> <p className="mb-0">This Week</p> </Link>
-                                                    <Link to="/panelList"> <p className=" mb-0">This Month</p> </Link>
+                                                    <Link to="/PanellistDashboard"> <p className="ReAva_stl mb-0">UpComing Today</p> </Link>
+                                                    <Link to="/PanellistDashboard"> <p className="mb-0">This Week</p> </Link>
+                                                    <Link to="/PanellistDashboard"> <p className=" mb-0">This Month</p> </Link>
                                                 </div>
                                             </div>
                                         </div>
                                         <Switch>
-                                            <Route path="/panelList"> <UpcomingToday /> </Route>
+                                            <Route path="/PanellistDashboard"> <UpcomingToday /> </Route>
                                         </Switch>
                                     </Router>
                                 </div>

@@ -3,7 +3,7 @@ import '../css/ReqViewPanelDash.css';
 import { Card, Image } from 'react-bootstrap';
 import { Link} from 'react-router-dom'
 import {FaPhone, FaEnvelope, FaCommentDots, FaWhatsapp, FaVideo ,FaCalendarCheck ,FaCalendarTimes} from 'react-icons/fa';
-import RPHeader from './RPHeader';
+// import RPHeader from './RPHeader';
 const wtspstyle = {
   color: "#3ab948",
   width: "28px",
@@ -13,7 +13,7 @@ const wtspstyle = {
 export default function ReqViewPanelSearch() {
   return (
     <div>
-      <RPHeader />
+      {/* <RPHeader /> */}
       <div className="container-fluid">
         <div className="profile">
           <Card className="cardstl">
@@ -24,14 +24,13 @@ export default function ReqViewPanelSearch() {
                   <FaCalendarCheck size={22} style={{color:"#16b92c"}} className="mt-3" />
                   <p className="pt-2">This Week</p>
                 </div>
-
                   <div className="col-md-3">
                     <div className="mb-4">
                       <Image src="../profile1.png" roundedCircle className="img_req" />
                     </div>
                   </div>
                   <div className="col-md-5 p-0">
-                    <Link to="/Dashboard"> 
+                    <Link to="/PanellistDashboard"> 
                      <p className="ptextColor font-weight-bold">Sarrah Connor</p></Link>
                     <p className="pp_stl">Primary Skills</p>
                     <p className="mb-0 text-dark font-weight-bold">JAVA, PHP</p>
@@ -71,7 +70,6 @@ export default function ReqViewPanelSearch() {
               </div>
             </Card.Body>
           </Card>
-         
          
           <Card className="cardstl">
             <Card.Body className="pl-0 pr-0">
@@ -88,7 +86,7 @@ export default function ReqViewPanelSearch() {
                     </div>
                   </div>
                   <div className="col-md-5 p-0">
-                    <Link to="/Dashboard"> 
+                    <Link to="/PanellistDashboard"> 
                      <p className="ptextColor font-weight-bold">Sarrah Connor</p></Link>
                     <p className="pp_stl">Primary Skills</p>
                     <p className="mb-0 text-dark font-weight-bold">JAVA, PHP</p>
@@ -128,14 +126,6 @@ export default function ReqViewPanelSearch() {
               </div>
             </Card.Body>
           </Card>
-         
-         
-         
-         
-         
-         
-         
-          
           </div>
       </div>
     </div>

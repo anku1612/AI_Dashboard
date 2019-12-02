@@ -3,9 +3,12 @@ import {BrowserRouter , Route ,Switch} from 'react-router-dom';
 import LoginPage from './pages/LoginPage'
 import RPLogin from './pages/RPLogin'
 import LandingPage from './pages/LandingPage'
+import PanelPage from './pages/PanelPage'
+import InterviewTimeSchedule from './pages/InterviewTimeSchedule'
 import Reqhome from './App.test.js';
 import Candidatehome   from './App.test.js';
 import panelList   from './App.test.js';
+import PanellistDashboard   from './App.test.js';
 import CandidateSearch   from './App.test.js';
 import MyRequirements from './App.test.js';
 import RecIntelligentSearch from './App.test.js';
@@ -18,13 +21,14 @@ import RPHeader from './pages/RPHeader';
 import ReqViewPanelDash from './pages/ReqViewPanelDash';
 import ReqViewPanelSearch from './pages/ReqViewPanelSearch';
 import './App.css';
-
 function App(){
   return(
     <BrowserRouter>
     <div >
       <Switch> 
       <Route path="/"  exact  component={LandingPage} />
+      <Route path="/PanelPage"  exact  component={PanelPage} />
+      <Route path="/InterviewTimeSchedule"  exact  component={InterviewTimeSchedule} />
       <Route path="/LoginPage"  exact  component={LoginPage} />
       <Route path="/RPLogin" exact  component={RPLogin} />
       <Route path="/Reqhome"   component={Reqhome} />
@@ -41,6 +45,9 @@ function App(){
       <Route path="/ReqViewPanelDash"  component={ReqViewPanelDash} />
       <Route path="/ReqViewPanelSearch"  component={ReqViewPanelSearch} />
       <Route path="/panelList" component={panelList} />
+      <Route path="/PanellistDashboard" component={PanellistDashboard} />
+
+      
     </Switch>
  </div>
     </BrowserRouter>

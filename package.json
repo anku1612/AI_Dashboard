@@ -13,6 +13,7 @@
     "fusioncharts": "^3.14.1",
     "jquery": "^3.4.1",
     "mdbreact": "^4.22.1",
+    "primereact": "^3.3.3",
     "react": "^16.10.2",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-chartjs-2": "^2.8.0",

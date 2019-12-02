@@ -53,9 +53,142 @@
     color: white;
     right: 33%;
 }
-.main{
+.mainpagestl{
     background-color: #f4f4f4;
 }
+.modal_head{
+    color: white;
+    background: black;
+    border-bottom: 5px solid #00aeef !important;
+}
+.logo_stl{
+    width: 50px;
+    height: 50px;
+}
+.time_sch_stl{
+border: 1px solid #ddd !important;
+background: #f8f8fa !important;
+margin-bottom: 0;
+color: black !important;
+font-size: 15px;
+padding: 10px;
+}
+body .p-button{
+    margin: 0;
+    color: #ffffff !important;
+    background-color: #007ad9 !important;
+    border: 1px solid #007ad9 !important;
+    font-size: 14px !important;
+    -moz-transition: background-color 0.2s, box-shadow 0.2s;
+    -o-transition: background-color 0.2s, box-shadow 0.2s;
+    -webkit-transition: background-color 0.2s, box-shadow 0.2s;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+body .p-component{
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+.p-fileupload-choose {
+    position: relative;
+    overflow: hidden;
+}
+.p-button {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    color: #ffffff;
+    text-decoration: none!important;
+    cursor: pointer;
+    text-align: center;
+    zoom: 1;
+    overflow: visible;
+    margin-right: .25em;
+    -ms-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 
-
-
+}
+.p-component, .p-component * {
+    box-sizing: border-box;
+}
+.p-button-icon-only .p-button-icon-left, .p-button-text-icon-left .p-button-icon-left, .p-button-text-icon-right .p-button-icon-right {
+    position: absolute;
+    top: 50%;
+    margin-top: -.5em;
+    height: 1em;
+}
+body .pi {
+    font-size: 1em;
+}
+.p-button-icon-left {
+    left: .5em;
+}
+.pi {
+    font-family: primeicons;
+    font-style: normal;
+    font-weight: 400;
+    font-feature-settings: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body .p-button.p-button-text-icon-left .p-button-text {
+    padding: 0.429em 1em 0.429em 2.25em;
+}
+.p-button .p-button-text {
+    display: block;
+    line-height: normal;
+}
+.p-fileupload-choose input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    direction: ltr;
+    cursor: pointer;
+}
+input[type="file" i] {
+    -webkit-appearance: initial;
+    background-color: initial;
+    cursor: default;
+    align-items: baseline;
+    color: inherit;
+    text-align: start !important;
+    padding: initial;
+    border: initial;
+}
+/* input {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+} */

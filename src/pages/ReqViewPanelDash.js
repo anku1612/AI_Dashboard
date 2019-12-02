@@ -44,7 +44,7 @@ export default function ReqViewPanelDash() {
                     </div>
                   </div>
                   <div className="col-md-8 p-0">
-                    <Link to="/Dashboard">  <h6 className="mb-0 textColor">Sarrah Connor</h6></Link>
+                    <Link to="/PanellistDashboard">  <h6 className="mb-0 textColor">Sarrah Connor</h6></Link>
                     <p className="mb-0">JAVA, PHP</p>
                   </div>
                 </div>
@@ -80,11 +80,7 @@ export default function ReqViewPanelDash() {
               </div>
             </Card.Body>
           </Card>
-
-
-
-
-          <Card className="mb-4 cardstl">
+          <Card className="cardstl">
             <div style={cardstyle}>
               <div className="row d-flex req-skil-head">
                 <div className="col-md-10">
@@ -140,7 +136,6 @@ export default function ReqViewPanelDash() {
       </div>
     </div>
   )
-
 
 }
 function October() {

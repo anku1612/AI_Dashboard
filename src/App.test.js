@@ -5,6 +5,8 @@ import Dashboard from './pages/ProfileSummary';
 import CandidateSearch from './pages/CandidateSearch';
 import RequireterMainPage from './pages/RequireterMainPage';
 import candidate_complete_profile from './pages/candidate_complete_profile';
+import ReqViewPanelSearch from './pages/ReqViewPanelSearch'
+import ReqViewPanelDash from './pages/ReqViewPanelDash'
 import PanellistDashboard from './pages/PanellistDashboard'
 import RecIntelligentSearch from './pages/RecruiterIntelligentSearch'
 import HiredMemDash from './pages/HiredcandidateDashboard'
@@ -28,7 +30,9 @@ function Apphome(){
       <Route path="/Dashboard"  component={Dashboard} />
       <Route path="/HiredMemDash"  component={HiredMemDash} />
       <Route path="/Candidatehome"  component={candidate_complete_profile} />
-      <Route path="/panelList" component={PanellistDashboard} />
+      <Route path="/panelList" component={ReqViewPanelSearch} />
+      <Route path="/PanellistDashboard" component={PanellistDashboard} />
+      <Route path="/ReqViewPanelDash" component={ReqViewPanelDash} />
       <Route path="/RecIntelligentSearch" component={RecIntelligentSearch} /> 
       <Route path="/Chartspage" component={Chartspage} />
       <Route path="/Charttest" component={Charttest} />
