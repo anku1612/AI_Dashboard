@@ -73,12 +73,13 @@ color: black !important;
 font-size: 15px;
 padding: 10px;
 }
-body .p-button{
+
+body .p-button {
     margin: 0;
-    color: #ffffff !important;
-    background-color: #007ad9 !important;
-    border: 1px solid #007ad9 !important;
-    font-size: 14px !important;
+    color: #ffffff;
+    background-color: #007ad9;
+    border: 1px solid #007ad9;
+    font-size: 14px;
     -moz-transition: background-color 0.2s, box-shadow 0.2s;
     -o-transition: background-color 0.2s, box-shadow 0.2s;
     -webkit-transition: background-color 0.2s, box-shadow 0.2s;
@@ -87,7 +88,7 @@ body .p-button{
     -webkit-border-radius: 3px;
     border-radius: 3px;
 }
-body .p-component{
+body .p-component {
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 14px;
     text-decoration: none;
@@ -100,7 +101,6 @@ body .p-component{
     display: inline-block;
     position: relative;
     padding: 0;
-    color: #ffffff;
     text-decoration: none!important;
     cursor: pointer;
     text-align: center;
@@ -111,7 +111,6 @@ body .p-component{
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
-
 }
 .p-component, .p-component * {
     box-sizing: border-box;
@@ -123,10 +122,13 @@ body .p-component{
     height: 1em;
 }
 body .pi {
-    font-size: 1em;
+    font-size: 1.25em;
 }
 .p-button-icon-left {
     left: .5em;
+}
+.p-component, .p-component * {
+    box-sizing: border-box;
 }
 .pi {
     font-family: primeicons;
@@ -140,12 +142,19 @@ body .pi {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 body .p-button.p-button-text-icon-left .p-button-text {
-    padding: 0.429em 1em 0.429em 2.25em;
+    padding: 0.429em 3em 0.429em 2.25em;
 }
 .p-button .p-button-text {
     display: block;
     line-height: normal;
+}
+.p-fileupload-choose.p-fileupload-choose-selected input[type=file] {
+    display: none;
+}
+.p-component, .p-component * {
+    box-sizing: border-box;
 }
 .p-fileupload-choose input[type=file] {
     position: absolute;
@@ -170,25 +179,24 @@ input[type="file" i] {
     padding: initial;
     border: initial;
 }
-/* input {
-    text-rendering: auto;
-    color: initial;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    -webkit-appearance: textfield;
-    background-color: white;
-    -webkit-rtl-ordering: logical;
-    cursor: text;
-    margin: 0em;
-    font: 400 13.3333px Arial;
-    padding: 1px 0px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: initial;
-    border-image: initial;
-} */
+
+.chartt-scrollbar {
+    height: 300px;
+    overflow-y: scroll;
+  }
+  .chartt-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  .chartt-scrollbar::-webkit-scrollbar-track {
+    background:#dadada; 
+  }
+  .chartt-scrollbar::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  .reg_main{
+      padding: 5px 40px;
+  }
+
+.bor_stlreg{
+    border-bottom: 2px solid #f1f1f1;
+}
