@@ -200,3 +200,10 @@ input[type="file" i] {
 .bor_stlreg{
     border-bottom: 2px solid #f1f1f1;
 }
+.btnotp{
+    font-size: 10px !important;
+    padding: 7px 5px !important;
+    font-weight: bold !important;
+}
+
+

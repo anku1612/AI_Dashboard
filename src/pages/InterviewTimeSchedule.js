@@ -25,7 +25,7 @@ export default class InterviewTimeSchedule extends React.Component{
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <div className="bg-white container-fluid p-5">
+      <div className="bg-white p-5">
         <div className="col-md-12 pb-5">
           <p className="time_sch_stl">Please select 10 of Your Available Date and Timings for
            Scheduling Interview in this month (Earn 500/- for each Interview)</p>
@@ -34,7 +34,38 @@ export default class InterviewTimeSchedule extends React.Component{
           <div className="col-md-4">
             <Calendar />
             <div className="pt-5">
-            
+            <div className="form-group w-75">
+    <select className="form-control border px-3 py-2 " id="exampleFormControlSelect10">
+    <option value="time">Select Time</option>
+        <option value="9am">9.00 AM</option>
+        <option value="9.30pm">9.30 AM</option>
+        <option value="10am">10.00 AM</option>
+        <option value="10.30am">10.30 AM</option>
+        <option value="11am">11.00 AM</option>
+        <option value="11.30am">11.30 AM</option>
+        <option value="12pm">12.00 PM</option>
+        <option value="12.30pm">12.30 PM</option>
+        <option value="1pm">01.00 PM</option>
+        <option value="1.30pm">01.30 PM</option>
+        <option value="2pm">02.00 PM</option>
+        <option value="2.30pm">02.30 PM</option>
+        <option value="3pm">03.00 PM</option>
+        <option value="3.30pm">03.30 PM</option>
+        <option value="4pm">04.00 PM</option>
+        <option value="4.30pm">04.30 PM</option>
+        <option value="5pm">05.00 PM</option>
+        <option value="5.30pm">05.30 PM</option>
+        <option value="6pm">06.00 PM</option>
+        <option value="6.30pm">06.30 PM</option>
+        <option value="7pm">07.00 PM</option>
+        <option value="7.30pm">07.30 PM</option>
+        <option value="8pm">08.00 PM</option>
+        <option value="8.30pm">08.30 PM</option>
+        <option value="9pm">09.00 PM</option>
+        <option value="9.30pm">09.30 PM</option>
+        <option value="10pm">10.00 PM</option>
+    </select>
+  </div>
 
 </div> 
             <div>

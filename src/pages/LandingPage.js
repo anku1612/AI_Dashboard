@@ -21,7 +21,7 @@ export default function LandingPage() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto links">
             <Link to="/" className="nav-link lan_page" style={{ color: "#00aeef" }}>Home</Link>
-            <Link to="/" className="nav-link lan_page">About</Link>
+            <Link to="/PanelPage" className="nav-link lan_page">About</Link>
             <Link to="/" className="nav-link lan_page">Features</Link>
             <Link to="/" className="nav-link lan_page">Products</Link>
             <Link to="/" className="nav-link lan_page">Contact</Link>

@@ -12,7 +12,6 @@ import Nav from 'react-bootstrap/Nav';
 class RegPage extends React.Component {
   constructor() {
     super();
-
     this.onUpload = this.onUpload.bind(this);
     this.onBasicUpload = this.onBasicUpload.bind(this);
     this.onBasicUploadAuto = this.onBasicUploadAuto.bind(this);
@@ -20,11 +19,9 @@ class RegPage extends React.Component {
   onUpload(event) {
     this.growl.show({ severity: 'info', summary: 'Success', detail: 'File Uploaded' });
   }
-
   onBasicUpload(event) {
     this.growl.show({ severity: 'info', summary: 'Success', detail: 'File Uploaded with Basic Mode' });
   }
-
   onBasicUploadAuto(event) {
     this.growl.show({ severity: 'info', summary: 'Success', detail: 'File Uploaded with Auto Mode' });
   }
@@ -53,9 +50,7 @@ class RegPage extends React.Component {
               <Growl ref={(el) => { this.growl = el; }}></Growl>
             </div>
             </div>
-
             <Form>
-
               <div className="py-4 my-0">
             <h4 className="">Personal Information</h4>
                 <Row>

@@ -21,14 +21,12 @@ import HiredMemDash from './App.test.js';
 import RPHeader from './pages/RPHeader';
 import ReqViewPanelDash from './pages/ReqViewPanelDash';
 import ReqViewPanelSearch from './pages/ReqViewPanelSearch';
-// import demo from './pages/demo';
 import './App.css';
 function App(){
   return(
     <BrowserRouter>
     <div >
       <Switch> 
-      {/* <Route path="/demo"  exact  component={demo} /> */}
       <Route path="/"  exact  component={LandingPage} />
       <Route path="/PanelPage"  exact  component={PanelPage} />
       <Route path="/InterviewTimeSchedule"  exact  component={InterviewTimeSchedule} />
